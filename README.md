@@ -1,0 +1,1 @@
+# 7games-bet-static
