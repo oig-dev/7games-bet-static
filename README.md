@@ -1,1 +1,3 @@
-# 7games-bet-static
+# 7Games
+
+Static file repository.
