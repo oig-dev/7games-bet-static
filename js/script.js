@@ -3,6 +3,7 @@ var isMobile = false;
 var iconOpen = `<svg id="iconOn" class="active" xmlns="http://www.w3.org/2000/svg" width="38.694" height="24.544" viewBox="0 0 38.694 24.544"><path d="M28.42,55.434l26.91.331V52.79l-26.91.331v2.313Z" transform="translate(-28.42 -31.22)" fill="#2fc473"/><path d="M0,16.747H24.994l-1.2,2.366-3.579-6.93.466-.343,5.516,5.516,2.366,2.366H0V16.747Z" transform="translate(10.133 -7.002)" fill="#2fc473"/><path d="M28.42,2.513l26.91.462V0L28.42.466V2.513Z" transform="translate(-28.42)" fill="#2fc473"/><rect width="5.414" height="2.975" transform="translate(0.319 10.766)" fill="#2fc473"/><path d="M9.221,36.08,7.37,39.659,7.836,40l3.927-3.922Z" transform="translate(23.92 -21.338)" fill="#2fc473"/></svg>`;
 var iconClose = `<div style="width: 40px;" id="iconOff"><img src="https://static.springbuilder.site/fs/userFiles-v2/7games-18751367/media/menu-desktop-close.svg?1668203149036" style="width: 100%;" /></div>`
 var iconChat = `<svg xmlns="http://www.w3.org/2000/svg" width="34.636" height="33.72" viewBox="0 0 34.636 33.72"><g opacity="0.7"><path d="M25.6,12.793H1.531A1.532,1.532,0,0,0,0,14.324V39.586l5.434-5.434H25.6a1.533,1.533,0,0,0,1.531-1.531v-18.3A1.532,1.532,0,0,0,25.6,12.793ZM5.773,26.061a2.309,2.309,0,1,1,2.309-2.309A2.311,2.311,0,0,1,5.773,26.061Zm7.5,0a2.309,2.309,0,1,1,2.309-2.309A2.311,2.311,0,0,1,13.277,26.061Zm7.5,0a2.309,2.309,0,1,1,2.309-2.309A2.311,2.311,0,0,1,20.782,26.061Z" transform="translate(0 -5.866)" fill="#2fc473"/><path d="M37.332.793h-25.8A1.532,1.532,0,0,0,10,2.324V6.566H29.828a2.689,2.689,0,0,1,2.685,2.685V23.874h6.35V2.324A1.532,1.532,0,0,0,37.332.793Z" transform="translate(-4.227 -0.793)" fill="#2fc473"/></g></svg>`
+console.log("teste v1.0")
 
 // Checando se estamos no mobile ou desktop
 if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -525,16 +526,4 @@ function createSvgIcon(element, name) {
   
     return iconSvg
   }
-}
-
-// [mega pixel] Rastrea visualização da home
-fbq('track', 'ViewContent');
-
-// [mega pixel] Rastrea cadastros
-var authWrapperId = isMobile ? "#m263" : "#m845";
-waitForElm(authWrapperId).then(() => { trackLeads() });
-
-function trackLeads() {
-  var registerBtn = document.querySelector("button.v3-btn.v3-btn-primary.v3-register-btn");
-  registerBtn.addEventListener("click", () => { fbq('track', 'Lead') });
 }
