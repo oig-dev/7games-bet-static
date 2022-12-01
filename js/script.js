@@ -22,9 +22,6 @@ if(isMobile){
 
 setInterval('insereCabecalhoW1()', 500);
 
-// [mega pixel] Rastrea visualização da home
-fbq('track', 'ViewContent');
-
 //TROCA ICON BETSLIP MOBILE
 function trocaImagemCupomMenuMobile() {
   const newImage = document.createElement('img');
@@ -530,6 +527,10 @@ function createSvgIcon(element, name) {
   }
 }
 
+// [mega pixel] Rastrea visualização da home
+fbq('track', 'ViewContent');
+
+// [mega pixel] Rastrea cadastros
 var authWrapperId = isMobile ? "#m263" : "#m845";
 waitForElm(authWrapperId).then(() => { trackLeads() });
 
