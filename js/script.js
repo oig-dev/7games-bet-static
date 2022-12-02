@@ -532,7 +532,9 @@ fbq('track', 'ViewContent');
 
 // [mega pixel] Rastrea cadastros
 var authWrapperId = isMobile ? "#m263" : "#m845";
-waitForElm(authWrapperId).then(() => { trackLeads() });
+waitForElm(authWrapperId).then(() => {
+  setTimeout("trackLeads()", 500);
+});
 
 function trackLeads() {
   var registerBtn = document.querySelector("button.v3-btn.v3-btn-primary.v3-register-btn");
