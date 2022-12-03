@@ -632,16 +632,20 @@ function createSvgIcon(element, name) {
 fbq("track", "ViewContent");
 
 // [mega pixel] Rastrea cadastros
-//var authWrapperId = isMobile ? "#m263" : "#m845";
-//waitForElm(authWrapperId).then(() => {
-//  setTimeout("trackLeads()", 500);
-//});
+var authWrapperId = isMobile ? "#m263" : "#m845";
+waitForElm(authWrapperId).then(() => {
+  setTimeout("trackLeads()", 500);
+});
 
-//function trackLeads() {
-//  var registerBtn = document.querySelector(
-//    "button.v3-btn.v3-btn-primary.v3-register-btn"
-//  );
-// registerBtn.addEventListener("click", () => {
-//   fbq("track", "Lead");
-//  });
-//}
+function trackLeads() {
+  var registerBtn = document.querySelector(
+    "button.v3-btn.v3-btn-primary.v3-register-btn"
+  );
+  if (registerBtn) {
+    registerBtn.addEventListener("click", () => {
+     fbq("track", "Lead");
+    });
+  } else {
+    setTimeout("trackLeads()", 500);
+  }
+}
