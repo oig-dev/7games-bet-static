@@ -629,11 +629,20 @@ function createSvgIcon(element, name) {
 }
 
 // [mega pixel] Rastrea visualização da home
-fbq("track", "ViewContent");
+function trackViewContent() {
+  var homeContentWrapper = document.getElementById(isMobile ? "r422" : "r431");
+  if (homeContentWrapper) {
+    var script = document.createElement('script');
+    script.text = 'fbq("track", "ViewContent")';
+    homeContentWrapper.appendChild(script);
+  } else {
+    setTimeout("trackViewContent()", 500);
+  }
+}
+setTimeout("trackViewContent()", 500);
 
 // [mega pixel] Rastrea cadastros
-var authWrapperId = isMobile ? "#m263" : "#m845";
-waitForElm(authWrapperId).then(() => {
+waitForElm(isMobile ? "#m263" : "#m845").then(() => {
   setTimeout("trackLeads()", 500);
 });
 
@@ -643,7 +652,7 @@ function trackLeads() {
   );
   if (registerBtn) {
     registerBtn.addEventListener("click", () => {
-     fbq("track", "Lead");
+      fbq("track", "Lead");
     });
   } else {
     setTimeout("trackLeads()", 500);
