@@ -639,7 +639,8 @@ function trackViewContent() {
     setTimeout("trackViewContent()", 500);
   }
 }
-setTimeout("trackViewContent()", 500);
+// setTimeout("trackViewContent()", 500); // Desabilitado
+fbq("track", "ViewContent");
 
 // [mega pixel] Rastrea cadastros
 waitForElm(isMobile ? "#m263" : "#m845").then(() => {
@@ -652,7 +653,7 @@ function trackLeads() {
   );
   if (registerBtn) {
     registerBtn.addEventListener("click", () => {
-      fbq("track", "Lead");
+      fbq("track", "CompleteRegistration");
     });
   } else {
     setTimeout("trackLeads()", 500);
