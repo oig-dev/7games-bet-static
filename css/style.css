@@ -1503,3 +1503,20 @@ body {
     height: 100% !important;
   }
 }
+
+/* Overwrite desktop home galery */
+.gallery {
+  justify-content: space-around;
+}
+
+div.uc-masonry-item-block:first-child {
+  width: 34.85% !important;
+}
+
+.gallery > div {
+  width: 25%;
+}
+
+.gallery > div {
+  width: 25%;
+}
