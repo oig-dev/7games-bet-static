@@ -533,7 +533,7 @@
             void 0 === f
               ? void 0
               : f.swarmUrl) || "wss://eu-swarm-springre.betconstruct.com/",
-          CASINO_URL: "https://api.7games.bet/casino/mirror/",
+          CASINO_URL: "https://api.7games.bet/casino/",
           JACKPOT_URL: "wss://rgs-wss.betconstructapps.com/jackpot",
           GEO_LINK_URL:
             (null === (d = window) ||
