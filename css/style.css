@@ -1506,10 +1506,11 @@ body {
 
 /* Overwrite desktop home galery */
 .gallery {
-  justify-content: space-around;
+  justify-content: center;
+  padding: 20px 0;
 }
 
-div.uc-masonry-item-block:first-child {
+.gallery > div.uc-masonry-item-block:first-child {
   width: 34.85% !important;
 }
 
@@ -1517,6 +1518,7 @@ div.uc-masonry-item-block:first-child {
   width: 25%;
 }
 
-.gallery > div {
-  width: 25%;
+.gallery > div > div > div > .effect-block {
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #00000029;
 }
