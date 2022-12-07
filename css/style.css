@@ -1505,20 +1505,20 @@ body {
 }
 
 /* Overwrite desktop home galery */
-#907.gallery {
+.animated-907.gallery {
   justify-content: center;
   padding: 20px 0;
 }
 
-#907.gallery > div.uc-masonry-item-block:first-child {
+.animated-907.gallery > div.uc-masonry-item-block:first-child {
   width: 34.85% !important;
 }
 
-#907.gallery > div {
+.animated-907.gallery > div {
   width: 25%;
 }
 
-#907.gallery > div > div > div > .effect-block {
+.animated-907.gallery > div > div > div > .effect-block {
   border-radius: 20px;
   box-shadow: 0px 3px 6px #00000029;
 }
