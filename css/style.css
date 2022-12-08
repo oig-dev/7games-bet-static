@@ -1007,7 +1007,7 @@ body {
     background: var(--v3-black-2);
     border-radius: 100px;
     bottom: 10px;
-    z-index: 99999;
+    z-index: 999;
     text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1521,4 +1521,18 @@ body {
 .animated-907.gallery > div > div > div > .effect-block {
   border-radius: 20px;
   box-shadow: 0px 3px 6px #00000029;
+}
+
+/* Loading popup */
+#loading-wrapper {
+  background-color: #010101;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
