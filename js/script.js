@@ -47,10 +47,14 @@ function trocaImagemCupomMenuMobile() {
     "#bottom-navigation > div:nth-child(5) > span > svg"
   )?.remove();
 
-  const newImage = document.createElement("img");
-  newImage.src =
-    "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
-  fifthMenuItem.appendChild(newImage);
+  if(!document.querySelector(
+    "#bottom-navigation > div:nth-child(5) > span > img"
+  )) {
+    const newImage = document.createElement("img");
+    newImage.src =
+      "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
+    fifthMenuItem.appendChild(newImage);
+  }
 }
 
 function resolveAfter2Seconds() {
