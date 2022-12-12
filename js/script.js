@@ -35,12 +35,9 @@ function trocaImagemCupomMenuMobile() {
   );
   
   if (!fifthMenuItem) {
-    const bottomNav = document.getElementById("bottom-navigation");
-    if (!bottomNav) return;
-    const div = document.createElement("div");
-    div.appendChild(document.createElement("span"));
-    bottomNav.appendChild(div);
-    fifthMenuItem = div;
+    fifthMenuItem = document.querySelector("#bottom-navigation > div:nth-child(1)").cloneNode(true);
+    fifthMenuItem.appendChild(document.createElement("span"));
+    document.getElementById("bottom-navigation").appendChild(fifthMenuItem);
   }
 
   document.querySelector(
