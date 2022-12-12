@@ -28,31 +28,53 @@ if (isMobile) {
 
 setInterval("insereCabecalhoW1()", 500);
 
+function atualizaCupomMenuMobile() {
+  const existsElement = document.querySelector(
+    "#bottom-navigation > div:nth-child(5) > span > svg"
+  );
+
+  if (!existsElement) return;
+  const newImage = document.createElement("img");
+  newImage.src =
+    "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
+
+  existsElement?.remove();
+
+  document
+    .querySelector("#bottom-navigation > div:nth-child(5) > span")
+    .appendChild(newImage);
+}
+
+function moveElementTo(selected_element, direction) {
+
+  var element_to_move = selected_element,
+      td = element_to_move.parentNode;
+
+  if (direction === -1 && element_to_move.previousElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.previousElementSibling);
+  } else if (direction === 1 && element_to_move.nextElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.nextElementSibling.nextElementSibling)
+  }
+}
+
 // [Bottom Nav] TROCA ICON BETSLIP MOBILE
 function trocaImagemCupomMenuMobile() {
-  let fifthMenuItem = document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span"
-  );
-  
-  if (!fifthMenuItem) {
-    const firstMenuItem = document.querySelector("#bottom-navigation > div:nth-child(1)");
-    if (!firstMenuItem) return;
-    fifthMenuItem = firstMenuItem.cloneNode(true);
-    fifthMenuItem.appendChild(document.createElement("span"));
-    document.getElementById("bottom-navigation").appendChild(fifthMenuItem);
-  }
-
-  document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > svg"
-  )?.remove();
-
-  if(!document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > img"
-  )) {
-    const newImage = document.createElement("img");
-    newImage.src =
-      "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
-    fifthMenuItem.appendChild(newImage);
+  const BOTTOM_ITENS_QTY = 6
+  const bottom_nav = document.querySelector("#bottom-navigation");
+  if (bottom_nav?.children.length === BOTTOM_ITENS_QTY) {
+    atualizaCupomMenuMobile();
+  } else {
+    const newMenuItem = document.createElement("div");
+    newMenuItem.className = "style__TabWrapper-sc-ggzj2o-1 eruTVB";
+    newMenuItem.innerHTML = `
+      <span class="v3-icon " style="font-size: 24px; position: relative; height: 24px;">
+        <div class="style__BetCountWrapper-sc-nlog2h-0 dpOJAN">0</div>
+        <img src="https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835">
+      </span>
+      <div class="style__TabName-sc-ggzj2o-2 gSnjmI">Cupom</div>
+    `;
+    bottom_nav.appendChild(newMenuItem);
+    moveElementTo(newMenuItem, -1);
   }
 }
 
@@ -465,6 +487,7 @@ function addIconeComponentMaisJogados() {
   const component = isMobile
     ? document.querySelector("#m871 .uc-content span")
     : document.querySelector("#m848 .uc-content span");
+  if (!component) return;
   const text = component.textContent.toLowerCase();
   if (text.includes("mais jogados")) {
     const svg = {
