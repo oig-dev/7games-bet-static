@@ -28,29 +28,23 @@ if (isMobile) {
 
 setInterval("insereCabecalhoW1()", 500);
 
-// [Bottom Nav] TROCA ICON BETSLIP MOBILE
+//TROCA ICON BETSLIP MOBILE
 function trocaImagemCupomMenuMobile() {
-  let fifthMenuItem = document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span"
-  );
-  
-  if (!fifthMenuItem) {
-    const bottomNav = document.getElementById("bottom-navigation");
-    if (!bottomNav) return;
-    const div = document.createElement("div");
-    div.appendChild(document.createElement("span"));
-    bottomNav.appendChild(div);
-    fifthMenuItem = div;
-  }
-
-  document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > svg"
-  )?.remove();
-
   const newImage = document.createElement("img");
+
+  const existsElement = document.querySelector(
+    "#bottom-navigation > div:nth-child(5) > span > svg"
+  );
+
+  if (!existsElement) return;
   newImage.src =
     "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
-  fifthMenuItem.appendChild(newImage);
+
+  existsElement?.remove();
+
+  document
+    .querySelector("#bottom-navigation > div:nth-child(5) > span")
+    .appendChild(newImage);
 }
 
 function resolveAfter2Seconds() {
