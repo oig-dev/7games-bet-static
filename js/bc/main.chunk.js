@@ -1,6 +1,6 @@
-/*! For license information please see main.b3b8451a.chunk.js.LICENSE.txt */
-(this["webpackJsonpsportsbook-v3.0"] =
-  this["webpackJsonpsportsbook-v3.0"] || []).push([
+/*!For license information please see main.f45e869b.chunk.js.LICENSE.txt*/ (this[
+  "webpackJsonpsportsbook-v3.0"
+] = this["webpackJsonpsportsbook-v3.0"] || []).push([
   [374],
   [
     function (e, t, n) {
@@ -10497,7 +10497,7 @@
             .concat(e, "=")
             .concat(t, ";")
             .concat(o)
-            .concat(a, "path=/;secure");
+            .concat(a, "path=/");
           return (document.cookie = u), u;
         },
         a = function (e) {
@@ -55078,4 +55078,3 @@
   ],
   [[320, 427]],
 ]);
-//# sourceMappingURL=main.b3b8451a.chunk.js.map
