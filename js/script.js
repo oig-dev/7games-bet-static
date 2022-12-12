@@ -465,6 +465,7 @@ function addIconeComponentMaisJogados() {
   const component = isMobile
     ? document.querySelector("#m871 .uc-content span")
     : document.querySelector("#m848 .uc-content span");
+  if (!component) return;
   const text = component.textContent.toLowerCase();
   if (text.includes("mais jogados")) {
     const svg = {
