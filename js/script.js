@@ -63,7 +63,7 @@ function trocaImagemCupomMenuMobile() {
   const bottom_nav = document.querySelector("#bottom-navigation");
   if (bottom_nav?.children.length === BOTTOM_ITENS_QTY) {
     atualizaCupomMenuMobile();
-  } else {
+  } else if (bottom_nav?.children.length < BOTTOM_ITENS_QTY) {
     const newMenuItem = document.createElement("div");
     newMenuItem.className = "style__TabWrapper-sc-ggzj2o-1 eruTVB";
     newMenuItem.innerHTML = `
