@@ -79,7 +79,7 @@ async function trocaBotaoMobile() {
   if (!menuMobile) return;
 
   const bodyParent = await resolveAfter2Seconds();
-  const body = document.querySelector("#bottom-navigation > div:nth-child(3)");
+  const body = document.querySelector("#bottom-navigation > div:nth-child(4)");
   var documentFragment = document.createDocumentFragment();
 
   const openMenu = document.createElement("div");
