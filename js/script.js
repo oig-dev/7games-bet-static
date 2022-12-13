@@ -28,31 +28,27 @@ if (isMobile) {
 
 setInterval("insereCabecalhoW1()", 500);
 
+function moveElementTo(selected_element, direction) {
+  var element_to_move = selected_element,
+      td = element_to_move.parentNode;
+
+  if (direction === -1 && element_to_move.previousElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.previousElementSibling);
+  } else if (direction === 1 && element_to_move.nextElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.nextElementSibling.nextElementSibling)
+  }
+}
+
 // [Bottom Nav] TROCA ICON BETSLIP MOBILE
 function trocaImagemCupomMenuMobile() {
-  let fifthMenuItem = document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span"
+  const ORDER = 4;
+  const fifthMenuIcon = document.querySelector(
+    `#bottom-navigation > div:nth-child(${ORDER}) > span > svg`
   );
   
-  if (!fifthMenuItem) {
-    const firstMenuItem = document.querySelector("#bottom-navigation > div:nth-child(1)");
-    if (!firstMenuItem) return;
-    fifthMenuItem = firstMenuItem.cloneNode(true);
-    fifthMenuItem.appendChild(document.createElement("span"));
-    document.getElementById("bottom-navigation").appendChild(fifthMenuItem);
-  }
-
-  document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > svg"
-  )?.remove();
-
-  if(!document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > img"
-  )) {
-    const newImage = document.createElement("img");
-    newImage.src =
-      "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
-    fifthMenuItem.appendChild(newImage);
+  if (fifthMenuIcon) {
+    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML = ".cls-17777{fill:#65C673;}";
+    moveElementTo(document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`), 1);
   }
 }
 
