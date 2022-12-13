@@ -31,4 +31,4 @@ function stopLoading () {
     }
 }
 
-// startLoading();
+startLoading();
