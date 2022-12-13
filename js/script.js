@@ -28,23 +28,28 @@ if (isMobile) {
 
 setInterval("insereCabecalhoW1()", 500);
 
-//TROCA ICON BETSLIP MOBILE
+function moveElementTo(selected_element, direction) {
+  var element_to_move = selected_element,
+      td = element_to_move.parentNode;
+
+  if (direction === -1 && element_to_move.previousElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.previousElementSibling);
+  } else if (direction === 1 && element_to_move.nextElementSibling) {
+      td.insertBefore(element_to_move, element_to_move.nextElementSibling.nextElementSibling)
+  }
+}
+
+// [Bottom Nav] TROCA ICON BETSLIP MOBILE
 function trocaImagemCupomMenuMobile() {
-  const newImage = document.createElement("img");
-
-  const existsElement = document.querySelector(
-    "#bottom-navigation > div:nth-child(5) > span > svg"
+  const ORDER = 4;
+  const fifthMenuIcon = document.querySelector(
+    `#bottom-navigation > div:nth-child(${ORDER}) > span > svg`
   );
-
-  if (!existsElement) return;
-  newImage.src =
-    "https://7games.bet/fs/userFiles-v2/7games-18751367/media/ticket.png?1668004946835";
-
-  existsElement?.remove();
-
-  document
-    .querySelector("#bottom-navigation > div:nth-child(5) > span")
-    .appendChild(newImage);
+  
+  if (fifthMenuIcon) {
+    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML = ".cls-17777{fill:#65C673;}";
+    moveElementTo(document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`), 1);
+  }
 }
 
 function resolveAfter2Seconds() {
@@ -70,7 +75,7 @@ async function trocaBotaoMobile() {
   if (!menuMobile) return;
 
   const bodyParent = await resolveAfter2Seconds();
-  const body = document.querySelector("#bottom-navigation > div:nth-child(3)");
+  const body = document.querySelector("#bottom-navigation > div:nth-child(6)");
   var documentFragment = document.createDocumentFragment();
 
   const openMenu = document.createElement("div");
@@ -86,7 +91,7 @@ async function trocaBotaoMobile() {
 
   btnMenuExiste?.remove();
 
-  bodyParent.insertBefore(documentFragment, body.nextSibling);
+  bodyParent.insertBefore(documentFragment, body);
 }
 
 function cupomAnima1() {
@@ -456,6 +461,7 @@ function addIconeComponentMaisJogados() {
   const component = isMobile
     ? document.querySelector("#m871 .uc-content span")
     : document.querySelector("#m848 .uc-content span");
+  if (!component) return;
   const text = component.textContent.toLowerCase();
   if (text.includes("mais jogados")) {
     const svg = {
@@ -629,17 +635,6 @@ function createSvgIcon(element, name) {
 }
 
 // [mega pixel] Rastrea visualização da home
-function trackViewContent() {
-  var homeContentWrapper = document.getElementById(isMobile ? "r422" : "r431");
-  if (homeContentWrapper) {
-    var script = document.createElement('script');
-    script.text = 'fbq("track", "ViewContent")';
-    homeContentWrapper.appendChild(script);
-  } else {
-    setTimeout("trackViewContent()", 500);
-  }
-}
-// setTimeout("trackViewContent()", 500); // Desabilitado
 fbq("track", "ViewContent");
 
 // [mega pixel] Rastrea cadastros
