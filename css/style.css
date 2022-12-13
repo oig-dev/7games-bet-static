@@ -482,25 +482,25 @@ div[class^="style__Container-sc"] .am-flexbox button span:nth-child(1) {
 }
 
 /* favoritos cassino */
-#m1096 .style__Container-sc-gq0272-0.fQzLTZ,
-#m1097 .style__Container-sc-gq0272-0.fQzLTZ,
+.style__Container-sc-gq0272-0.fQzLTZ,
+.style__Container-sc-gq0272-0.fQzLTZ,
 #prematch-left-sidebar-wrapper .Competitions__FavoriteIconWrapper__FavoriteIcon,
-#m239 .Competitions__FavoriteIconWrapper__FavoriteIcon,
-#m251 .style__Container-sc-gq0272-0.jXxNfk.favIcon,
-#m239 .style__Container-sc-gq0272-0.jXxNfk.favIcon,
-#m241 .style__Container-sc-gq0272-0.jXxNfk.favIcon,
+.Competitions__FavoriteIconWrapper__FavoriteIcon,
+.style__Container-sc-gq0272-0.jXxNfk.favIcon,
+.style__Container-sc-gq0272-0.jXxNfk.favIcon,
+.style__Container-sc-gq0272-0.jXxNfk.favIcon,
 #prematch-left-sidebar-wrapper .style__Container-sc-gq0272-0.jXxNfk.favIcon,
-#m251 .style__Container-sc-gq0272-0.kbsxNo,
-#m217 .style__Container-sc-gq0272-0.kbsxNo,
-#m753 .style__Container-sc-gq0272-0.fQzLTZ,
-#m846 .style__Container-sc-gq0272-0.fQzLTZ,
-#m749 .style__Container-sc-gq0272-0.fQzLTZ,
-#m750 .style__Container-sc-gq0272-0.fQzLTZ {
+.style__Container-sc-gq0272-0.kbsxNo,
+.style__Container-sc-gq0272-0.kbsxNo,
+.style__Container-sc-gq0272-0.fQzLTZ,
+.style__Container-sc-gq0272-0.fQzLTZ,
+.style__Container-sc-gq0272-0.fQzLTZ,
+.style__Container-sc-gq0272-0.fQzLTZ {
   color: #808080!important;
 }
 
 #prematch-left-sidebar-wrapper .Competitions__FavoriteIconWrapper__FavoriteIcon__active,
-#m239 .Competitions__FavoriteIconWrapper__FavoriteIcon__active {
+.Competitions__FavoriteIconWrapper__FavoriteIcon__active {
   color: var(--v3-primary-6)!important;
 }
 
