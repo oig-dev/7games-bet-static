@@ -1536,3 +1536,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.loading-body {
+  overflow-y: hidden;
+}
