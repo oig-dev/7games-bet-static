@@ -1,4 +1,4 @@
-const LOADING_IMG = "https://static.7games.bet/images/loading.png";
+const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
 
 function startLoading () {
     let rawHtml = document.createElement("div");
