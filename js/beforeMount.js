@@ -1,9 +1,9 @@
+const LOADING_IMG = "https://static.7games.bet/images/loading.png";
+
 function startLoading () {
     let rawHtml = document.createElement("div");
     rawHtml.id = "loading-wrapper";
-    rawHtml.innerHTML = `
-        <img src="https://static.7games.bet/images/loading.gif"/>
-    `;
+    rawHtml.innerHTML = `<img src="${LOADING_IMG}"/>`;
     document.body.appendChild(rawHtml);
     document.body.classList.add("loading-body");
 }
