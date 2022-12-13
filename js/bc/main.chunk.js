@@ -608,7 +608,7 @@
             void 0 === k
               ? void 0
               : k.privacyPolicyTarget) || "1",
-          STORAGE_URL: "https://static-bc.7games.bet/",
+          STORAGE_URL: "https://fstatic.7games.bet/",
           LANGUAGE_PREFIX: Zt[on] || Zt[on.slice(0, 2)],
           MATCHTRACKER_LANG_PREFIX: en.c[on] || en.c[on.slice(0, 2)],
           CURRENT_LANGUAGE: on || "en",
