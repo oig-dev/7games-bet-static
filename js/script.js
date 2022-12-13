@@ -671,6 +671,3 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
     </svg>
   `;
 });
-
-// End loading
-setInterval("stopLoading()", 1100);

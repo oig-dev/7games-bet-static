@@ -31,4 +31,5 @@ function stopLoading () {
     }
 }
 
-startLoading();
+// startLoading();
+// setInterval("stopLoading()", 1100);
