@@ -1525,7 +1525,7 @@ body {
 
 /* Loading popup */
 #loading-wrapper {
-  background-color: #010101;
+  background-color: #18201D;
   z-index: 9999;
   position: absolute;
   top: 0;
@@ -1535,6 +1535,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#loading-wrapper > img{
+  width: 200px;
 }
 
 .loading-body {
