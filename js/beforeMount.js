@@ -15,13 +15,13 @@ function startLoading() {
   let rawHtml = document.createElement("div");
   rawHtml.id = "loading-wrapper";
   rawHtml.innerHTML = `<img src="${LOADING_IMG}"/>`;
-  document.body.appendChild(rawHtml);
-  document.body.classList.add("loading-body");
+  document.body?.appendChild(rawHtml);
+  document.body?.classList.add("loading-body");
 }
 
 function stopLoading() {
   document.getElementById("loading-wrapper")?.remove();
-  document.body.classList.remove("loading-body");
+  document.body?.classList.remove("loading-body");
 }
 
 function onElementReady(callback, selector) {
