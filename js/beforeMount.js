@@ -24,26 +24,17 @@ function stopLoading() {
   document.body.classList.remove("loading-body");
 }
 
-function onBodyReady(callback) {
+function onElementReady(callback, selector) {
   var intervalId = window.setInterval(function () {
-    if (document.body) {
+    if (document.querySelector(selector)) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
   }, 100);
 }
 
-function onLastElementReady(callback, selector) {
-  var intervalId = window.setInterval(function () {
-    if (document.querySelector(selector)) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 500);
-}
-
-onBodyReady(startLoading());
-onLastElementReady(
-    setTimeout("stopLoading()", 1500),
+onElementReady(startLoading(), "body");
+onElementReady(
+    setTimeout("stopLoading()", 2100),
     isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
 );
