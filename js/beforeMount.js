@@ -29,7 +29,7 @@ function startLoading() {
   document.body?.classList.add("loading-body");
 
   onElementReady(
-    setTimeout("stopLoading()", 2100),
+    setTimeout("stopLoading()", 2500),
     isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
   );
 }
