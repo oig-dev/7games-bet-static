@@ -26,7 +26,7 @@ function stopLoading() {
 
 function onBodyReady(callback) {
   var intervalId = window.setInterval(function () {
-    if (document.getElementsByTagName("body")[0] !== undefined) {
+    if (document.body) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
@@ -44,6 +44,6 @@ function onLastElementReady(callback, selector) {
 
 onBodyReady(startLoading());
 onLastElementReady(
-    setInterval(stopLoading(), 1000),
+    setTimeout("stopLoading()", 1500),
     isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
 );
