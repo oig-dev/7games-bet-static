@@ -9,20 +9,6 @@ if (
 ) {
   isMobile = true;
 }
-const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
-
-function startLoading() {
-  let rawHtml = document.createElement("div");
-  rawHtml.id = "loading-wrapper";
-  rawHtml.innerHTML = `<img src="${LOADING_IMG}"/>`;
-  document.body.appendChild(rawHtml);
-  document.body.classList.add("loading-body");
-}
-
-function stopLoading() {
-  document.getElementById("loading-wrapper")?.remove();
-  document.body.classList.remove("loading-body");
-}
 
 function onElementReady(callback, selector) {
   var intervalId = window.setInterval(function () {
@@ -33,8 +19,24 @@ function onElementReady(callback, selector) {
   }, 100);
 }
 
-onElementReady(startLoading(), "body");
-onElementReady(
-    setTimeout("stopLoading()", 2100),
+const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
+
+function startLoading() {
+  let rawHtml = document.createElement("div");
+  rawHtml.id = "loading-wrapper";
+  rawHtml.innerHTML = `<img src="${LOADING_IMG}"/>`;
+  document.body?.appendChild(rawHtml);
+  document.body?.classList.add("loading-body");
+
+  onElementReady(
+    setTimeout("stopLoading()", 2500),
     isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
-);
+  );
+}
+
+function stopLoading() {
+  document.getElementById("loading-wrapper")?.remove();
+  document.body?.classList.remove("loading-body");
+}
+
+onElementReady(startLoading(), "body");
