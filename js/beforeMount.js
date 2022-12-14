@@ -28,15 +28,12 @@ function startLoading() {
   document.body.appendChild(rawHtml);
   document.body.classList.add("loading-body");
 
-  onElementReady(
-    () => {setTimeout("stopLoading()", 1000)},
-    isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
-  );
+  setTimeout("stopLoading()", 2000);
 }
 
 function stopLoading() {
-  document.getElementById("loading-wrapper")?.remove();
+  document.getElementById("loading-wrapper").remove();
   document.body.classList.remove("loading-body");
 }
 
-// onElementReady(startLoading, "body");
+onElementReady(startLoading, "body");
