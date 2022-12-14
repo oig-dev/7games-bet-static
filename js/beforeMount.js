@@ -16,7 +16,7 @@ function onElementReady(callback, selector) {
       window.clearInterval(intervalId);
       callback();
     }
-  }, 100);
+  }, 200);
 }
 
 const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
