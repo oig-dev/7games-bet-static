@@ -44,6 +44,6 @@ function onLastElementReady(callback, selector) {
 
 onBodyReady(startLoading());
 onLastElementReady(
-    stopLoading(),
+    setInterval(stopLoading(), 1000),
     isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
 );
