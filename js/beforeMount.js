@@ -9,6 +9,31 @@ if (
 ) {
   isMobile = true;
 }
+
+/* 
+Função que aguarda um elemento existir para executar 
+(Fonte: https://stackoverflow.com/questions/5525071/how-to-wait-until-an-element-exists)
+*/
+function waitForElm(selector) {
+  return new Promise((resolve) => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver((mutations) => {
+      if (document.querySelector(selector)) {
+        resolve(document.querySelector(selector));
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
+}
+
 const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
 
 function startLoading() {
@@ -24,26 +49,5 @@ function stopLoading() {
   document.body.classList.remove("loading-body");
 }
 
-function onBodyReady(callback) {
-  var intervalId = window.setInterval(function () {
-    if (document.getElementsByTagName("body")[0] !== undefined) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 100);
-}
-
-function onLastElementReady(callback, selector) {
-  var intervalId = window.setInterval(function () {
-    if (document.querySelector(selector)) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 500);
-}
-
-onBodyReady(startLoading());
-onLastElementReady(
-    setInterval(stopLoading(), 1000),
-    isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK"
-);
+waitForElm("body").then((elm) => { startLoading() });
+waitForElm(isMobile ? "#button-menu" : ".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => { setInterval("stopLoading()", 1500) });
