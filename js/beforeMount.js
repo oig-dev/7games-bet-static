@@ -10,13 +10,13 @@ if (
   isMobile = true;
 }
 
-function onElementReady(callback, selector) {
+function onBodyReady(callback) {
   var intervalId = window.setInterval(function () {
-    if (document.querySelector(selector)) {
+    if (document.body) {
       window.clearInterval(intervalId);
       callback();
     }
-  }, 200);
+  }, 100);
 }
 
 const LOADING_IMG = "https://static.7games.bet/images/loading.gif";
@@ -36,4 +36,4 @@ function stopLoading() {
   document.body.classList.remove("loading-body");
 }
 
-onElementReady(startLoading, "body");
+onBodyReady(startLoading);
