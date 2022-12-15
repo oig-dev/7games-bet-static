@@ -1,4 +1,4 @@
-/*!For license information please see main.77b358b8.chunk.js.LICENSE.txt*/ (this[
+/*!For license information please see main.47da88cc.chunk.js.LICENSE.txt*/ (this[
   "webpackJsonpsportsbook-v3.0"
 ] = this["webpackJsonpsportsbook-v3.0"] || []).push([
   [376],
@@ -13588,6 +13588,7 @@
           "-2539": "swarm.MarketTypeNotAvailableforBetBuilder",
           "-2488": "swarm.notallowedPasswordContainsName",
           "-2541": "swarm.notallowedPasswordContainsEmail",
+          "-2534": "swarm.phoneNumberIsNotSet",
           "-2456": "swarm.emailTypeNotFound",
           "-2484": "swarm.dublicateIban",
           "-2535": "swarm.SMSProviderError",
