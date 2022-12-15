@@ -1,1 +1,0 @@
-(this["webpackJsonpsportsbook-v3.0"]=this["webpackJsonpsportsbook-v3.0"]||[]).push([[22],{762:function(t,n,e){"use strict";var r=e(0);n.a=function(){var t=Object(r.useRef)(!1);return Object(r.useEffect)((function(){return t.current=!0,function(){t.current=!1}}),[]),{mounted:t,mountCheckWrapper:function(n){t.current&&n()}}}}}]);
