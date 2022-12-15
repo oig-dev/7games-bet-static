@@ -4934,7 +4934,7 @@
     (n.o = function (e, c) {
       return Object.prototype.hasOwnProperty.call(e, c);
     }),
-    (n.p = "https://fstatic.7games.bet/widgets-x/"),
+    (n.p = "https://static.springbuilder.site/widgets-x/"),
     (n.oe = function (e) {
       throw (console.error(e), e);
     });
