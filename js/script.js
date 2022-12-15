@@ -673,6 +673,12 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
 });
 
 // Troca ordem das opções de pagamento no deposito
-waitForElm(".payment__item-box").then((elm) => {
-  moveElementTo(elm, 1)
-});
+if (isMobile) {
+  waitForElm(".paymentMethods__listLayout__item").then((elm) => {
+    moveElementTo(elm, 1)
+  });
+} else {
+  waitForElm(".payment__item-box").then((elm) => {
+    moveElementTo(elm, 1)
+  });
+}
