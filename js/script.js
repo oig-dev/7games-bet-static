@@ -671,3 +671,8 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
     </svg>
   `;
 });
+
+// Troca ordem das opções de pagamento no deposito
+waitForElm(".payment__item-box").then((elm) => {
+  moveElementTo(elm, 1)
+});
