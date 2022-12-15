@@ -608,7 +608,7 @@
             void 0 === k
               ? void 0
               : k.privacyPolicyTarget) || "1",
-          STORAGE_URL: "https://static.springbuilder.site/",
+          STORAGE_URL: "https://fstatic.7games.bet/",
           LANGUAGE_PREFIX: Zt[on] || Zt[on.slice(0, 2)],
           MATCHTRACKER_LANG_PREFIX: en.c[on] || en.c[on.slice(0, 2)],
           CURRENT_LANGUAGE: on || "en",
@@ -31362,8 +31362,7 @@
             WDS_SOCKET_PORT: void 0,
             FAST_REFRESH: !0,
             REACT_APP_ENV: "widgets",
-            REACT_APP_WIDGETS_HOSTING:
-              "https://static.springbuilder.site/widgets-x",
+            REACT_APP_WIDGETS_HOSTING: "https://static-bc.7games.bet/widgets-x",
           });
         var m = (function (e) {
           var t, n;
