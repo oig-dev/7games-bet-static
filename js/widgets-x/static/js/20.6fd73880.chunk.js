@@ -1,0 +1,1 @@
+(this["webpackJsonpsportsbook-v3.0"]=this["webpackJsonpsportsbook-v3.0"]||[]).push([[20],{840:function(s,r,o){"use strict";var e=o(61),t=o.n(e),n=o(177);r.a=function(s){var r=Object(n.f)();return t.a.parse(s||r.search,{ignoreQueryPrefix:!0})}}}]);
