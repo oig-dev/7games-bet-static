@@ -1544,3 +1544,7 @@ body {
 .loading-body {
   overflow-y: hidden !important;
 }
+
+.card__container.card__container-mobile {
+  padding: 0 10px 24px !important;
+}
