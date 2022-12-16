@@ -689,23 +689,3 @@ if (isMobile) {
     moveElementTo(elm, 1);
   });
 }
-
-document.addEventListener("readystatechange", (event) => {
-  if (
-    document.querySelectorAll(".v3-login-btn,.profileInfo_circleButton_icon")
-      .length === 0
-  ) {
-    for (const element of document.querySelectorAll(
-      'script:empty[src*="widgets-x"]'
-    )) {
-      const oldSrc = element.src;
-      const t = +new Date();
-      const newSrc = oldSrc.split("?")[0] + "?v=" + t;
-      console.log(oldSrc, " to ", newSrc);
-      element.remove();
-      document
-        .querySelector("head")
-        .appendChild(document.createElement("script")).src = newSrc;
-    }
-  }
-});
