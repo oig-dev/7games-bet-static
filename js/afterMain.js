@@ -1,6 +1,6 @@
-/*!For license information please see main.ba213985.chunk.js.LICENSE.txt*/ (this[
-  "webpackJsonpsportsbook-v3.0"
-] = this["webpackJsonpsportsbook-v3.0"] || []).push([
+/*! For license information please see main.ef84b07d.chunk.js.LICENSE.txt */
+(this["webpackJsonpsportsbook-v3.0"] =
+  this["webpackJsonpsportsbook-v3.0"] || []).push([
   [380],
   [
     function (e, t, n) {
@@ -1697,58 +1697,58 @@
         return E;
       }),
         n.d(t, "j", function () {
-          return S;
+          return O;
         }),
         n.d(t, "f", function () {
-          return T;
+          return S;
         }),
         n.d(t, "n", function () {
-          return w;
+          return T;
         }),
         n.d(t, "i", function () {
-          return C;
+          return w;
         }),
         n.d(t, "h", function () {
-          return x;
+          return j;
         }),
         n.d(t, "m", function () {
-          return A;
+          return x;
         }),
         n.d(t, "k", function () {
-          return P;
+          return A;
         }),
         n.d(t, "o", function () {
-          return k;
+          return P;
         }),
         n.d(t, "l", function () {
-          return I;
+          return k;
         }),
         n.d(t, "s", function () {
-          return N;
+          return I;
         }),
         n.d(t, "e", function () {
-          return R;
+          return N;
         }),
         n.d(t, "a", function () {
-          return M;
+          return R;
         }),
         n.d(t, "p", function () {
-          return D;
+          return M;
         }),
         n.d(t, "q", function () {
-          return L;
+          return D;
         }),
         n.d(t, "t", function () {
-          return F;
+          return L;
         }),
         n.d(t, "r", function () {
-          return U;
+          return F;
         }),
         n.d(t, "g", function () {
-          return B;
+          return U;
         }),
         n.d(t, "c", function () {
-          return H;
+          return G;
         });
       var r = n(1),
         o = n(31),
@@ -1795,10 +1795,7 @@
             return o.sendCommand(e, "", t, n, r);
           });
         },
-        O = function () {
-          return m.a.IOVATION_ENABLE && m.a.IOVATION_MODE;
-        },
-        S = function (e) {
+        O = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -1824,7 +1821,7 @@
               },
               rid: f.a.gForCommand(),
             };
-          if (O()) {
+          if (m.a.IOVATION_ENABLE) {
             var h = 1 === +m.a.IOVATION_MODE ? "finger_print" : "io_black_box";
             if ("io_black_box" === h) {
               var y = window.IGLOO.getBlackbox();
@@ -1887,7 +1884,7 @@
             }
           );
         },
-        T = function (e) {
+        S = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -1910,7 +1907,7 @@
           )),
             E(r, t, null, n);
         },
-        w = function (e, t) {
+        T = function (e, t) {
           var n =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
@@ -1926,7 +1923,7 @@
             };
           E(o, n, null, r);
         },
-        C = function () {
+        w = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -1945,13 +1942,13 @@
           };
           E(o, e, null, t);
         },
-        j = function (e) {
+        C = function (e) {
           var t = JSON.parse(p.a.getItem(Object(y.a)("account", "AUTH_DATA")));
           e.first_name && t && (t.first_name = e.first_name),
             e.last_name && t && (t.last_name = e.last_name),
             p.a.setItem(Object(y.a)("account", "AUTH_DATA"), JSON.stringify(t));
         },
-        x = function (e, t, n) {
+        j = function (e, t, n) {
           var r = {
             command: s.a.GET,
             params: { source: s.b.USER, what: { profile: [] }, subscribe: !0 },
@@ -1979,7 +1976,7 @@
                       Object(l.a)(m.a.CUSTOM_CODE_LOGIN, r));
               }
               if (
-                (j(r),
+                (C(r),
                 n &&
                   m.a.SEON_INTEGRATION &&
                   ["all", "login"].includes(m.a.SEON_VALIDATION_ACTION))
@@ -1988,7 +1985,7 @@
                 !(function t() {
                   clearTimeout(a),
                     c.a.getState().appData.seonSessionData
-                      ? (G("login", function (e) {
+                      ? (B("login", function (e) {
                           (!e.success || Object.keys(e.error).length > 0) &&
                             console.error(e);
                         }),
@@ -1999,11 +1996,11 @@
             },
             function (e) {
               var n = Object.values(e.profile)[0];
-              j(n), t(n);
+              C(n), t(n);
             }
           );
         },
-        A = function () {
+        x = function () {
           [
             Object(y.a)("account", "AUTH_DATA"),
             Object(y.a)("account", "JWT"),
@@ -2017,7 +2014,7 @@
             Object(g.a)("sbuser"),
             Object(g.a)("userGroupsIds");
         },
-        P = function () {
+        A = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -2026,11 +2023,11 @@
           Object(b.a)({ type: "userId", value: "0" });
           var n = { command: s.a.LOGOUT, params: t, rid: f.a.gForCommand() },
             r = function () {
-              A(), e();
+              x(), e();
             };
           E(n, r, null, r);
         },
-        k = function (e) {
+        P = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -2067,13 +2064,13 @@
                     Secure: !0,
                   });
               }
-              x(t, n), m.a.IFRAME_SPORTSBOOK && Object(_.a)("loginRestored");
+              j(t, n), m.a.IFRAME_SPORTSBOOK && Object(_.a)("loginRestored");
             },
             null,
             o
           );
         },
-        I = function (e, t) {
+        k = function (e, t) {
           var n =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
@@ -2100,7 +2097,7 @@
               },
               rid: f.a.gForCommand(),
             };
-          if (O()) {
+          if (m.a.IOVATION_ENABLE) {
             var p = 1 === +m.a.IOVATION_MODE ? "finger_print" : "io_black_box",
               h = window.IGLOO.getBlackbox();
             h.finished && (d.params.user_info[p] = h.blackbox);
@@ -2115,12 +2112,12 @@
                   m.a.SEON_INTEGRATION &&
                     ["all", "register"].includes(m.a.SEON_VALIDATION_ACTION) &&
                     c.a.getState().appData.seonSessionData &&
-                    G("register", function (e) {
+                    B("register", function (e) {
                       (!e.success || Object.keys(e.error).length > 0) &&
                         console.error(e);
                     }),
                   t &&
-                    S({ username: i, password: o }, n, function () {
+                    O({ username: i, password: o }, n, function () {
                       m.a.APPEND_CUSTOM_CODE_LOGIN_FAIL &&
                         Object(l.a)(m.a.CUSTOM_CODE_LOGIN_FAIL);
                     });
@@ -2132,7 +2129,7 @@
             }
           );
         },
-        N = function () {
+        I = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -2153,7 +2150,7 @@
             };
           E(r, e, t);
         },
-        R = function (e) {
+        N = function (e) {
           var t = {
             command: s.a.ENABLE_TWO_FACTOR_AUTHENTICATION,
             params: {},
@@ -2163,7 +2160,7 @@
             n.sendCommand(t, null, e, null);
           });
         },
-        M = function (e, t) {
+        R = function (e, t) {
           var n = e.code,
             r = e.fingerprint,
             o = e.is_device_trusted,
@@ -2182,7 +2179,7 @@
             e.sendCommand(i, null, t, null);
           });
         },
-        D = function (e, t, n) {
+        M = function (e, t, n) {
           var r = {
             command: s.a.SEND_SMS_TO_PHONE_NUMBER,
             params: { phone_number: e.replace("+", ""), action_type: t },
@@ -2192,7 +2189,7 @@
             e.sendCommand(r, null, n);
           });
         },
-        L = function (e, t, n) {
+        D = function (e, t, n) {
           var r = {
             command: s.a.SEND_SMS_WITH_USERNAME,
             params: { login: e, action_type: t },
@@ -2202,7 +2199,7 @@
             e.sendCommand(r, null, n);
           });
         },
-        F = function (e, t) {
+        L = function (e, t) {
           var n = {
             command: s.a.VERIFY_USER,
             params: { verification_code: e },
@@ -2212,7 +2209,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        U = function (e) {
+        F = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -2226,7 +2223,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        B = function (e, t) {
+        U = function (e, t) {
           var n = {
             command: s.a.GET_CHILD_REGIONS,
             params: { alpha2_code: e },
@@ -2236,7 +2233,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        G = function (e, t) {
+        B = function (e, t) {
           var n = c.a.getState().appData.seonSessionData,
             r = {
               command: s.a.VALIDATE_SEON_ON_ACTION,
@@ -2247,7 +2244,7 @@
             e.sendCommand(r, null, t);
           });
         },
-        H = function (e, t, n) {
+        G = function (e, t, n) {
           var r = {
             command: s.a.CHECK_CPF_NUMBER,
             params: { cpf: e },
@@ -31420,7 +31417,8 @@
             WDS_SOCKET_PORT: void 0,
             FAST_REFRESH: !0,
             REACT_APP_ENV: "widgets",
-            REACT_APP_WIDGETS_HOSTING: "https://fstatic.7games.bet/widgets-x",
+            REACT_APP_WIDGETS_HOSTING:
+              "https://fstatic.7games.bet/widgets-x",
           });
         var m = (function (e) {
           var t, n;
@@ -55182,3 +55180,4 @@
   ],
   [[320, 433]],
 ]);
+//# sourceMappingURL=main.ef84b07d.chunk.js.map
