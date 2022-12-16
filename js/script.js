@@ -30,12 +30,15 @@ setInterval("insereCabecalhoW1()", 500);
 
 function moveElementTo(selected_element, direction) {
   var element_to_move = selected_element,
-      td = element_to_move.parentNode;
+    td = element_to_move.parentNode;
 
   if (direction === -1 && element_to_move.previousElementSibling) {
-      td.insertBefore(element_to_move, element_to_move.previousElementSibling);
+    td.insertBefore(element_to_move, element_to_move.previousElementSibling);
   } else if (direction === 1 && element_to_move.nextElementSibling) {
-      td.insertBefore(element_to_move, element_to_move.nextElementSibling.nextElementSibling)
+    td.insertBefore(
+      element_to_move,
+      element_to_move.nextElementSibling.nextElementSibling
+    );
   }
 }
 
@@ -45,10 +48,14 @@ function trocaImagemCupomMenuMobile() {
   const fifthMenuIcon = document.querySelector(
     `#bottom-navigation > div:nth-child(${ORDER}) > span > svg`
   );
-  
+
   if (fifthMenuIcon) {
-    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML = ".cls-17777{fill:#65C673;}";
-    moveElementTo(document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`), 1);
+    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML =
+      ".cls-17777{fill:#65C673;}";
+    moveElementTo(
+      document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`),
+      1
+    );
   }
 }
 
@@ -675,10 +682,30 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
 // Troca ordem das opções de pagamento no deposito
 if (isMobile) {
   waitForElm(".paymentMethods__listLayout__item").then((elm) => {
-    moveElementTo(elm, 1)
+    moveElementTo(elm, 1);
   });
 } else {
   waitForElm(".payment__item-box").then((elm) => {
-    moveElementTo(elm, 1)
+    moveElementTo(elm, 1);
   });
 }
+
+document.addEventListener("readystatechange", (event) => {
+  if (
+    document.querySelectorAll(".v3-login-btn,.profileInfo_circleButton_icon")
+      .length === 0
+  ) {
+    for (const element of document.querySelectorAll(
+      'script:empty[src*="widgets-x"]'
+    )) {
+      const oldSrc = element.src;
+      const t = +new Date();
+      const newSrc = oldSrc.split("?")[0] + "?v=" + t;
+      console.log(oldSrc, " to ", newSrc);
+      element.remove();
+      document
+        .querySelector("head")
+        .appendChild(document.createElement("script")).src = newSrc;
+    }
+  }
+});
