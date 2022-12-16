@@ -1,7 +1,7 @@
-/*!For license information please see main.47da88cc.chunk.js.LICENSE.txt*/ (this[
+/*!For license information please see main.ba213985.chunk.js.LICENSE.txt*/ (this[
   "webpackJsonpsportsbook-v3.0"
 ] = this["webpackJsonpsportsbook-v3.0"] || []).push([
-  [376],
+  [380],
   [
     function (e, t, n) {
       "use strict";
@@ -436,8 +436,15 @@
         qt,
         Jt,
         Qt,
-        Xt = n(34),
-        Zt = {
+        Xt,
+        Zt,
+        en,
+        tn,
+        nn,
+        rn,
+        on,
+        an = n(34),
+        un = {
           ar: "arb",
           az: "aze",
           "da-dk": "den",
@@ -495,21 +502,21 @@
           "nl-nl": "nld",
           "bg-bg": "bgr",
         },
-        en = n(101),
-        tn = n(44),
-        nn =
+        cn = n(101),
+        sn = n(44),
+        ln =
           "https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/44662",
-        rn = document.documentElement.lang,
-        on =
-          (Xt.a,
-          Zt[rn] || rn.slice(0, 2),
-          Xt.a,
-          Xt.a,
+        fn = document.documentElement.lang,
+        dn =
+          (an.a,
+          un[fn] || fn.slice(0, 2),
+          an.a,
+          an.a,
           document.documentElement.lang),
-        an = document.documentElement.dir || "ltr",
-        un = Object(tn.b)("isAndroidWrapperApp"),
-        cn = Object(tn.b)("isIOSWrapperApp"),
-        sn = {
+        pn = document.documentElement.dir || "ltr",
+        hn = Object(sn.b)("isAndroidWrapperApp"),
+        mn = Object(sn.b)("isIOSWrapperApp"),
+        vn = {
           PARTNER_ID:
             (null === (a = window) ||
             void 0 === a ||
@@ -519,8 +526,8 @@
             void 0 === u
               ? void 0
               : u.partnerId) || 4,
-          SOURCE: un ? 16 : cn ? 17 : Xt.a ? 4 : 42,
-          WRAPPER_APP: !!un || !!cn,
+          SOURCE: hn ? 16 : mn ? 17 : an.a ? 4 : 42,
+          WRAPPER_APP: !!hn || !!mn,
           SWARM_URL:
             (null === (c = window) ||
             void 0 === c ||
@@ -609,9 +616,9 @@
               ? void 0
               : k.privacyPolicyTarget) || "1",
           STORAGE_URL: "https://fstatic.7games.bet/",
-          LANGUAGE_PREFIX: Zt[on] || Zt[on.slice(0, 2)],
-          MATCHTRACKER_LANG_PREFIX: en.c[on] || en.c[on.slice(0, 2)],
-          CURRENT_LANGUAGE: on || "en",
+          LANGUAGE_PREFIX: un[dn] || un[dn.slice(0, 2)],
+          MATCHTRACKER_LANG_PREFIX: cn.c[dn] || cn.c[dn.slice(0, 2)],
+          CURRENT_LANGUAGE: dn || "en",
           ODD_ROUNDING: 3,
           PRICE_ROUNDING: 2,
           PRICE_SEPARATOR: " ",
@@ -645,248 +652,275 @@
             void 0 === U
               ? void 0
               : U.topNavigationButtonAlignment) || "bottom",
-          DIRECTION: an,
-          CASINO_GAME_SWITCHING_DURING_GAME_SESSION: !0,
-          CASINO_GAMES_FETCH_COUNT: 16,
-          CASINO_MOBILE_IFRAME: Boolean(
-            +(
-              (null === (B = window) ||
-              void 0 === B ||
-              null === (G = B.partnerConfigs) ||
-              void 0 === G
-                ? void 0
-                : G.springConfig.casinoIFrameMobileOnOff) || "0"
-            )
-          ),
-          CASINO_SPORTSBOOK_SWITCHER: +(
+          DIRECTION: pn,
+          IOVATION_ENABLE:
+            (null === (B = window) ||
+            void 0 === B ||
+            null === (G = B.partnerConfigs) ||
+            void 0 === G
+              ? void 0
+              : G.iovationEnabled) || !1,
+          IOVATION_MODE:
             (null === (H = window) ||
             void 0 === H ||
             null === (V = H.partnerConfigs) ||
             void 0 === V
               ? void 0
-              : V.accountType) || 0
+              : V.iovationMode) || "0",
+          CASINO_GAME_SWITCHING_DURING_GAME_SESSION: !0,
+          CASINO_GAMES_FETCH_COUNT: 16,
+          CASINO_MOBILE_IFRAME: Boolean(
+            +(
+              (null === (W = window) ||
+              void 0 === W ||
+              null === (z = W.partnerConfigs) ||
+              void 0 === z
+                ? void 0
+                : z.springConfig.casinoIFrameMobileOnOff) || "0"
+            )
+          ),
+          CASINO_SPORTSBOOK_SWITCHER: +(
+            (null === ($ = window) ||
+            void 0 === $ ||
+            null === (Y = $.partnerConfigs) ||
+            void 0 === Y
+              ? void 0
+              : Y.accountType) || 0
           ),
           CASINO_GAMBLING_LOGO_URL:
-            (null === (W = window.partnerConfigs) || void 0 === W
+            (null === (K = window.partnerConfigs) || void 0 === K
               ? void 0
-              : W.casinoGamblingLogoUrl) || nn,
+              : K.casinoGamblingLogoUrl) || ln,
           CASINO_HIGH_QUALITY_PICTURES:
-            (null === (z = window.partnerConfigs) || void 0 === z
+            (null === (q = window.partnerConfigs) || void 0 === q
               ? void 0
-              : z.casinoHighQualityPictures) || !1,
+              : q.casinoHighQualityPictures) || !1,
           CASINO_GAME_URL_PREFIX: "games",
           CASINO_MOUNT_PATH: "slots",
           CASINO_FUN_MODE:
-            (null === ($ = window.partnerConfigs) || void 0 === $
+            (null === (J = window.partnerConfigs) || void 0 === J
               ? void 0
-              : $.casinoFunMode) || !1,
+              : J.casinoFunMode) || !1,
           SPORTSBOOK_MOUNT_PATH:
-            null !== (Y = window) && void 0 !== Y && Y.mockedData
+            null !== (Q = window) && void 0 !== Q && Q.mockedData
               ? ""
               : "match",
           SPORT_MENU_DEFAULT_SELECTED:
-            (null === (K = window) ||
-            void 0 === K ||
-            null === (q = K.partnerConfigs) ||
-            void 0 === q
-              ? void 0
-              : q.initiallyOpen) || "sportsTypes",
-          SPORT_MARKET_IS_COMPACT:
-            (null === (J = window) ||
-            void 0 === J ||
-            null === (Q = J.partnerConfigs) ||
-            void 0 === Q
-              ? void 0
-              : Q.isCompact) || 0,
-          SPORT_COMPETITION_IS_COMPACT:
             (null === (X = window) ||
             void 0 === X ||
             null === (Z = X.partnerConfigs) ||
             void 0 === Z
               ? void 0
-              : Z.isCompetitionCompact) || 0,
-          IS_BOOK_BET_AVAILABLE:
-            ((null === (ee = window) || void 0 === ee
+              : Z.initiallyOpen) || "sportsTypes",
+          SPORT_MARKET_IS_COMPACT:
+            (null === (ee = window) ||
+            void 0 === ee ||
+            null === (te = ee.partnerConfigs) ||
+            void 0 === te
               ? void 0
-              : ee.partnerConfigs) &&
+              : te.isCompact) || 0,
+          SPORT_COMPETITION_IS_COMPACT:
+            (null === (ne = window) ||
+            void 0 === ne ||
+            null === (re = ne.partnerConfigs) ||
+            void 0 === re
+              ? void 0
+              : re.isCompetitionCompact) || 0,
+          IS_BOOK_BET_AVAILABLE:
+            ((null === (oe = window) || void 0 === oe
+              ? void 0
+              : oe.partnerConfigs) &&
               Boolean(
-                +(null === (te = window) ||
-                void 0 === te ||
-                null === (ne = te.partnerConfigs) ||
-                void 0 === ne
+                +(null === (ae = window) ||
+                void 0 === ae ||
+                null === (ie = ae.partnerConfigs) ||
+                void 0 === ie
                   ? void 0
-                  : ne.bookBetAvailable)
+                  : ie.bookBetAvailable)
+              )) ||
+            !1,
+          IS_BOOK_BET_SHARING_AVAILABLE:
+            ((null === (ue = window) || void 0 === ue
+              ? void 0
+              : ue.partnerConfigs) &&
+              Boolean(
+                +(null === (ce = window) ||
+                void 0 === ce ||
+                null === (se = ce.partnerConfigs) ||
+                void 0 === se
+                  ? void 0
+                  : se.bookBetSharingAvailable1)
               )) ||
             !1,
           IS_QUICK_BET:
-            ((null === (re = window) || void 0 === re
+            ((null === (le = window) || void 0 === le
               ? void 0
-              : re.partnerConfigs) &&
+              : le.partnerConfigs) &&
               Boolean(
-                +(null === (oe = window) ||
-                void 0 === oe ||
-                null === (ae = oe.partnerConfigs) ||
-                void 0 === ae
+                +(null === (fe = window) ||
+                void 0 === fe ||
+                null === (de = fe.partnerConfigs) ||
+                void 0 === de
                   ? void 0
-                  : ae.quickBet)
+                  : de.quickBet)
               )) ||
             !1,
           IS_BOOSTED_ODDS_ENABLED:
-            (null === (ie = window.partnerConfigs) || void 0 === ie
+            (null === (pe = window.partnerConfigs) || void 0 === pe
               ? void 0
-              : ie.boostedOddsEnabled) || !1,
+              : pe.boostedOddsEnabled) || !1,
           IS_MULTIPLES_ENABLED:
-            (null === (ue = window.partnerConfigs) || void 0 === ue
+            (null === (he = window.partnerConfigs) || void 0 === he
               ? void 0
-              : ue.multiplesEnabled) || !1,
+              : he.multiplesEnabled) || !1,
           IS_EDIT_BET_AVAILABLE:
             null ===
-              (ce =
-                (null === (se = window) || void 0 === se
+              (me =
+                (null === (ve = window) || void 0 === ve
                   ? void 0
-                  : se.partnerConfigs) &&
+                  : ve.partnerConfigs) &&
                 Boolean(
-                  +(null === (le = window) ||
-                  void 0 === le ||
-                  null === (fe = le.partnerConfigs) ||
-                  void 0 === fe
+                  +(null === (ye = window) ||
+                  void 0 === ye ||
+                  null === (ge = ye.partnerConfigs) ||
+                  void 0 === ge
                     ? void 0
-                    : fe.editBetAvailable)
+                    : ge.editBetAvailable)
                 )) ||
-            void 0 === ce ||
-            ce,
+            void 0 === me ||
+            me,
           IS_BETSLIP_FLOATING_ENABLED:
-            null === (de = window.partnerConfigs) || void 0 === de
+            null === (be = window.partnerConfigs) || void 0 === be
               ? void 0
-              : de.betslipFloatingMode,
+              : be.betslipFloatingMode,
           TEAM_LOGOS: Boolean(
             +(
-              (null === (pe = window) ||
-              void 0 === pe ||
-              null === (he = pe.partnerConfigs) ||
-              void 0 === he
+              (null === (_e = window) ||
+              void 0 === _e ||
+              null === (Ee = _e.partnerConfigs) ||
+              void 0 === Ee
                 ? void 0
-                : he.teamLogos) || "1"
+                : Ee.teamLogos) || "1"
             )
           ),
           PUSH_NOTIFICATIONS_ENABLED:
-            (null === (me = window) ||
-            void 0 === me ||
-            null === (ve = me.partnerConfigs) ||
-            void 0 === ve
+            (null === (Oe = window) ||
+            void 0 === Oe ||
+            null === (Se = Oe.partnerConfigs) ||
+            void 0 === Se
               ? void 0
-              : ve.pushNotifications) || !1,
+              : Se.pushNotifications) || !1,
           BETS_WITH_SAME_GROUP: !(
-            null === (ye = window) ||
-            void 0 === ye ||
-            null === (ge = ye.partnerConfigs) ||
-            void 0 === ge ||
-            !ge.betsWithSameGroup
+            null === (Te = window) ||
+            void 0 === Te ||
+            null === (we = Te.partnerConfigs) ||
+            void 0 === we ||
+            !we.betsWithSameGroup
           ),
           OPEN_BETS_BY_DEFAULT:
-            (null === (be = window) ||
-            void 0 === be ||
-            null === (_e = be.partnerConfigs) ||
-            void 0 === _e
+            (null === (Ce = window) ||
+            void 0 === Ce ||
+            null === (je = Ce.partnerConfigs) ||
+            void 0 === je
               ? void 0
-              : _e.openBetsByDefault) || 0,
+              : je.openBetsByDefault) || 0,
           BETSLIP_TYPE:
-            (null === (Ee = window) ||
-            void 0 === Ee ||
-            null === (Oe = Ee.partnerConfigs) ||
-            void 0 === Oe
+            (null === (xe = window) ||
+            void 0 === xe ||
+            null === (Ae = xe.partnerConfigs) ||
+            void 0 === Ae
               ? void 0
-              : Oe.betslipType) || 0,
+              : Ae.betslipType) || 0,
           SPORTSBOOK_ICON_STYLE:
-            (null === (Se = window) ||
-            void 0 === Se ||
-            null === (Te = Se.partnerConfigs) ||
-            void 0 === Te
+            (null === (Pe = window) ||
+            void 0 === Pe ||
+            null === (ke = Pe.partnerConfigs) ||
+            void 0 === ke
               ? void 0
-              : Te.sportsbookIconStyle) || "colored",
+              : ke.sportsbookIconStyle) || "colored",
           FLAG_STYLE:
-            (null === (we = window) ||
-            void 0 === we ||
-            null === (Ce = we.partnerConfigs) ||
-            void 0 === Ce
+            (null === (Ie = window) ||
+            void 0 === Ie ||
+            null === (Ne = Ie.partnerConfigs) ||
+            void 0 === Ne
               ? void 0
-              : Ce.flagStyle) || "circled",
+              : Ne.flagStyle) || "circled",
           MATCH_TRACKER_URL: "https://visualization.ml.bcua.io",
           GIFT_BET:
             "1" ===
-            (null === (je = window) ||
-            void 0 === je ||
-            null === (xe = je.partnerConfigs) ||
-            void 0 === xe
+            (null === (Re = window) ||
+            void 0 === Re ||
+            null === (Me = Re.partnerConfigs) ||
+            void 0 === Me
               ? void 0
-              : xe.giftBet),
+              : Me.giftBet),
           IS_PRINT_AVAILABLE:
-            ((null === (Ae = window) || void 0 === Ae
-              ? void 0
-              : Ae.partnerConfigs) &&
-              Boolean(
-                +(null === (Pe = window) ||
-                void 0 === Pe ||
-                null === (ke = Pe.partnerConfigs) ||
-                void 0 === ke
-                  ? void 0
-                  : ke.printBetAvailable)
-              ) &&
-              !Xt.a) ||
-            !1,
-          REMOVE_SUSPENDED_SELECTION:
-            ((null === (Ie = window) || void 0 === Ie
-              ? void 0
-              : Ie.partnerConfigs) &&
-              Boolean(
-                +(null === (Ne = window) ||
-                void 0 === Ne ||
-                null === (Re = Ne.partnerConfigs) ||
-                void 0 === Re
-                  ? void 0
-                  : Re.removeSuspendedSelection)
-              )) ||
-            !1,
-          SEON_INTEGRATION:
-            ((null === (Me = window) || void 0 === Me
-              ? void 0
-              : Me.partnerConfigs) &&
-              window.partnerConfigs.seonIntegration) ||
-            !1,
-          SEON_VALIDATION_ACTION:
             ((null === (De = window) || void 0 === De
               ? void 0
               : De.partnerConfigs) &&
+              Boolean(
+                +(null === (Le = window) ||
+                void 0 === Le ||
+                null === (Fe = Le.partnerConfigs) ||
+                void 0 === Fe
+                  ? void 0
+                  : Fe.printBetAvailable)
+              ) &&
+              !an.a) ||
+            !1,
+          REMOVE_SUSPENDED_SELECTION:
+            ((null === (Ue = window) || void 0 === Ue
+              ? void 0
+              : Ue.partnerConfigs) &&
+              Boolean(
+                +(null === (Be = window) ||
+                void 0 === Be ||
+                null === (Ge = Be.partnerConfigs) ||
+                void 0 === Ge
+                  ? void 0
+                  : Ge.removeSuspendedSelection)
+              )) ||
+            !1,
+          SEON_INTEGRATION:
+            ((null === (He = window) || void 0 === He
+              ? void 0
+              : He.partnerConfigs) &&
+              window.partnerConfigs.seonIntegration) ||
+            !1,
+          SEON_VALIDATION_ACTION:
+            ((null === (Ve = window) || void 0 === Ve
+              ? void 0
+              : Ve.partnerConfigs) &&
               window.partnerConfigs.seonValidationAction) ||
             "all",
           THEME_SWITCHER: Boolean(
-            null === (Le = window) ||
-              void 0 === Le ||
-              null === (Fe = Le.partnerConfigs) ||
-              void 0 === Fe
+            null === (We = window) ||
+              void 0 === We ||
+              null === (ze = We.partnerConfigs) ||
+              void 0 === ze
               ? void 0
-              : Fe.themeMode
+              : ze.themeMode
           ),
           RESPONSIBLE_GAMING_URL: "https://www.opbets.com/responsible-gaming",
           GAMBLING_MESSAGE_URL: "http://www.begambleaware.org",
           MOCKED_DATA:
-            (null === (Ue = window) || void 0 === Ue
+            (null === ($e = window) || void 0 === $e
               ? void 0
-              : Ue.mockedData) || !1,
+              : $e.mockedData) || !1,
           JURISDICTION:
-            (null === (Be = window) ||
-            void 0 === Be ||
-            null === (Ge = Be.partnerConfigs) ||
-            void 0 === Ge
+            (null === (Ye = window) ||
+            void 0 === Ye ||
+            null === (Ke = Ye.partnerConfigs) ||
+            void 0 === Ke
               ? void 0
-              : Ge.jurisdiction) || "0",
+              : Ke.jurisdiction) || "0",
           BOTTOM_NAV_VALIDATION:
-            (null === (He = window) ||
-            void 0 === He ||
-            null === (Ve = He.partnerConfigs) ||
-            void 0 === Ve
+            (null === (qe = window) ||
+            void 0 === qe ||
+            null === (Je = qe.partnerConfigs) ||
+            void 0 === Je
               ? void 0
-              : Ve.enableBottomNavigation) || !0,
+              : Je.enableBottomNavigation) || !0,
           IS_WEBP_SUPPORTED: null,
           DT: {
             shortDate: "DD MMM",
@@ -894,16 +928,16 @@
             time: "HH:mm",
             longTime: "HH:mm:ss",
           },
-          PAGE_URLS: (null === (We = window) ||
-          void 0 === We ||
-          null === (ze = We.partnerConfigs) ||
-          void 0 === ze
+          PAGE_URLS: (null === (Qe = window) ||
+          void 0 === Qe ||
+          null === (Xe = Qe.partnerConfigs) ||
+          void 0 === Xe
             ? void 0
-            : ze.sbPageUrls) || {
-            live: Xt.a
+            : Xe.sbPageUrls) || {
+            live: an.a
               ? "".concat(window.location.origin, "/live")
               : "".concat(window.location.origin, "/desktop-sportsbook-live"),
-            prematch: Xt.a
+            prematch: an.a
               ? "".concat(window.location.origin, "/prematch")
               : "".concat(window.location.origin, "/desktop-sportsbook"),
             casino: "".concat(window.location.origin, "/casino"),
@@ -912,171 +946,171 @@
           },
           APPEND_CUSTOM_CODE_ON_REG_POPUP: Boolean(
             +(
-              (null === ($e = window.partnerConfigs) || void 0 === $e
+              (null === (Ze = window.partnerConfigs) || void 0 === Ze
                 ? void 0
-                : $e.springConfig.appendCustomCodeRegistrationPopupOpen) || "0"
+                : Ze.springConfig.appendCustomCodeRegistrationPopupOpen) || "0"
             )
           ),
           CUSTOM_CODE_ON_REG_POPUP:
-            (null === (Ye = window.partnerConfigs) || void 0 === Ye
+            (null === (et = window.partnerConfigs) || void 0 === et
               ? void 0
-              : Ye.springConfig.customCodeRegistrationPopupOpen) || "",
+              : et.springConfig.customCodeRegistrationPopupOpen) || "",
           APPEND_CUSTOM_CODE_LOGIN: Boolean(
             +(
-              (null === (Ke = window.partnerConfigs) || void 0 === Ke
+              (null === (tt = window.partnerConfigs) || void 0 === tt
                 ? void 0
-                : Ke.springConfig.appendCustomCodeLogin) || "0"
+                : tt.springConfig.appendCustomCodeLogin) || "0"
             )
           ),
           CUSTOM_CODE_LOGIN:
-            (null === (qe = window.partnerConfigs) || void 0 === qe
+            (null === (nt = window.partnerConfigs) || void 0 === nt
               ? void 0
-              : qe.springConfig.customCodeLogin) || "",
+              : nt.springConfig.customCodeLogin) || "",
           APPEND_CUSTOM_CODE_REG: Boolean(
             +(
-              (null === (Je = window.partnerConfigs) || void 0 === Je
+              (null === (rt = window.partnerConfigs) || void 0 === rt
                 ? void 0
-                : Je.springConfig.appendCustomCodeRegistration) || "0"
+                : rt.springConfig.appendCustomCodeRegistration) || "0"
             )
           ),
           CUSTOM_CODE_REG:
-            (null === (Qe = window.partnerConfigs) || void 0 === Qe
+            (null === (ot = window.partnerConfigs) || void 0 === ot
               ? void 0
-              : Qe.springConfig.customCodeRegistration) || "",
+              : ot.springConfig.customCodeRegistration) || "",
           APPEND_CUSTOM_CODE_DEPOSIT: Boolean(
             +(
-              (null === (Xe = window.partnerConfigs) || void 0 === Xe
+              (null === (at = window.partnerConfigs) || void 0 === at
                 ? void 0
-                : Xe.springConfig.appendCustomCodeDeposit) || "1"
+                : at.springConfig.appendCustomCodeDeposit) || "1"
             )
           ),
           CUSTOM_CODE_DEPOSIT:
-            (null === (Ze = window.partnerConfigs) || void 0 === Ze
+            (null === (it = window.partnerConfigs) || void 0 === it
               ? void 0
-              : Ze.springConfig.customCodeDeposit) || "",
+              : it.springConfig.customCodeDeposit) || "",
           APPEND_CUSTOM_CODE_BETSLIP: Boolean(
             +(
-              (null === (et = window.partnerConfigs) || void 0 === et
+              (null === (ut = window.partnerConfigs) || void 0 === ut
                 ? void 0
-                : et.springConfig.betslipAppendCustomCodeActivity) || "0"
+                : ut.springConfig.betslipAppendCustomCodeActivity) || "0"
             )
           ),
           CUSTOM_CODE_BETSLIP:
-            (null === (tt = window.partnerConfigs) || void 0 === tt
+            (null === (ct = window.partnerConfigs) || void 0 === ct
               ? void 0
-              : tt.springConfig.betslipCustomCode) || "",
+              : ct.springConfig.betslipCustomCode) || "",
           APPEND_CUSTOM_CODE_FIRST_DEPOSIT: Boolean(
             +(
-              (null === (nt = window.partnerConfigs) || void 0 === nt
+              (null === (st = window.partnerConfigs) || void 0 === st
                 ? void 0
-                : nt.springConfig.appendCustomCodeFirstDeposit) || "0"
+                : st.springConfig.appendCustomCodeFirstDeposit) || "0"
             )
           ),
           CUSTOM_CODE_FIRST_DEPOSIT:
-            (null === (rt = window.partnerConfigs) || void 0 === rt
+            (null === (lt = window.partnerConfigs) || void 0 === lt
               ? void 0
-              : rt.springConfig.customCodeFirstDeposit) || "",
+              : lt.springConfig.customCodeFirstDeposit) || "",
           APPEND_CUSTOM_CODE_DEPOSIT_FAIL: Boolean(
             +(
-              (null === (ot = window.partnerConfigs) || void 0 === ot
+              (null === (ft = window.partnerConfigs) || void 0 === ft
                 ? void 0
-                : ot.springConfig.appendCustomFailedDeposit) || "0"
+                : ft.springConfig.appendCustomFailedDeposit) || "0"
             )
           ),
           CUSTOM_CODE_DEPOSIT_FAIL:
-            (null === (at = window.partnerConfigs) || void 0 === at
+            (null === (dt = window.partnerConfigs) || void 0 === dt
               ? void 0
-              : at.springConfig.customFailedDeposit) || "",
+              : dt.springConfig.customFailedDeposit) || "",
           APPEND_CUSTOM_CODE_LOGIN_FAIL: Boolean(
             +(
-              (null === (it = window.partnerConfigs) || void 0 === it
+              (null === (pt = window.partnerConfigs) || void 0 === pt
                 ? void 0
-                : it.springConfig.appendCustomFailedLogin) || "0"
+                : pt.springConfig.appendCustomFailedLogin) || "0"
             )
           ),
           CUSTOM_CODE_LOGIN_FAIL:
-            (null === (ut = window.partnerConfigs) || void 0 === ut
+            (null === (ht = window.partnerConfigs) || void 0 === ht
               ? void 0
-              : ut.springConfig.customFailedLogin) || "",
+              : ht.springConfig.customFailedLogin) || "",
           BET_BUILDER_URL:
-            (null === (ct = window) ||
-            void 0 === ct ||
-            null === (st = ct.partnerConfigs) ||
-            void 0 === st
+            (null === (mt = window) ||
+            void 0 === mt ||
+            null === (vt = mt.partnerConfigs) ||
+            void 0 === vt
               ? void 0
-              : st.betBuilderIframeUrl) || "",
+              : vt.betBuilderIframeUrl) || "",
           IS_ACTIVE_STREAM_TAB:
             null ===
-              (lt =
-                (null === (ft = window) || void 0 === ft
+              (yt =
+                (null === (gt = window) || void 0 === gt
                   ? void 0
-                  : ft.partnerConfigs) &&
+                  : gt.partnerConfigs) &&
                 Boolean(
-                  +(null === (dt = window) ||
-                  void 0 === dt ||
-                  null === (pt = dt.partnerConfigs) ||
-                  void 0 === pt
+                  +(null === (bt = window) ||
+                  void 0 === bt ||
+                  null === (_t = bt.partnerConfigs) ||
+                  void 0 === _t
                     ? void 0
-                    : pt.isStreamActiveTabCompact)
+                    : _t.isStreamActiveTabCompact)
                 )) ||
-            void 0 === lt ||
-            lt,
+            void 0 === yt ||
+            yt,
           OUTRIGHT_FILTER: +(
-            (null === (ht = window) ||
-            void 0 === ht ||
-            null === (mt = ht.partnerConfigs) ||
-            void 0 === mt
+            (null === (Et = window) ||
+            void 0 === Et ||
+            null === (Ot = Et.partnerConfigs) ||
+            void 0 === Ot
               ? void 0
-              : mt.outrightFilter) || 0
+              : Ot.outrightFilter) || 0
           ),
           CAROUSEL_ARROWS:
-            (null === (vt = window) ||
-            void 0 === vt ||
-            null === (yt = vt.partnerConfigs) ||
-            void 0 === yt
+            (null === (St = window) ||
+            void 0 === St ||
+            null === (Tt = St.partnerConfigs) ||
+            void 0 === Tt
               ? void 0
-              : yt.carouselArrows) || !1,
+              : Tt.carouselArrows) || !1,
           BET_BUILDER_SWITCHER:
-            (null === (gt = window) ||
-            void 0 === gt ||
-            null === (bt = gt.partnerConfigs) ||
-            void 0 === bt
+            (null === (wt = window) ||
+            void 0 === wt ||
+            null === (Ct = wt.partnerConfigs) ||
+            void 0 === Ct
               ? void 0
-              : bt.betBuilder) || !1,
+              : Ct.betBuilder) || !1,
           CURRENCIES_WITH_SYMBOLS:
-            (null === (_t = window) ||
-            void 0 === _t ||
-            null === (Et = _t.partnerConfigs) ||
-            void 0 === Et
+            (null === (jt = window) ||
+            void 0 === jt ||
+            null === (xt = jt.partnerConfigs) ||
+            void 0 === xt
               ? void 0
-              : Et.currenciesWithSymbols) || !1,
+              : xt.currenciesWithSymbols) || !1,
           REALITY_CHECK_SWITCHER:
-            (null === (Ot = window) ||
-            void 0 === Ot ||
-            null === (St = Ot.partnerConfigs) ||
-            void 0 === St
+            (null === (At = window) ||
+            void 0 === At ||
+            null === (Pt = At.partnerConfigs) ||
+            void 0 === Pt
               ? void 0
-              : St.realityCheckSwitcher) || !1,
+              : Pt.realityCheckSwitcher) || !1,
           DEFAULT_ODD_ACCEPT:
-            (null === (Tt = window) ||
-            void 0 === Tt ||
-            null === (wt = Tt.partnerConfigs) ||
-            void 0 === wt
+            (null === (kt = window) ||
+            void 0 === kt ||
+            null === (It = kt.partnerConfigs) ||
+            void 0 === It
               ? void 0
-              : wt.defaultOddAccept.toString()) || "2",
+              : It.defaultOddAccept.toString()) || "2",
           CURRENT_COUNTRY_CODE:
-            (null === (Ct = window) ||
-            void 0 === Ct ||
-            null === (jt = Ct.partnerConfigs) ||
-            void 0 === jt
+            (null === (Nt = window) ||
+            void 0 === Nt ||
+            null === (Rt = Nt.partnerConfigs) ||
+            void 0 === Rt
               ? void 0
-              : jt.currentCountry) || "AM",
-          ODD_TYPE: (null === (xt = window) ||
-          void 0 === xt ||
-          null === (At = xt.partnerConfigs) ||
-          void 0 === At
+              : Rt.currentCountry) || "AM",
+          ODD_TYPE: (null === (Mt = window) ||
+          void 0 === Mt ||
+          null === (Dt = Mt.partnerConfigs) ||
+          void 0 === Dt
             ? void 0
-            : At.defaultOddTypes) || [
+            : Dt.defaultOddTypes) || [
             "decimal",
             "fractional",
             "american",
@@ -1085,96 +1119,96 @@
             "indo",
           ],
           DEFAULT_ODD_TYPE:
-            (null === (Pt = window) ||
-            void 0 === Pt ||
-            null === (kt = Pt.partnerConfigs) ||
-            void 0 === kt
+            (null === (Lt = window) ||
+            void 0 === Lt ||
+            null === (Ft = Lt.partnerConfigs) ||
+            void 0 === Ft
               ? void 0
-              : kt.defaultSelectedOddType) || "decimal",
+              : Ft.defaultSelectedOddType) || "decimal",
           IS_BET_STATUS_CHECKER_AVAILABLE:
-            (null === (It = window) ||
-            void 0 === It ||
-            null === (Nt = It.partnerConfigs) ||
-            void 0 === Nt
+            (null === (Ut = window) ||
+            void 0 === Ut ||
+            null === (Bt = Ut.partnerConfigs) ||
+            void 0 === Bt
               ? void 0
-              : Nt.betStatusCheck) || !1,
+              : Bt.betStatusCheck) || !1,
           STATISTICS_SWITCHER: Boolean(
             +(
-              (null === (Rt = window) ||
-              void 0 === Rt ||
-              null === (Mt = Rt.partnerConfigs) ||
-              void 0 === Mt
+              (null === (Gt = window) ||
+              void 0 === Gt ||
+              null === (Ht = Gt.partnerConfigs) ||
+              void 0 === Ht
                 ? void 0
-                : Mt.statisticEnabled) || 0
+                : Ht.statisticEnabled) || 0
             )
           ),
           STATISTICS_URL:
-            (null === (Dt = window) ||
-            void 0 === Dt ||
-            null === (Lt = Dt.partnerConfigs) ||
-            void 0 === Lt
+            (null === (Vt = window) ||
+            void 0 === Vt ||
+            null === (Wt = Vt.partnerConfigs) ||
+            void 0 === Wt
               ? void 0
-              : Lt.statisticsLink) || "https://statistics.vbet.com/",
+              : Wt.statisticsLink) || "https://statistics.vbet.com/",
           PREDEFINE_STAKES_ENABLE: Boolean(
             +(
-              (null === (Ft = window.partnerConfigs) || void 0 === Ft
+              (null === (zt = window.partnerConfigs) || void 0 === zt
                 ? void 0
-                : Ft.betslipPredefinedStakes) || "0"
+                : zt.betslipPredefinedStakes) || "0"
             )
           ),
           PREDEFINE_STAKE_1: Number(
-            (null === (Ut = window.partnerConfigs) || void 0 === Ut
+            (null === ($t = window.partnerConfigs) || void 0 === $t
               ? void 0
-              : Ut.stake_1) || ""
+              : $t.stake_1) || ""
           ),
           PREDEFINE_STAKE_2: Number(
-            (null === (Bt = window.partnerConfigs) || void 0 === Bt
+            (null === (Yt = window.partnerConfigs) || void 0 === Yt
               ? void 0
-              : Bt.stake_2) || ""
+              : Yt.stake_2) || ""
           ),
           PREDEFINE_STAKE_3: Number(
-            (null === (Gt = window.partnerConfigs) || void 0 === Gt
+            (null === (Kt = window.partnerConfigs) || void 0 === Kt
               ? void 0
-              : Gt.stake_3) || ""
+              : Kt.stake_3) || ""
           ),
           IS_PARTIAL_CASHOUT_AVAILABLE:
-            (null === (Ht = window) ||
-            void 0 === Ht ||
-            null === (Vt = Ht.partnerConfigs) ||
-            void 0 === Vt
+            (null === (qt = window) ||
+            void 0 === qt ||
+            null === (Jt = qt.partnerConfigs) ||
+            void 0 === Jt
               ? void 0
-              : Vt.partial_cashout_off_onn) || !1,
+              : Jt.partial_cashout_off_onn) || !1,
           IS_ALLOW_BONUS_BALANCE_SUPERBET:
-            (null === (Wt = window) ||
-            void 0 === Wt ||
-            null === (zt = Wt.partnerConfigs) ||
-            void 0 === zt
+            (null === (Qt = window) ||
+            void 0 === Qt ||
+            null === (Xt = Qt.partnerConfigs) ||
+            void 0 === Xt
               ? void 0
-              : zt.allow_bonus_balance_for_superbet) || !1,
+              : Xt.allow_bonus_balance_for_superbet) || !1,
           GPS_TRACKING_URL: "https://geolocation.bctech.us",
           GPS_TRACKING_ENABLED:
-            (null === ($t = window) ||
-            void 0 === $t ||
-            null === (Yt = $t.partnerConfigs) ||
-            void 0 === Yt
+            (null === (Zt = window) ||
+            void 0 === Zt ||
+            null === (en = Zt.partnerConfigs) ||
+            void 0 === en
               ? void 0
-              : Yt.GPSTrackingEnabled) || !1,
+              : en.GPSTrackingEnabled) || !1,
           GPS_TRACKING_CHECKING_INTERVAL:
-            (null === (Kt = window) ||
-            void 0 === Kt ||
-            null === (qt = Kt.partnerConfigs) ||
-            void 0 === qt
+            (null === (tn = window) ||
+            void 0 === tn ||
+            null === (nn = tn.partnerConfigs) ||
+            void 0 === nn
               ? void 0
-              : qt.GPSTrackingCheckingInterval) || 5e3,
+              : nn.GPSTrackingCheckingInterval) || 5e3,
           IFRAME_SPORTSBOOK:
-            (null === (Jt = window) ||
-            void 0 === Jt ||
-            null === (Qt = Jt.partnerConfigs) ||
-            void 0 === Qt
+            (null === (rn = window) ||
+            void 0 === rn ||
+            null === (on = rn.partnerConfigs) ||
+            void 0 === on
               ? void 0
-              : Qt.iframe_sportsbook) || !1,
+              : on.iframe_sportsbook) || !1,
         };
-      t.a = sn;
+      t.a = vn;
     },
     function (e, t, n) {
       e.exports = n(230);
@@ -1663,58 +1697,58 @@
         return E;
       }),
         n.d(t, "j", function () {
-          return O;
-        }),
-        n.d(t, "f", function () {
           return S;
         }),
-        n.d(t, "n", function () {
+        n.d(t, "f", function () {
           return T;
         }),
-        n.d(t, "i", function () {
+        n.d(t, "n", function () {
           return w;
         }),
-        n.d(t, "h", function () {
-          return j;
+        n.d(t, "i", function () {
+          return C;
         }),
-        n.d(t, "m", function () {
+        n.d(t, "h", function () {
           return x;
         }),
-        n.d(t, "k", function () {
+        n.d(t, "m", function () {
           return A;
         }),
-        n.d(t, "o", function () {
+        n.d(t, "k", function () {
           return P;
         }),
-        n.d(t, "l", function () {
+        n.d(t, "o", function () {
           return k;
         }),
-        n.d(t, "s", function () {
+        n.d(t, "l", function () {
           return I;
         }),
-        n.d(t, "e", function () {
+        n.d(t, "s", function () {
           return N;
         }),
-        n.d(t, "a", function () {
+        n.d(t, "e", function () {
           return R;
         }),
-        n.d(t, "p", function () {
+        n.d(t, "a", function () {
           return M;
         }),
-        n.d(t, "q", function () {
+        n.d(t, "p", function () {
           return D;
         }),
-        n.d(t, "t", function () {
+        n.d(t, "q", function () {
           return L;
         }),
-        n.d(t, "r", function () {
+        n.d(t, "t", function () {
           return F;
         }),
-        n.d(t, "g", function () {
+        n.d(t, "r", function () {
           return U;
         }),
+        n.d(t, "g", function () {
+          return B;
+        }),
         n.d(t, "c", function () {
-          return G;
+          return H;
         });
       var r = n(1),
         o = n(31),
@@ -1761,7 +1795,10 @@
             return o.sendCommand(e, "", t, n, r);
           });
         },
-        O = function (e) {
+        O = function () {
+          return m.a.IOVATION_ENABLE && m.a.IOVATION_MODE;
+        },
+        S = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -1787,6 +1824,13 @@
               },
               rid: f.a.gForCommand(),
             };
+          if (O()) {
+            var h = 1 === +m.a.IOVATION_MODE ? "finger_print" : "io_black_box";
+            if ("io_black_box" === h) {
+              var y = window.IGLOO.getBlackbox();
+              y.finished && (p.params[h] = y.blackbox);
+            }
+          }
           E(
             p,
             function (e) {
@@ -1843,7 +1887,7 @@
             }
           );
         },
-        S = function (e) {
+        T = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -1866,7 +1910,7 @@
           )),
             E(r, t, null, n);
         },
-        T = function (e, t) {
+        w = function (e, t) {
           var n =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
@@ -1882,7 +1926,7 @@
             };
           E(o, n, null, r);
         },
-        w = function () {
+        C = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -1901,13 +1945,13 @@
           };
           E(o, e, null, t);
         },
-        C = function (e) {
+        j = function (e) {
           var t = JSON.parse(p.a.getItem(Object(y.a)("account", "AUTH_DATA")));
           e.first_name && t && (t.first_name = e.first_name),
             e.last_name && t && (t.last_name = e.last_name),
             p.a.setItem(Object(y.a)("account", "AUTH_DATA"), JSON.stringify(t));
         },
-        j = function (e, t, n) {
+        x = function (e, t, n) {
           var r = {
             command: s.a.GET,
             params: { source: s.b.USER, what: { profile: [] }, subscribe: !0 },
@@ -1935,7 +1979,7 @@
                       Object(l.a)(m.a.CUSTOM_CODE_LOGIN, r));
               }
               if (
-                (C(r),
+                (j(r),
                 n &&
                   m.a.SEON_INTEGRATION &&
                   ["all", "login"].includes(m.a.SEON_VALIDATION_ACTION))
@@ -1944,7 +1988,7 @@
                 !(function t() {
                   clearTimeout(a),
                     c.a.getState().appData.seonSessionData
-                      ? (B("login", function (e) {
+                      ? (G("login", function (e) {
                           (!e.success || Object.keys(e.error).length > 0) &&
                             console.error(e);
                         }),
@@ -1955,11 +1999,11 @@
             },
             function (e) {
               var n = Object.values(e.profile)[0];
-              C(n), t(n);
+              j(n), t(n);
             }
           );
         },
-        x = function () {
+        A = function () {
           [
             Object(y.a)("account", "AUTH_DATA"),
             Object(y.a)("account", "JWT"),
@@ -1973,7 +2017,7 @@
             Object(g.a)("sbuser"),
             Object(g.a)("userGroupsIds");
         },
-        A = function () {
+        P = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -1982,11 +2026,11 @@
           Object(b.a)({ type: "userId", value: "0" });
           var n = { command: s.a.LOGOUT, params: t, rid: f.a.gForCommand() },
             r = function () {
-              x(), e();
+              A(), e();
             };
           E(n, r, null, r);
         },
-        P = function (e) {
+        k = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -2023,13 +2067,13 @@
                     Secure: !0,
                   });
               }
-              j(t, n), m.a.IFRAME_SPORTSBOOK && Object(_.a)("loginRestored");
+              x(t, n), m.a.IFRAME_SPORTSBOOK && Object(_.a)("loginRestored");
             },
             null,
             o
           );
         },
-        k = function (e, t) {
+        I = function (e, t) {
           var n =
               arguments.length > 2 && void 0 !== arguments[2]
                 ? arguments[2]
@@ -2056,6 +2100,11 @@
               },
               rid: f.a.gForCommand(),
             };
+          if (O()) {
+            var p = 1 === +m.a.IOVATION_MODE ? "finger_print" : "io_black_box",
+              h = window.IGLOO.getBlackbox();
+            h.finished && (d.params.user_info[p] = h.blackbox);
+          }
           E(
             d,
             function (r) {
@@ -2066,12 +2115,12 @@
                   m.a.SEON_INTEGRATION &&
                     ["all", "register"].includes(m.a.SEON_VALIDATION_ACTION) &&
                     c.a.getState().appData.seonSessionData &&
-                    B("register", function (e) {
+                    G("register", function (e) {
                       (!e.success || Object.keys(e.error).length > 0) &&
                         console.error(e);
                     }),
                   t &&
-                    O({ username: i, password: o }, n, function () {
+                    S({ username: i, password: o }, n, function () {
                       m.a.APPEND_CUSTOM_CODE_LOGIN_FAIL &&
                         Object(l.a)(m.a.CUSTOM_CODE_LOGIN_FAIL);
                     });
@@ -2083,7 +2132,7 @@
             }
           );
         },
-        I = function () {
+        N = function () {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -2104,7 +2153,7 @@
             };
           E(r, e, t);
         },
-        N = function (e) {
+        R = function (e) {
           var t = {
             command: s.a.ENABLE_TWO_FACTOR_AUTHENTICATION,
             params: {},
@@ -2114,7 +2163,7 @@
             n.sendCommand(t, null, e, null);
           });
         },
-        R = function (e, t) {
+        M = function (e, t) {
           var n = e.code,
             r = e.fingerprint,
             o = e.is_device_trusted,
@@ -2133,7 +2182,7 @@
             e.sendCommand(i, null, t, null);
           });
         },
-        M = function (e, t, n) {
+        D = function (e, t, n) {
           var r = {
             command: s.a.SEND_SMS_TO_PHONE_NUMBER,
             params: { phone_number: e.replace("+", ""), action_type: t },
@@ -2143,7 +2192,7 @@
             e.sendCommand(r, null, n);
           });
         },
-        D = function (e, t, n) {
+        L = function (e, t, n) {
           var r = {
             command: s.a.SEND_SMS_WITH_USERNAME,
             params: { login: e, action_type: t },
@@ -2153,7 +2202,7 @@
             e.sendCommand(r, null, n);
           });
         },
-        L = function (e, t) {
+        F = function (e, t) {
           var n = {
             command: s.a.VERIFY_USER,
             params: { verification_code: e },
@@ -2163,7 +2212,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        F = function (e) {
+        U = function (e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -2177,7 +2226,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        U = function (e, t) {
+        B = function (e, t) {
           var n = {
             command: s.a.GET_CHILD_REGIONS,
             params: { alpha2_code: e },
@@ -2187,7 +2236,7 @@
             e.sendCommand(n, null, t);
           });
         },
-        B = function (e, t) {
+        G = function (e, t) {
           var n = c.a.getState().appData.seonSessionData,
             r = {
               command: s.a.VALIDATE_SEON_ON_ACTION,
@@ -2198,7 +2247,7 @@
             e.sendCommand(r, null, t);
           });
         },
-        G = function (e, t, n) {
+        H = function (e, t, n) {
           var r = {
             command: s.a.CHECK_CPF_NUMBER,
             params: { cpf: e },
@@ -3715,7 +3764,7 @@
         Pe = n(6),
         ke = n(124),
         Ie = n(81),
-        Ne = n(223),
+        Ne = n(224),
         Re = {
           subscriptions: [],
           allowEasyBet: !0,
@@ -10214,8 +10263,8 @@
                       ? arguments[4]
                       : null;
                 if (y.a.MOCKED_DATA)
-                  n.e(390)
-                    .then(n.bind(null, 3941))
+                  n.e(394)
+                    .then(n.bind(null, 3944))
                     .then(function (t) {
                       null === r ||
                         void 0 === r ||
@@ -23896,7 +23945,7 @@
             .concat(e, "/")
             .concat(r)
             .replace(/(\/)\/+/g, "$1");
-          return t ? [!i, l + window.location.search] : l;
+          return t ? [!i, l + "".concat(n ? window.location.search : "")] : l;
         },
         s = function (e) {
           return ""
@@ -25810,8 +25859,8 @@
         p = n(4),
         h = n(7),
         m = Object(a.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(5), n.e(8), n.e(467)]).then(
-            n.bind(null, 2549)
+          return Promise.all([n.e(0), n.e(1), n.e(5), n.e(8), n.e(471)]).then(
+            n.bind(null, 2550)
           );
         }),
         v = {
@@ -26709,34 +26758,6 @@
     },
     function (e, t, n) {
       "use strict";
-      n.d(t, "a", function () {
-        return u;
-      }),
-        n.d(t, "b", function () {
-          return c;
-        });
-      var r = n(14),
-        o = n(124),
-        a = n(4),
-        i = n(10),
-        u = function () {
-          var e,
-            t = JSON.parse(r.a.getItem(Object(i.a)("betslip", "ODDS_FORMAT"))),
-            n =
-              null === (e = a.a.DEFAULT_ODD_TYPE) || void 0 === e
-                ? void 0
-                : e.toUpperCase();
-          return t || o.l[n];
-        },
-        c = function (e) {
-          r.a.setItem(
-            Object(i.a)("betslip", "ODDS_FORMAT"),
-            JSON.stringify(e) || "null"
-          );
-        };
-    },
-    function (e, t, n) {
-      "use strict";
       function r(e, t) {
         if (!(e instanceof t))
           throw new TypeError("Cannot call a class as a function");
@@ -27182,6 +27203,34 @@
           );
         })(p.Component);
       t.a = I;
+    },
+    function (e, t, n) {
+      "use strict";
+      n.d(t, "a", function () {
+        return u;
+      }),
+        n.d(t, "b", function () {
+          return c;
+        });
+      var r = n(14),
+        o = n(124),
+        a = n(4),
+        i = n(10),
+        u = function () {
+          var e,
+            t = JSON.parse(r.a.getItem(Object(i.a)("betslip", "ODDS_FORMAT"))),
+            n =
+              null === (e = a.a.DEFAULT_ODD_TYPE) || void 0 === e
+                ? void 0
+                : e.toUpperCase();
+          return t || o.l[n];
+        },
+        c = function (e) {
+          r.a.setItem(
+            Object(i.a)("betslip", "ODDS_FORMAT"),
+            JSON.stringify(e) || "null"
+          );
+        };
     },
     function (e, t, n) {
       "use strict";
@@ -31371,8 +31420,7 @@
             WDS_SOCKET_PORT: void 0,
             FAST_REFRESH: !0,
             REACT_APP_ENV: "widgets",
-            REACT_APP_WIDGETS_HOSTING:
-              "https://fstatic.7games.bet/widgets-x",
+            REACT_APP_WIDGETS_HOSTING: "https://fstatic.7games.bet/widgets-x",
           });
         var m = (function (e) {
           var t, n;
@@ -47638,32 +47686,32 @@
     },
     function (e, t, n) {
       var r = {
-        "./by": [302, 103],
-        "./by.ts": [302, 103],
-        "./ca": [303, 104],
-        "./ca.ts": [303, 104],
-        "./cy": [304, 105],
-        "./cy.ts": [304, 105],
-        "./de": [305, 106],
-        "./de.ts": [305, 106],
-        "./fr": [306, 107],
-        "./fr.ts": [306, 107],
-        "./gh": [307, 108],
-        "./gh.ts": [307, 108],
-        "./it": [308, 109],
-        "./it.ts": [308, 109],
-        "./mga": [309, 110],
-        "./mga.ts": [309, 110],
-        "./nl": [310, 111],
-        "./nl.ts": [310, 111],
-        "./po": [311, 112],
-        "./po.ts": [311, 112],
-        "./se": [312, 113],
-        "./se.ts": [312, 113],
-        "./uk": [313, 114],
-        "./uk.ts": [313, 114],
-        "./usa": [314, 115],
-        "./usa.ts": [314, 115],
+        "./by": [302, 104],
+        "./by.ts": [302, 104],
+        "./ca": [303, 105],
+        "./ca.ts": [303, 105],
+        "./cy": [304, 106],
+        "./cy.ts": [304, 106],
+        "./de": [305, 107],
+        "./de.ts": [305, 107],
+        "./fr": [306, 108],
+        "./fr.ts": [306, 108],
+        "./gh": [307, 109],
+        "./gh.ts": [307, 109],
+        "./it": [308, 110],
+        "./it.ts": [308, 110],
+        "./mga": [309, 111],
+        "./mga.ts": [309, 111],
+        "./nl": [310, 112],
+        "./nl.ts": [310, 112],
+        "./po": [311, 113],
+        "./po.ts": [311, 113],
+        "./se": [312, 114],
+        "./se.ts": [312, 114],
+        "./uk": [313, 115],
+        "./uk.ts": [313, 115],
+        "./usa": [314, 116],
+        "./usa.ts": [314, 116],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -49003,149 +49051,149 @@
     },
     function (e, t, n) {
       var r = {
-        "./af.js": [455, 1574],
-        "./am.js": [456, 1575],
-        "./ar-dz.js": [457, 1576],
-        "./ar-iq.js": [458, 1577],
-        "./ar-kw.js": [459, 1578],
-        "./ar-ly.js": [460, 1579],
-        "./ar-ma.js": [461, 1580],
-        "./ar-sa.js": [462, 1581],
-        "./ar-tn.js": [463, 1582],
-        "./ar.js": [464, 1583],
-        "./az.js": [465, 1584],
-        "./be.js": [466, 1585],
-        "./bg.js": [467, 1586],
-        "./bi.js": [468, 1587],
-        "./bm.js": [469, 1588],
-        "./bn-bd.js": [470, 1589],
-        "./bn.js": [471, 1590],
-        "./bo.js": [472, 1591],
-        "./br.js": [473, 1592],
-        "./bs.js": [474, 1593],
-        "./ca.js": [475, 1594],
-        "./cs.js": [476, 1595],
-        "./cv.js": [477, 1596],
-        "./cy.js": [478, 1597],
-        "./da.js": [479, 1598],
-        "./de-at.js": [480, 1599],
-        "./de-ch.js": [481, 1600],
-        "./de.js": [482, 1601],
-        "./dv.js": [483, 1602],
-        "./el.js": [484, 1603],
-        "./en-au.js": [485, 1604],
-        "./en-ca.js": [486, 1605],
-        "./en-gb.js": [487, 1606],
-        "./en-ie.js": [488, 1607],
-        "./en-il.js": [489, 1608],
-        "./en-in.js": [490, 1609],
-        "./en-nz.js": [491, 1610],
-        "./en-sg.js": [492, 1611],
-        "./en-tt.js": [493, 1612],
-        "./en.js": [494, 1613],
-        "./eo.js": [495, 1614],
-        "./es-do.js": [496, 1615],
-        "./es-mx.js": [497, 1616],
-        "./es-pr.js": [498, 1617],
-        "./es-us.js": [499, 1618],
-        "./es.js": [500, 1619],
-        "./et.js": [501, 1620],
-        "./eu.js": [502, 1621],
-        "./fa.js": [503, 1622],
-        "./fi.js": [504, 1623],
-        "./fo.js": [505, 1624],
-        "./fr-ca.js": [506, 1625],
-        "./fr-ch.js": [507, 1626],
-        "./fr.js": [508, 1627],
-        "./fy.js": [509, 1628],
-        "./ga.js": [510, 1629],
-        "./gd.js": [511, 1630],
-        "./gl.js": [512, 1631],
-        "./gom-latn.js": [513, 1632],
-        "./gu.js": [514, 1633],
-        "./he.js": [515, 1634],
-        "./hi.js": [516, 1635],
-        "./hr.js": [517, 1636],
-        "./ht.js": [518, 1637],
-        "./hu.js": [519, 1638],
-        "./hy-am.js": [520, 1639],
-        "./id.js": [521, 1640],
-        "./is.js": [522, 1641],
-        "./it-ch.js": [523, 1642],
-        "./it.js": [524, 1643],
-        "./ja.js": [525, 1644],
-        "./jv.js": [526, 1645],
-        "./ka.js": [527, 1646],
-        "./kk.js": [528, 1647],
-        "./km.js": [529, 1648],
-        "./kn.js": [530, 1649],
-        "./ko.js": [531, 1650],
-        "./ku.js": [532, 1651],
-        "./ky.js": [533, 1652],
-        "./lb.js": [534, 1653],
-        "./lo.js": [535, 1654],
-        "./lt.js": [536, 1655],
-        "./lv.js": [537, 1656],
-        "./me.js": [538, 1657],
-        "./mi.js": [539, 1658],
-        "./mk.js": [540, 1659],
-        "./ml.js": [541, 1660],
-        "./mn.js": [542, 1661],
-        "./mr.js": [543, 1662],
-        "./ms-my.js": [544, 1663],
-        "./ms.js": [545, 1664],
-        "./mt.js": [546, 1665],
-        "./my.js": [547, 1666],
-        "./nb.js": [548, 1667],
-        "./ne.js": [549, 1668],
-        "./nl-be.js": [550, 1669],
-        "./nl.js": [551, 1670],
-        "./nn.js": [552, 1671],
-        "./oc-lnc.js": [553, 1672],
-        "./pa-in.js": [554, 1673],
-        "./pl.js": [555, 1674],
-        "./pt-br.js": [556, 1675],
-        "./pt.js": [557, 1676],
-        "./rn.js": [558, 1677],
-        "./ro.js": [559, 1678],
-        "./ru.js": [560, 1679],
-        "./rw.js": [561, 1680],
-        "./sd.js": [562, 1681],
-        "./se.js": [563, 1682],
-        "./si.js": [564, 1683],
-        "./sk.js": [565, 1684],
-        "./sl.js": [566, 1685],
-        "./sq.js": [567, 1686],
-        "./sr-cyrl.js": [568, 1687],
-        "./sr.js": [569, 1688],
-        "./ss.js": [570, 1689],
-        "./sv-fi.js": [571, 1690],
-        "./sv.js": [572, 1691],
-        "./sw.js": [573, 1692],
-        "./ta.js": [574, 1693],
-        "./te.js": [575, 1694],
-        "./tet.js": [576, 1695],
-        "./tg.js": [577, 1696],
-        "./th.js": [578, 1697],
-        "./tk.js": [579, 1698],
-        "./tl-ph.js": [580, 1699],
-        "./tlh.js": [581, 1700],
-        "./tr.js": [582, 1701],
-        "./tzl.js": [583, 1702],
-        "./tzm-latn.js": [584, 1703],
-        "./tzm.js": [585, 1704],
-        "./ug-cn.js": [586, 1705],
-        "./uk.js": [587, 1706],
-        "./ur.js": [588, 1707],
-        "./uz-latn.js": [589, 1708],
-        "./uz.js": [590, 1709],
-        "./vi.js": [591, 1710],
-        "./x-pseudo.js": [592, 1711],
-        "./yo.js": [593, 1712],
-        "./zh-cn.js": [594, 1713],
-        "./zh-hk.js": [595, 1714],
-        "./zh-tw.js": [596, 1715],
-        "./zh.js": [597, 1716],
+        "./af.js": [455, 1577],
+        "./am.js": [456, 1578],
+        "./ar-dz.js": [457, 1579],
+        "./ar-iq.js": [458, 1580],
+        "./ar-kw.js": [459, 1581],
+        "./ar-ly.js": [460, 1582],
+        "./ar-ma.js": [461, 1583],
+        "./ar-sa.js": [462, 1584],
+        "./ar-tn.js": [463, 1585],
+        "./ar.js": [464, 1586],
+        "./az.js": [465, 1587],
+        "./be.js": [466, 1588],
+        "./bg.js": [467, 1589],
+        "./bi.js": [468, 1590],
+        "./bm.js": [469, 1591],
+        "./bn-bd.js": [470, 1592],
+        "./bn.js": [471, 1593],
+        "./bo.js": [472, 1594],
+        "./br.js": [473, 1595],
+        "./bs.js": [474, 1596],
+        "./ca.js": [475, 1597],
+        "./cs.js": [476, 1598],
+        "./cv.js": [477, 1599],
+        "./cy.js": [478, 1600],
+        "./da.js": [479, 1601],
+        "./de-at.js": [480, 1602],
+        "./de-ch.js": [481, 1603],
+        "./de.js": [482, 1604],
+        "./dv.js": [483, 1605],
+        "./el.js": [484, 1606],
+        "./en-au.js": [485, 1607],
+        "./en-ca.js": [486, 1608],
+        "./en-gb.js": [487, 1609],
+        "./en-ie.js": [488, 1610],
+        "./en-il.js": [489, 1611],
+        "./en-in.js": [490, 1612],
+        "./en-nz.js": [491, 1613],
+        "./en-sg.js": [492, 1614],
+        "./en-tt.js": [493, 1615],
+        "./en.js": [494, 1616],
+        "./eo.js": [495, 1617],
+        "./es-do.js": [496, 1618],
+        "./es-mx.js": [497, 1619],
+        "./es-pr.js": [498, 1620],
+        "./es-us.js": [499, 1621],
+        "./es.js": [500, 1622],
+        "./et.js": [501, 1623],
+        "./eu.js": [502, 1624],
+        "./fa.js": [503, 1625],
+        "./fi.js": [504, 1626],
+        "./fo.js": [505, 1627],
+        "./fr-ca.js": [506, 1628],
+        "./fr-ch.js": [507, 1629],
+        "./fr.js": [508, 1630],
+        "./fy.js": [509, 1631],
+        "./ga.js": [510, 1632],
+        "./gd.js": [511, 1633],
+        "./gl.js": [512, 1634],
+        "./gom-latn.js": [513, 1635],
+        "./gu.js": [514, 1636],
+        "./he.js": [515, 1637],
+        "./hi.js": [516, 1638],
+        "./hr.js": [517, 1639],
+        "./ht.js": [518, 1640],
+        "./hu.js": [519, 1641],
+        "./hy-am.js": [520, 1642],
+        "./id.js": [521, 1643],
+        "./is.js": [522, 1644],
+        "./it-ch.js": [523, 1645],
+        "./it.js": [524, 1646],
+        "./ja.js": [525, 1647],
+        "./jv.js": [526, 1648],
+        "./ka.js": [527, 1649],
+        "./kk.js": [528, 1650],
+        "./km.js": [529, 1651],
+        "./kn.js": [530, 1652],
+        "./ko.js": [531, 1653],
+        "./ku.js": [532, 1654],
+        "./ky.js": [533, 1655],
+        "./lb.js": [534, 1656],
+        "./lo.js": [535, 1657],
+        "./lt.js": [536, 1658],
+        "./lv.js": [537, 1659],
+        "./me.js": [538, 1660],
+        "./mi.js": [539, 1661],
+        "./mk.js": [540, 1662],
+        "./ml.js": [541, 1663],
+        "./mn.js": [542, 1664],
+        "./mr.js": [543, 1665],
+        "./ms-my.js": [544, 1666],
+        "./ms.js": [545, 1667],
+        "./mt.js": [546, 1668],
+        "./my.js": [547, 1669],
+        "./nb.js": [548, 1670],
+        "./ne.js": [549, 1671],
+        "./nl-be.js": [550, 1672],
+        "./nl.js": [551, 1673],
+        "./nn.js": [552, 1674],
+        "./oc-lnc.js": [553, 1675],
+        "./pa-in.js": [554, 1676],
+        "./pl.js": [555, 1677],
+        "./pt-br.js": [556, 1678],
+        "./pt.js": [557, 1679],
+        "./rn.js": [558, 1680],
+        "./ro.js": [559, 1681],
+        "./ru.js": [560, 1682],
+        "./rw.js": [561, 1683],
+        "./sd.js": [562, 1684],
+        "./se.js": [563, 1685],
+        "./si.js": [564, 1686],
+        "./sk.js": [565, 1687],
+        "./sl.js": [566, 1688],
+        "./sq.js": [567, 1689],
+        "./sr-cyrl.js": [568, 1690],
+        "./sr.js": [569, 1691],
+        "./ss.js": [570, 1692],
+        "./sv-fi.js": [571, 1693],
+        "./sv.js": [572, 1694],
+        "./sw.js": [573, 1695],
+        "./ta.js": [574, 1696],
+        "./te.js": [575, 1697],
+        "./tet.js": [576, 1698],
+        "./tg.js": [577, 1699],
+        "./th.js": [578, 1700],
+        "./tk.js": [579, 1701],
+        "./tl-ph.js": [580, 1702],
+        "./tlh.js": [581, 1703],
+        "./tr.js": [582, 1704],
+        "./tzl.js": [583, 1705],
+        "./tzm-latn.js": [584, 1706],
+        "./tzm.js": [585, 1707],
+        "./ug-cn.js": [586, 1708],
+        "./uk.js": [587, 1709],
+        "./ur.js": [588, 1710],
+        "./uz-latn.js": [589, 1711],
+        "./uz.js": [590, 1712],
+        "./vi.js": [591, 1713],
+        "./x-pseudo.js": [592, 1714],
+        "./yo.js": [593, 1715],
+        "./zh-cn.js": [594, 1716],
+        "./zh-hk.js": [595, 1717],
+        "./zh-tw.js": [596, 1718],
+        "./zh.js": [597, 1719],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -49167,72 +49215,72 @@
     },
     function (e, t, n) {
       var r = {
-        "./ar_EG.js": [598, 521],
-        "./az_AZ.js": [599, 522],
-        "./bg_BG.js": [600, 523],
-        "./bn_BD.js": [601, 524],
-        "./by_BY.js": [602, 525],
-        "./ca_ES.js": [603, 526],
-        "./cs_CZ.js": [604, 527],
-        "./da_DK.js": [605, 528],
-        "./de_DE.js": [606, 529],
+        "./ar_EG.js": [598, 525],
+        "./az_AZ.js": [599, 526],
+        "./bg_BG.js": [600, 527],
+        "./bn_BD.js": [601, 528],
+        "./by_BY.js": [602, 529],
+        "./ca_ES.js": [603, 530],
+        "./cs_CZ.js": [604, 531],
+        "./da_DK.js": [605, 532],
+        "./de_DE.js": [606, 533],
         "./default.js": [104],
-        "./el_GR.js": [607, 530],
-        "./en_GB.js": [608, 531],
-        "./en_US.js": [453, 1567],
-        "./es_ES.js": [609, 532],
-        "./et_EE.js": [610, 533],
-        "./fa_IR.js": [611, 534],
-        "./fi_FI.js": [612, 535],
-        "./fr_BE.js": [613, 536],
-        "./fr_CA.js": [614, 537],
-        "./fr_FR.js": [615, 538],
-        "./ga_IE.js": [616, 539],
-        "./gl_ES.js": [617, 540],
-        "./he_IL.js": [618, 541],
-        "./hi_IN.js": [619, 542],
-        "./hr_HR.js": [620, 543],
-        "./hu_HU.js": [621, 544],
-        "./hy_AM.js": [622, 1568],
-        "./id_ID.js": [623, 545],
-        "./is_IS.js": [624, 546],
-        "./it_IT.js": [625, 547],
-        "./ja_JP.js": [626, 548],
-        "./ka_GE.js": [627, 549],
-        "./kk_KZ.js": [628, 550],
-        "./km_KH.js": [629, 551],
-        "./kmr_IQ.js": [630, 125, 129, 1569],
-        "./kn_IN.js": [631, 552],
-        "./ko_KR.js": [632, 553],
-        "./ku_IQ.js": [633, 125, 129, 1570],
-        "./lt_LT.js": [634, 554],
-        "./lv_LV.js": [635, 555],
-        "./mk_MK.js": [636, 556],
-        "./ml_IN.js": [637, 557],
-        "./mn_MN.js": [638, 558],
-        "./ms_MY.js": [639, 559],
-        "./nb_NO.js": [640, 560],
-        "./ne_NP.js": [641, 1571],
-        "./nl_BE.js": [642, 561],
-        "./nl_NL.js": [643, 562],
-        "./pl_PL.js": [644, 563],
-        "./pt_BR.js": [645, 564],
-        "./pt_PT.js": [646, 565],
-        "./ro_RO.js": [647, 566],
-        "./ru_RU.js": [648, 567],
-        "./sk_SK.js": [649, 568],
-        "./sl_SI.js": [650, 579],
-        "./sr_RS.js": [651, 569],
-        "./sv_SE.js": [652, 570],
-        "./ta_IN.js": [653, 571],
-        "./th_TH.js": [654, 572],
-        "./tr_TR.js": [655, 573],
-        "./uk_UA.js": [656, 574],
-        "./ur_PK.js": [657, 575],
-        "./vi_VN.js": [658, 576],
-        "./zh_CN.js": [659, 577],
-        "./zh_HK.js": [660, 126, 130, 1572],
-        "./zh_TW.js": [661, 126, 130, 1573],
+        "./el_GR.js": [607, 534],
+        "./en_GB.js": [608, 535],
+        "./en_US.js": [453, 1570],
+        "./es_ES.js": [609, 536],
+        "./et_EE.js": [610, 537],
+        "./fa_IR.js": [611, 538],
+        "./fi_FI.js": [612, 539],
+        "./fr_BE.js": [613, 540],
+        "./fr_CA.js": [614, 541],
+        "./fr_FR.js": [615, 542],
+        "./ga_IE.js": [616, 543],
+        "./gl_ES.js": [617, 544],
+        "./he_IL.js": [618, 545],
+        "./hi_IN.js": [619, 546],
+        "./hr_HR.js": [620, 547],
+        "./hu_HU.js": [621, 548],
+        "./hy_AM.js": [622, 1571],
+        "./id_ID.js": [623, 549],
+        "./is_IS.js": [624, 550],
+        "./it_IT.js": [625, 551],
+        "./ja_JP.js": [626, 552],
+        "./ka_GE.js": [627, 553],
+        "./kk_KZ.js": [628, 554],
+        "./km_KH.js": [629, 555],
+        "./kmr_IQ.js": [630, 127, 131, 1572],
+        "./kn_IN.js": [631, 556],
+        "./ko_KR.js": [632, 557],
+        "./ku_IQ.js": [633, 127, 131, 1573],
+        "./lt_LT.js": [634, 558],
+        "./lv_LV.js": [635, 559],
+        "./mk_MK.js": [636, 560],
+        "./ml_IN.js": [637, 561],
+        "./mn_MN.js": [638, 562],
+        "./ms_MY.js": [639, 563],
+        "./nb_NO.js": [640, 564],
+        "./ne_NP.js": [641, 1574],
+        "./nl_BE.js": [642, 565],
+        "./nl_NL.js": [643, 566],
+        "./pl_PL.js": [644, 567],
+        "./pt_BR.js": [645, 568],
+        "./pt_PT.js": [646, 569],
+        "./ro_RO.js": [647, 570],
+        "./ru_RU.js": [648, 571],
+        "./sk_SK.js": [649, 572],
+        "./sl_SI.js": [650, 583],
+        "./sr_RS.js": [651, 573],
+        "./sv_SE.js": [652, 574],
+        "./ta_IN.js": [653, 575],
+        "./th_TH.js": [654, 576],
+        "./tr_TR.js": [655, 577],
+        "./uk_UA.js": [656, 578],
+        "./ur_PK.js": [657, 579],
+        "./vi_VN.js": [658, 580],
+        "./zh_CN.js": [659, 581],
+        "./zh_HK.js": [660, 128, 132, 1575],
+        "./zh_TW.js": [661, 128, 132, 1576],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -49254,26 +49302,26 @@
     },
     function (e, t, n) {
       var r = {
-        "./ar/translations.json": [662, 488],
-        "./de/translations.json": [663, 489],
-        "./el/translations.json": [664, 500],
-        "./en/translations.json": [454, 122],
-        "./en_CA/translations.json": [665, 501],
-        "./es/translations.json": [666, 502],
-        "./fr/translations.json": [667, 503],
-        "./hi_IN/translations.json": [668, 504],
-        "./hy/translations.json": [669, 505],
-        "./ko/translations.json": [670, 506],
-        "./ku/translations.json": [671, 490],
-        "./pt/translations.json": [672, 491],
-        "./pt_BR/translations.json": [673, 492],
-        "./ru/translations.json": [674, 493],
-        "./sv/translations.json": [675, 494],
-        "./th/translations.json": [676, 495],
-        "./tr/translations.json": [677, 496],
-        "./uz/translations.json": [678, 497],
-        "./zh/translations.json": [679, 498],
-        "./zh_CN/translations.json": [680, 499],
+        "./ar/translations.json": [662, 492],
+        "./de/translations.json": [663, 493],
+        "./el/translations.json": [664, 504],
+        "./en/translations.json": [454, 123],
+        "./en_CA/translations.json": [665, 505],
+        "./es/translations.json": [666, 506],
+        "./fr/translations.json": [667, 507],
+        "./hi_IN/translations.json": [668, 508],
+        "./hy/translations.json": [669, 509],
+        "./ko/translations.json": [670, 510],
+        "./ku/translations.json": [671, 494],
+        "./pt/translations.json": [672, 495],
+        "./pt_BR/translations.json": [673, 496],
+        "./ru/translations.json": [674, 497],
+        "./sv/translations.json": [675, 498],
+        "./th/translations.json": [676, 499],
+        "./tr/translations.json": [677, 500],
+        "./uz/translations.json": [678, 501],
+        "./zh/translations.json": [679, 502],
+        "./zh_CN/translations.json": [680, 503],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -52927,8 +52975,8 @@
         sr = n(187),
         lr = (n(426), n(7)),
         fr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(480)]).then(
-            n.bind(null, 3769)
+          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(484)]).then(
+            n.bind(null, 3772)
           );
         }),
         dr = function () {
@@ -53087,162 +53135,162 @@
           return Promise.all([
             n.e(6),
             n.e(13),
-            n.e(31),
-            n.e(37),
-            n.e(377),
-          ]).then(n.bind(null, 3311));
+            n.e(27),
+            n.e(33),
+            n.e(381),
+          ]).then(n.bind(null, 3313));
         }),
         vr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
             n.e(13),
-            n.e(20),
-            n.e(31),
-            n.e(349),
-          ]).then(n.bind(null, 3100));
+            n.e(27),
+            n.e(33),
+            n.e(352),
+          ]).then(n.bind(null, 3101));
         }),
         yr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(11),
             n.e(6),
-            n.e(25),
+            n.e(24),
             n.e(40),
-            n.e(232),
-          ]).then(n.bind(null, 3765));
+            n.e(236),
+          ]).then(n.bind(null, 3768));
         }),
         gr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(6), n.e(31), n.e(484)]).then(
-            n.bind(null, 3912)
+          return Promise.all([n.e(0), n.e(6), n.e(27), n.e(488)]).then(
+            n.bind(null, 3916)
           );
         }),
         br = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(285)]).then(
-            n.bind(null, 3900)
+          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(288)]).then(
+            n.bind(null, 3904)
           );
         }),
         _r = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(25),
+            n.e(24),
             n.e(13),
-            n.e(20),
-            n.e(405),
-          ]).then(n.bind(null, 3766));
+            n.e(27),
+            n.e(409),
+          ]).then(n.bind(null, 3769));
         }),
         Er = Object(f.lazy)(function () {
           return Promise.all([
             n.e(11),
-            n.e(25),
+            n.e(24),
             n.e(40),
             n.e(13),
-            n.e(152),
-          ]).then(n.bind(null, 3722));
+            n.e(155),
+          ]).then(n.bind(null, 3725));
         }),
         Or = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(140)]).then(
-            n.bind(null, 3312)
+          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(143)]).then(
+            n.bind(null, 3314)
           );
         }),
         Sr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(11), n.e(19), n.e(6), n.e(222)]).then(
-            n.bind(null, 2550)
+          return Promise.all([n.e(0), n.e(11), n.e(19), n.e(6), n.e(225)]).then(
+            n.bind(null, 2551)
           );
         }),
         Tr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(25), n.e(260)]).then(
-            n.bind(null, 3326)
+          return Promise.all([n.e(5), n.e(24), n.e(263)]).then(
+            n.bind(null, 3329)
           );
         }),
         wr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(18), n.e(38), n.e(268)]).then(
-            n.bind(null, 3313)
+          return Promise.all([n.e(0), n.e(5), n.e(18), n.e(38), n.e(271)]).then(
+            n.bind(null, 3315)
           );
         }),
         Cr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(7), n.e(6), n.e(25), n.e(288)]).then(
-            n.bind(null, 2897)
+          return Promise.all([n.e(5), n.e(7), n.e(6), n.e(24), n.e(291)]).then(
+            n.bind(null, 2898)
           );
         }),
         jr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(17), n.e(23), n.e(291)]).then(
-            n.bind(null, 3298)
+          return Promise.all([n.e(0), n.e(1), n.e(17), n.e(22), n.e(294)]).then(
+            n.bind(null, 3300)
           );
         }),
         xr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(293)]).then(
-            n.bind(null, 3314)
+          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(296)]).then(
+            n.bind(null, 3316)
           );
         }),
         Ar = Object(f.lazy)(function () {
           return Promise.all([
             n.e(10),
             n.e(13),
-            n.e(22),
-            n.e(47),
-            n.e(89),
-          ]).then(n.bind(null, 3327));
+            n.e(21),
+            n.e(46),
+            n.e(90),
+          ]).then(n.bind(null, 3330));
         }),
         Pr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(317)]).then(
-            n.bind(null, 3767)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(320)]).then(
+            n.bind(null, 3770)
           );
         }),
         kr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(322)]).then(
-            n.bind(null, 2749)
+          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(325)]).then(
+            n.bind(null, 2752)
           );
         }),
         Ir = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(323)]).then(
-            n.bind(null, 3104)
-          );
-        }),
-        Nr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(325)]).then(
-            n.bind(null, 2641)
-          );
-        }),
-        Rr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(7), n.e(16), n.e(25), n.e(324)]).then(
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(326)]).then(
             n.bind(null, 3105)
           );
         }),
+        Nr = Object(f.lazy)(function () {
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(328)]).then(
+            n.bind(null, 2642)
+          );
+        }),
+        Rr = Object(f.lazy)(function () {
+          return Promise.all([n.e(5), n.e(7), n.e(16), n.e(24), n.e(327)]).then(
+            n.bind(null, 3106)
+          );
+        }),
         Mr = Object(f.lazy)(function () {
-          return n.e(68).then(n.bind(null, 3106));
+          return n.e(71).then(n.bind(null, 3107));
         }),
         Dr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(336)]).then(
-            n.bind(null, 2911)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(339)]).then(
+            n.bind(null, 2912)
           );
         }),
         Lr = Object(f.lazy)(function () {
-          return Promise.all([n.e(1), n.e(2), n.e(3), n.e(4), n.e(355)]).then(
-            n.bind(null, 3107)
-          );
-        }),
-        Fr = Object(f.lazy)(function () {
-          return Promise.all([n.e(2), n.e(3), n.e(4), n.e(5), n.e(356)]).then(
+          return Promise.all([n.e(1), n.e(2), n.e(3), n.e(4), n.e(358)]).then(
             n.bind(null, 3108)
           );
         }),
-        Ur = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(357)]).then(
-            n.bind(null, 3315)
-          );
-        }),
-        Br = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(358)]).then(
+        Fr = Object(f.lazy)(function () {
+          return Promise.all([n.e(2), n.e(3), n.e(4), n.e(5), n.e(359)]).then(
             n.bind(null, 3109)
           );
         }),
-        Gr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(359)]).then(
+        Ur = Object(f.lazy)(function () {
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(360)]).then(
+            n.bind(null, 3317)
+          );
+        }),
+        Br = Object(f.lazy)(function () {
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(361)]).then(
             n.bind(null, 3110)
           );
         }),
-        Hr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(360)]).then(
+        Gr = Object(f.lazy)(function () {
+          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(362)]).then(
             n.bind(null, 3111)
+          );
+        }),
+        Hr = Object(f.lazy)(function () {
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(363)]).then(
+            n.bind(null, 3112)
           );
         }),
         Vr = Object(f.lazy)(function () {
@@ -53250,116 +53298,116 @@
             n.e(5),
             n.e(10),
             n.e(13),
-            n.e(47),
-            n.e(362),
-          ]).then(n.bind(null, 3316));
+            n.e(46),
+            n.e(366),
+          ]).then(n.bind(null, 3318));
         }),
         Wr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(11), n.e(387)]).then(
-            n.bind(null, 2898)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(11), n.e(391)]).then(
+            n.bind(null, 2899)
           );
         }),
         zr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(34),
             n.e(13),
-            n.e(20),
-            n.e(37),
-            n.e(422),
-          ]).then(n.bind(null, 3317));
+            n.e(33),
+            n.e(51),
+            n.e(426),
+          ]).then(n.bind(null, 3319));
         }),
         $r = Object(f.lazy)(function () {
-          return Promise.all([n.e(10), n.e(70)]).then(n.bind(null, 3736));
+          return Promise.all([n.e(10), n.e(73)]).then(n.bind(null, 3739));
         }),
         Yr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(430)]).then(
-            n.bind(null, 2480)
+          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(434)]).then(
+            n.bind(null, 2481)
           );
         }),
         Kr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(433)]).then(
-            n.bind(null, 3306)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(437)]).then(
+            n.bind(null, 3308)
           );
         }),
         qr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(469)]).then(
-            n.bind(null, 3296)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(473)]).then(
+            n.bind(null, 3298)
           );
         }),
         Jr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(34),
             n.e(10),
-            n.e(22),
-            n.e(37),
-            n.e(456),
-          ]).then(n.bind(null, 3318));
+            n.e(21),
+            n.e(33),
+            n.e(460),
+          ]).then(n.bind(null, 3320));
         }),
         Qr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(2), n.e(3), n.e(4), n.e(457)]).then(
-            n.bind(null, 3112)
+          return Promise.all([n.e(0), n.e(2), n.e(3), n.e(4), n.e(461)]).then(
+            n.bind(null, 3113)
           );
         }),
         Xr = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(25),
+            n.e(24),
             n.e(13),
             n.e(20),
-            n.e(21),
-            n.e(507),
-          ]).then(n.bind(null, 3300));
+            n.e(26),
+            n.e(511),
+          ]).then(n.bind(null, 3302));
         }),
         Zr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(25),
+            n.e(24),
             n.e(13),
-            n.e(20),
-            n.e(515),
-          ]).then(n.bind(null, 3729));
+            n.e(27),
+            n.e(519),
+          ]).then(n.bind(null, 3732));
         }),
         eo = Object(f.lazy)(function () {
           return Promise.all([
             n.e(13),
-            n.e(37),
-            n.e(43),
-            n.e(120),
-            n.e(404),
-          ]).then(n.bind(null, 3114));
+            n.e(33),
+            n.e(35),
+            n.e(121),
+            n.e(408),
+          ]).then(n.bind(null, 3115));
         }),
         to = Object(f.lazy)(function () {
-          return Promise.all([n.e(25), n.e(13), n.e(28), n.e(452)]).then(
-            n.bind(null, 3748)
+          return Promise.all([n.e(24), n.e(13), n.e(26), n.e(456)]).then(
+            n.bind(null, 3751)
           );
         }),
         no = Object(f.lazy)(function () {
-          return Promise.all([n.e(25), n.e(479)]).then(n.bind(null, 2900));
+          return Promise.all([n.e(24), n.e(483)]).then(n.bind(null, 2901));
         }),
         ro = Object(f.lazy)(function () {
-          return Promise.all([n.e(13), n.e(300)]).then(n.bind(null, 3115));
+          return Promise.all([n.e(13), n.e(303)]).then(n.bind(null, 3116));
         }),
         oo = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(25),
+            n.e(24),
             n.e(13),
-            n.e(21),
-            n.e(407),
-          ]).then(n.bind(null, 3116));
+            n.e(20),
+            n.e(411),
+          ]).then(n.bind(null, 3117));
         }),
         ao = Object(f.lazy)(function () {
-          return Promise.all([n.e(6), n.e(31), n.e(116), n.e(511)]).then(
-            n.bind(null, 3768)
+          return Promise.all([n.e(6), n.e(27), n.e(117), n.e(515)]).then(
+            n.bind(null, 3771)
           );
         }),
         io = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
             n.e(13),
-            n.e(21),
-            n.e(31),
-            n.e(478),
-          ]).then(n.bind(null, 3117));
+            n.e(20),
+            n.e(27),
+            n.e(482),
+          ]).then(n.bind(null, 3118));
         });
       xn.a.extend(Bn.a),
         xn.a.extend(Pn.a),
@@ -53547,7 +53595,7 @@
                             case 0:
                               return (
                                 (e.next = 2),
-                                n.e(122).then(n.t.bind(null, 454, 3))
+                                n.e(123).then(n.t.bind(null, 454, 3))
                               );
                             case 2:
                               if (((a = e.sent), zn.a.USER_FILES_URL)) {
@@ -53827,8 +53875,8 @@
           var fo = Object(Yn.b)("X_FCM_TOKEN");
           fo && Gn.a.dispatch(Object(Cn.j)(fo));
         } else
-          n.e(350)
-            .then(n.bind(null, 3897))
+          n.e(353)
+            .then(n.bind(null, 3901))
             .then(
               (function () {
                 var e = Object(c.a)(
@@ -53936,7 +53984,7 @@
       }
       n.r(t);
       var i = n(0),
-        u = n(224);
+        u = n(223);
       function c(e, t, n) {
         return (
           t in e
@@ -55132,5 +55180,5 @@
       }
     },
   ],
-  [[320, 429]],
+  [[320, 433]],
 ]);
