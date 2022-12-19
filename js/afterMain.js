@@ -24805,6 +24805,7 @@
             null,
             function (e) {
               n(e.data);
+              fbq("track", "Subscribe");
             }
           );
         },
