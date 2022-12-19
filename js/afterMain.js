@@ -2121,6 +2121,7 @@
                       m.a.APPEND_CUSTOM_CODE_LOGIN_FAIL &&
                         Object(l.a)(m.a.CUSTOM_CODE_LOGIN_FAIL);
                     });
+                fbq("track", "CompleteRegistration");
               }
             },
             null,
@@ -31417,8 +31418,7 @@
             WDS_SOCKET_PORT: void 0,
             FAST_REFRESH: !0,
             REACT_APP_ENV: "widgets",
-            REACT_APP_WIDGETS_HOSTING:
-              "https://fstatic.7games.bet/widgets-x",
+            REACT_APP_WIDGETS_HOSTING: "https://fstatic.7games.bet/widgets-x",
           });
         var m = (function (e) {
           var t, n;
