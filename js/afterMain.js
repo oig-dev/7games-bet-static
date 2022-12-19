@@ -24801,6 +24801,7 @@
             r,
             function (e) {
               t(e.details);
+              fbq("track", "Subscribe");
             },
             null,
             function (e) {
