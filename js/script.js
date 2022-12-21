@@ -30,15 +30,12 @@ setInterval("insereCabecalhoW1()", 500);
 
 function moveElementTo(selected_element, direction) {
   var element_to_move = selected_element,
-    td = element_to_move.parentNode;
+      td = element_to_move.parentNode;
 
   if (direction === -1 && element_to_move.previousElementSibling) {
-    td.insertBefore(element_to_move, element_to_move.previousElementSibling);
+      td.insertBefore(element_to_move, element_to_move.previousElementSibling);
   } else if (direction === 1 && element_to_move.nextElementSibling) {
-    td.insertBefore(
-      element_to_move,
-      element_to_move.nextElementSibling.nextElementSibling
-    );
+      td.insertBefore(element_to_move, element_to_move.nextElementSibling.nextElementSibling)
   }
 }
 
@@ -48,14 +45,10 @@ function trocaImagemCupomMenuMobile() {
   const fifthMenuIcon = document.querySelector(
     `#bottom-navigation > div:nth-child(${ORDER}) > span > svg`
   );
-
+  
   if (fifthMenuIcon) {
-    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML =
-      ".cls-17777{fill:#65C673;}";
-    moveElementTo(
-      document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`),
-      1
-    );
+    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML = ".cls-17777{fill:#65C673;}";
+    moveElementTo(document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`), 1);
   }
 }
 
@@ -678,3 +671,10 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
     </svg>
   `;
 });
+
+// Aumenta a margem inferior do rodapé de cadastro
+if (isMobile) {
+  waitForElm("div#fixed-footer").then((elm) => {
+    elm.style.marginBottom = "60px"
+  });
+}
