@@ -678,3 +678,131 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
     </svg>
   `;
 });
+
+// get first child of elm that is not display none
+function getFirstChildNotDisplayNone(elm) {
+  for (let i = 0; i < elm.children.length; i++) {
+    if (elm.children[i].style.display !== "none") {
+      return elm.children[i];
+    }
+  }
+}
+
+// Add ID if element does not have one
+function addId(elm, id) {
+  if (elm.id !== id) {
+    elm.id = id;
+  }
+}
+
+// Troca imagens das opções de pagamento no deposito
+function changePaymentBanner(elm, url) {
+  // check if the image is already the one we want
+  old_payment_banner_img = getFirstChildNotDisplayNone(elm);
+  if (
+    old_payment_banner_img &&
+    old_payment_banner_img.tagName === "IMG" &&
+    old_payment_banner_img.src === url
+  ) {
+    return;
+  }
+
+  // make all children of elm display none
+  for (let i = 0; i < elm.children.length; i++) {
+    elm.children[i].style.display = "none";
+  }
+
+  // add new image
+  new_payment_banner_img = document.createElement("img");
+  new_payment_banner_img.src = url;
+  new_payment_banner_img.classList = ["style__HeroImg-sc-swzx38-0", "eaaLne"];
+  elm.appendChild(new_payment_banner_img);
+  elm.style.paddingBottom = "3px";
+}
+
+function queryPaymentBanner(query, url) {
+  waitForElm(query).then((elm) => {
+    changePaymentBanner(elm, url);
+  });
+}
+
+function queryAddId(query, id) {
+  waitForElm(query).then((elm) => {
+    addId(elm.parentElement, id);
+  });
+}
+
+function queryAddIdExclude(query, id, excludedId) {
+  waitForElm(query).then((elm) => {
+    if (elm.id === excludedId) {
+      return;
+    }
+    addId(elm, id);
+  });
+}
+
+// Paybrokers
+const paybrokers_opt_query =
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
+
+const paybrokers_banner_query =
+  ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
+
+const paybrokers_banner_id = "paybrokers_banner_id";
+
+// Safeway
+const safeway_opt_query =
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroBox-sc-swzx38-4.hvFpHc";
+
+const safeway_banner_query =
+  ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc";
+
+const safeway_banner_id = "safeway_banner_id";
+
+// Rotinas
+setInterval(
+  `queryAddId(
+    "${paybrokers_banner_query}",
+    "${paybrokers_banner_id}"
+  )`,
+  500
+);
+setInterval(
+  `queryAddIdExclude(
+    "${safeway_banner_query}",
+    "${safeway_banner_id}",
+    "${paybrokers_banner_id}"
+  )`,
+  500
+);
+
+setInterval(
+  `queryPaymentBanner(
+    "${paybrokers_opt_query}",
+    "https://static.7games.bet/images/paybrokers.png"
+  )`,
+  500
+);
+setInterval(
+  `queryPaymentBanner(
+    "#${paybrokers_banner_id}",
+    "https://static.7games.bet/images/paybrokers.png"
+  )`,
+  500
+);
+
+setInterval(
+  `queryPaymentBanner(
+    "${safeway_opt_query}",
+    "https://static.7games.bet/images/safeway.png"
+  )`,
+  500
+);
+
+setInterval(
+  `queryPaymentBanner(
+    "#${safeway_banner_id}",
+    "https://static.7games.bet/images/safeway.png"
+  )`,
+  500
+);
