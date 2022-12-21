@@ -678,15 +678,3 @@ waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
     </svg>
   `;
 });
-
-// Troca ordem das opções de pagamento no deposito
-waitForElm(isMobile ? ".paymentMethods__listLayout__item" : ".payment__item-box").then((elm) => {
-  moveElementTo(elm, 1);
-});
-
-
-waitForElm("button.v3-btn.v3-btn-primary.v3-btn-lg.x-button.x-button--fullWidth").then((elm) => {
-  elm.addEventListener("click", function (event) {
-    fbq('track', 'Deposito');
-  });
-});
