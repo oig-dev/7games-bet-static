@@ -24803,6 +24803,9 @@
             function (e) {
               t(e.details);
               fbq("track", "Subscribe");
+              gtag("event", "conversion", {
+                send_to: "AW-336388911/IwMZCOL29YUYEK_Gs6AB",
+              });
             },
             null,
             function (e) {
