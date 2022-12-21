@@ -1,7 +1,7 @@
-/*! For license information please see main.ef84b07d.chunk.js.LICENSE.txt */
+/*! For license information please see main.5648453c.chunk.js.LICENSE.txt */
 (this["webpackJsonpsportsbook-v3.0"] =
   this["webpackJsonpsportsbook-v3.0"] || []).push([
-  [380],
+  [383],
   [
     function (e, t, n) {
       "use strict";
@@ -2343,6 +2343,7 @@
             QUICK_BET_ENABLED: "quick_bet_enabled",
             TYPE: "type",
             BOOK_BET_ID: "BOOK_BET_ID",
+            ADD_TO_BETSLIP_DATA: "ADD_TO_BETSLIP_DATA",
           },
           casino: { FAVORITES: "favorites", GAMES_FETCHED: "games_fetched" },
           sportsbook: {
@@ -9681,7 +9682,7 @@
       var a = r(n(40)),
         i = b(n(0)),
         u = r(n(161)),
-        c = n(281),
+        c = n(282),
         s = r(n(246)),
         l = b(n(393)),
         f = r(n(126)),
@@ -10261,8 +10262,8 @@
                       ? arguments[4]
                       : null;
                 if (y.a.MOCKED_DATA)
-                  n.e(394)
-                    .then(n.bind(null, 3944))
+                  n.e(397)
+                    .then(n.bind(null, 3945))
                     .then(function (t) {
                       null === r ||
                         void 0 === r ||
@@ -12390,8 +12391,8 @@
         s = r(n(28)),
         l = r(n(258)),
         f = r(n(147)),
-        d = r(n(289)),
-        p = r(n(282)),
+        d = r(n(287)),
+        p = r(n(280)),
         h = r(n(286)),
         m = r(n(369)),
         v = r(n(372)),
@@ -23757,6 +23758,22 @@
     },
     function (e, t, n) {
       "use strict";
+      n.d(t, "a", function () {
+        return i;
+      });
+      var r = n(1),
+        o = n(0),
+        a = n(7);
+      function i(e) {
+        var t = e.view;
+        return Object(a.jsx)(o.Suspense, {
+          fallback: e.fallback || null,
+          children: Object(a.jsx)(t, Object(r.a)({}, e.innerProps)),
+        });
+      }
+    },
+    function (e, t, n) {
+      "use strict";
       function r(e, t) {
         if (null == e) return {};
         var n,
@@ -23784,22 +23801,6 @@
       n.d(t, "a", function () {
         return r;
       });
-    },
-    function (e, t, n) {
-      "use strict";
-      n.d(t, "a", function () {
-        return i;
-      });
-      var r = n(1),
-        o = n(0),
-        a = n(7);
-      function i(e) {
-        var t = e.view;
-        return Object(a.jsx)(o.Suspense, {
-          fallback: e.fallback || null,
-          children: Object(a.jsx)(t, Object(r.a)({}, e.innerProps)),
-        });
-      }
     },
     function (e, t, n) {
       "use strict";
@@ -23854,7 +23855,7 @@
       var r = n(1),
         o = (n(188), n(121)),
         a = n.n(o),
-        i = n(186),
+        i = n(187),
         u = (n(0), n(178)),
         c = (n(421), n(7)),
         s = ["fullwidth", "type"],
@@ -25858,7 +25859,7 @@
         p = n(4),
         h = n(7),
         m = Object(a.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(5), n.e(8), n.e(471)]).then(
+          return Promise.all([n.e(0), n.e(1), n.e(5), n.e(8), n.e(474)]).then(
             n.bind(null, 2550)
           );
         }),
@@ -26285,7 +26286,7 @@
           return r;
         })(n(0)),
         d = n(163),
-        p = n(280),
+        p = n(281),
         h = r(n(424)),
         m = n(36),
         v = n(179);
@@ -28425,7 +28426,7 @@
         p = n(166),
         h = r(n(126)),
         m = n(36),
-        v = n(288),
+        v = n(289),
         y = n(194);
       function g(e) {
         if ("function" !== typeof WeakMap) return null;
@@ -32649,6 +32650,14 @@
     },
     function (e, t, n) {
       "use strict";
+      var r;
+      Object.defineProperty(t, "__esModule", { value: !0 }),
+        (t.default = void 0);
+      var o = (r = n(365)) && r.__esModule ? r : { default: r };
+      (t.default = o), (e.exports = o);
+    },
+    function (e, t, n) {
+      "use strict";
       var r = n(89);
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.composeRef = c),
@@ -35082,14 +35091,6 @@
         (Ie.useWatch = ke);
       t.default = Ie;
     },
-    function (e, t, n) {
-      "use strict";
-      var r;
-      Object.defineProperty(t, "__esModule", { value: !0 }),
-        (t.default = void 0);
-      var o = (r = n(365)) && r.__esModule ? r : { default: r };
-      (t.default = o), (e.exports = o);
-    },
     function (e, t) {
       e.exports = function (e) {
         return (
@@ -35163,6 +35164,14 @@
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.default = void 0);
       var o = (r = n(367)) && r.__esModule ? r : { default: r };
+      (t.default = o), (e.exports = o);
+    },
+    function (e, t, n) {
+      "use strict";
+      var r;
+      Object.defineProperty(t, "__esModule", { value: !0 }),
+        (t.default = void 0);
+      var o = (r = n(363)) && r.__esModule ? r : { default: r };
       (t.default = o), (e.exports = o);
     },
     function (e, t, n) {
@@ -35241,14 +35250,6 @@
           o
         );
       };
-    },
-    function (e, t, n) {
-      "use strict";
-      var r;
-      Object.defineProperty(t, "__esModule", { value: !0 }),
-        (t.default = void 0);
-      var o = (r = n(363)) && r.__esModule ? r : { default: r };
-      (t.default = o), (e.exports = o);
     },
     function (e, t, n) {
       "use strict";
@@ -47685,32 +47686,32 @@
     },
     function (e, t, n) {
       var r = {
-        "./by": [302, 104],
-        "./by.ts": [302, 104],
-        "./ca": [303, 105],
-        "./ca.ts": [303, 105],
-        "./cy": [304, 106],
-        "./cy.ts": [304, 106],
-        "./de": [305, 107],
-        "./de.ts": [305, 107],
-        "./fr": [306, 108],
-        "./fr.ts": [306, 108],
-        "./gh": [307, 109],
-        "./gh.ts": [307, 109],
-        "./it": [308, 110],
-        "./it.ts": [308, 110],
-        "./mga": [309, 111],
-        "./mga.ts": [309, 111],
-        "./nl": [310, 112],
-        "./nl.ts": [310, 112],
-        "./po": [311, 113],
-        "./po.ts": [311, 113],
-        "./se": [312, 114],
-        "./se.ts": [312, 114],
-        "./uk": [313, 115],
-        "./uk.ts": [313, 115],
-        "./usa": [314, 116],
-        "./usa.ts": [314, 116],
+        "./by": [302, 105],
+        "./by.ts": [302, 105],
+        "./ca": [303, 106],
+        "./ca.ts": [303, 106],
+        "./cy": [304, 107],
+        "./cy.ts": [304, 107],
+        "./de": [305, 108],
+        "./de.ts": [305, 108],
+        "./fr": [306, 109],
+        "./fr.ts": [306, 109],
+        "./gh": [307, 110],
+        "./gh.ts": [307, 110],
+        "./it": [308, 111],
+        "./it.ts": [308, 111],
+        "./mga": [309, 112],
+        "./mga.ts": [309, 112],
+        "./nl": [310, 113],
+        "./nl.ts": [310, 113],
+        "./po": [311, 114],
+        "./po.ts": [311, 114],
+        "./se": [312, 115],
+        "./se.ts": [312, 115],
+        "./uk": [313, 116],
+        "./uk.ts": [313, 116],
+        "./usa": [314, 117],
+        "./usa.ts": [314, 117],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -47843,7 +47844,7 @@
       "use strict";
       var r = n(21);
       Object.defineProperty(t, "__esModule", { value: !0 }), (t.default = u);
-      var o = r(n(287)),
+      var o = r(n(288)),
         a = 0,
         i = {};
       function u(e) {
@@ -49050,149 +49051,149 @@
     },
     function (e, t, n) {
       var r = {
-        "./af.js": [455, 1577],
-        "./am.js": [456, 1578],
-        "./ar-dz.js": [457, 1579],
-        "./ar-iq.js": [458, 1580],
-        "./ar-kw.js": [459, 1581],
-        "./ar-ly.js": [460, 1582],
-        "./ar-ma.js": [461, 1583],
-        "./ar-sa.js": [462, 1584],
-        "./ar-tn.js": [463, 1585],
-        "./ar.js": [464, 1586],
-        "./az.js": [465, 1587],
-        "./be.js": [466, 1588],
-        "./bg.js": [467, 1589],
-        "./bi.js": [468, 1590],
-        "./bm.js": [469, 1591],
-        "./bn-bd.js": [470, 1592],
-        "./bn.js": [471, 1593],
-        "./bo.js": [472, 1594],
-        "./br.js": [473, 1595],
-        "./bs.js": [474, 1596],
-        "./ca.js": [475, 1597],
-        "./cs.js": [476, 1598],
-        "./cv.js": [477, 1599],
-        "./cy.js": [478, 1600],
-        "./da.js": [479, 1601],
-        "./de-at.js": [480, 1602],
-        "./de-ch.js": [481, 1603],
-        "./de.js": [482, 1604],
-        "./dv.js": [483, 1605],
-        "./el.js": [484, 1606],
-        "./en-au.js": [485, 1607],
-        "./en-ca.js": [486, 1608],
-        "./en-gb.js": [487, 1609],
-        "./en-ie.js": [488, 1610],
-        "./en-il.js": [489, 1611],
-        "./en-in.js": [490, 1612],
-        "./en-nz.js": [491, 1613],
-        "./en-sg.js": [492, 1614],
-        "./en-tt.js": [493, 1615],
-        "./en.js": [494, 1616],
-        "./eo.js": [495, 1617],
-        "./es-do.js": [496, 1618],
-        "./es-mx.js": [497, 1619],
-        "./es-pr.js": [498, 1620],
-        "./es-us.js": [499, 1621],
-        "./es.js": [500, 1622],
-        "./et.js": [501, 1623],
-        "./eu.js": [502, 1624],
-        "./fa.js": [503, 1625],
-        "./fi.js": [504, 1626],
-        "./fo.js": [505, 1627],
-        "./fr-ca.js": [506, 1628],
-        "./fr-ch.js": [507, 1629],
-        "./fr.js": [508, 1630],
-        "./fy.js": [509, 1631],
-        "./ga.js": [510, 1632],
-        "./gd.js": [511, 1633],
-        "./gl.js": [512, 1634],
-        "./gom-latn.js": [513, 1635],
-        "./gu.js": [514, 1636],
-        "./he.js": [515, 1637],
-        "./hi.js": [516, 1638],
-        "./hr.js": [517, 1639],
-        "./ht.js": [518, 1640],
-        "./hu.js": [519, 1641],
-        "./hy-am.js": [520, 1642],
-        "./id.js": [521, 1643],
-        "./is.js": [522, 1644],
-        "./it-ch.js": [523, 1645],
-        "./it.js": [524, 1646],
-        "./ja.js": [525, 1647],
-        "./jv.js": [526, 1648],
-        "./ka.js": [527, 1649],
-        "./kk.js": [528, 1650],
-        "./km.js": [529, 1651],
-        "./kn.js": [530, 1652],
-        "./ko.js": [531, 1653],
-        "./ku.js": [532, 1654],
-        "./ky.js": [533, 1655],
-        "./lb.js": [534, 1656],
-        "./lo.js": [535, 1657],
-        "./lt.js": [536, 1658],
-        "./lv.js": [537, 1659],
-        "./me.js": [538, 1660],
-        "./mi.js": [539, 1661],
-        "./mk.js": [540, 1662],
-        "./ml.js": [541, 1663],
-        "./mn.js": [542, 1664],
-        "./mr.js": [543, 1665],
-        "./ms-my.js": [544, 1666],
-        "./ms.js": [545, 1667],
-        "./mt.js": [546, 1668],
-        "./my.js": [547, 1669],
-        "./nb.js": [548, 1670],
-        "./ne.js": [549, 1671],
-        "./nl-be.js": [550, 1672],
-        "./nl.js": [551, 1673],
-        "./nn.js": [552, 1674],
-        "./oc-lnc.js": [553, 1675],
-        "./pa-in.js": [554, 1676],
-        "./pl.js": [555, 1677],
-        "./pt-br.js": [556, 1678],
-        "./pt.js": [557, 1679],
-        "./rn.js": [558, 1680],
-        "./ro.js": [559, 1681],
-        "./ru.js": [560, 1682],
-        "./rw.js": [561, 1683],
-        "./sd.js": [562, 1684],
-        "./se.js": [563, 1685],
-        "./si.js": [564, 1686],
-        "./sk.js": [565, 1687],
-        "./sl.js": [566, 1688],
-        "./sq.js": [567, 1689],
-        "./sr-cyrl.js": [568, 1690],
-        "./sr.js": [569, 1691],
-        "./ss.js": [570, 1692],
-        "./sv-fi.js": [571, 1693],
-        "./sv.js": [572, 1694],
-        "./sw.js": [573, 1695],
-        "./ta.js": [574, 1696],
-        "./te.js": [575, 1697],
-        "./tet.js": [576, 1698],
-        "./tg.js": [577, 1699],
-        "./th.js": [578, 1700],
-        "./tk.js": [579, 1701],
-        "./tl-ph.js": [580, 1702],
-        "./tlh.js": [581, 1703],
-        "./tr.js": [582, 1704],
-        "./tzl.js": [583, 1705],
-        "./tzm-latn.js": [584, 1706],
-        "./tzm.js": [585, 1707],
-        "./ug-cn.js": [586, 1708],
-        "./uk.js": [587, 1709],
-        "./ur.js": [588, 1710],
-        "./uz-latn.js": [589, 1711],
-        "./uz.js": [590, 1712],
-        "./vi.js": [591, 1713],
-        "./x-pseudo.js": [592, 1714],
-        "./yo.js": [593, 1715],
-        "./zh-cn.js": [594, 1716],
-        "./zh-hk.js": [595, 1717],
-        "./zh-tw.js": [596, 1718],
-        "./zh.js": [597, 1719],
+        "./af.js": [455, 1580],
+        "./am.js": [456, 1581],
+        "./ar-dz.js": [457, 1582],
+        "./ar-iq.js": [458, 1583],
+        "./ar-kw.js": [459, 1584],
+        "./ar-ly.js": [460, 1585],
+        "./ar-ma.js": [461, 1586],
+        "./ar-sa.js": [462, 1587],
+        "./ar-tn.js": [463, 1588],
+        "./ar.js": [464, 1589],
+        "./az.js": [465, 1590],
+        "./be.js": [466, 1591],
+        "./bg.js": [467, 1592],
+        "./bi.js": [468, 1593],
+        "./bm.js": [469, 1594],
+        "./bn-bd.js": [470, 1595],
+        "./bn.js": [471, 1596],
+        "./bo.js": [472, 1597],
+        "./br.js": [473, 1598],
+        "./bs.js": [474, 1599],
+        "./ca.js": [475, 1600],
+        "./cs.js": [476, 1601],
+        "./cv.js": [477, 1602],
+        "./cy.js": [478, 1603],
+        "./da.js": [479, 1604],
+        "./de-at.js": [480, 1605],
+        "./de-ch.js": [481, 1606],
+        "./de.js": [482, 1607],
+        "./dv.js": [483, 1608],
+        "./el.js": [484, 1609],
+        "./en-au.js": [485, 1610],
+        "./en-ca.js": [486, 1611],
+        "./en-gb.js": [487, 1612],
+        "./en-ie.js": [488, 1613],
+        "./en-il.js": [489, 1614],
+        "./en-in.js": [490, 1615],
+        "./en-nz.js": [491, 1616],
+        "./en-sg.js": [492, 1617],
+        "./en-tt.js": [493, 1618],
+        "./en.js": [494, 1619],
+        "./eo.js": [495, 1620],
+        "./es-do.js": [496, 1621],
+        "./es-mx.js": [497, 1622],
+        "./es-pr.js": [498, 1623],
+        "./es-us.js": [499, 1624],
+        "./es.js": [500, 1625],
+        "./et.js": [501, 1626],
+        "./eu.js": [502, 1627],
+        "./fa.js": [503, 1628],
+        "./fi.js": [504, 1629],
+        "./fo.js": [505, 1630],
+        "./fr-ca.js": [506, 1631],
+        "./fr-ch.js": [507, 1632],
+        "./fr.js": [508, 1633],
+        "./fy.js": [509, 1634],
+        "./ga.js": [510, 1635],
+        "./gd.js": [511, 1636],
+        "./gl.js": [512, 1637],
+        "./gom-latn.js": [513, 1638],
+        "./gu.js": [514, 1639],
+        "./he.js": [515, 1640],
+        "./hi.js": [516, 1641],
+        "./hr.js": [517, 1642],
+        "./ht.js": [518, 1643],
+        "./hu.js": [519, 1644],
+        "./hy-am.js": [520, 1645],
+        "./id.js": [521, 1646],
+        "./is.js": [522, 1647],
+        "./it-ch.js": [523, 1648],
+        "./it.js": [524, 1649],
+        "./ja.js": [525, 1650],
+        "./jv.js": [526, 1651],
+        "./ka.js": [527, 1652],
+        "./kk.js": [528, 1653],
+        "./km.js": [529, 1654],
+        "./kn.js": [530, 1655],
+        "./ko.js": [531, 1656],
+        "./ku.js": [532, 1657],
+        "./ky.js": [533, 1658],
+        "./lb.js": [534, 1659],
+        "./lo.js": [535, 1660],
+        "./lt.js": [536, 1661],
+        "./lv.js": [537, 1662],
+        "./me.js": [538, 1663],
+        "./mi.js": [539, 1664],
+        "./mk.js": [540, 1665],
+        "./ml.js": [541, 1666],
+        "./mn.js": [542, 1667],
+        "./mr.js": [543, 1668],
+        "./ms-my.js": [544, 1669],
+        "./ms.js": [545, 1670],
+        "./mt.js": [546, 1671],
+        "./my.js": [547, 1672],
+        "./nb.js": [548, 1673],
+        "./ne.js": [549, 1674],
+        "./nl-be.js": [550, 1675],
+        "./nl.js": [551, 1676],
+        "./nn.js": [552, 1677],
+        "./oc-lnc.js": [553, 1678],
+        "./pa-in.js": [554, 1679],
+        "./pl.js": [555, 1680],
+        "./pt-br.js": [556, 1681],
+        "./pt.js": [557, 1682],
+        "./rn.js": [558, 1683],
+        "./ro.js": [559, 1684],
+        "./ru.js": [560, 1685],
+        "./rw.js": [561, 1686],
+        "./sd.js": [562, 1687],
+        "./se.js": [563, 1688],
+        "./si.js": [564, 1689],
+        "./sk.js": [565, 1690],
+        "./sl.js": [566, 1691],
+        "./sq.js": [567, 1692],
+        "./sr-cyrl.js": [568, 1693],
+        "./sr.js": [569, 1694],
+        "./ss.js": [570, 1695],
+        "./sv-fi.js": [571, 1696],
+        "./sv.js": [572, 1697],
+        "./sw.js": [573, 1698],
+        "./ta.js": [574, 1699],
+        "./te.js": [575, 1700],
+        "./tet.js": [576, 1701],
+        "./tg.js": [577, 1702],
+        "./th.js": [578, 1703],
+        "./tk.js": [579, 1704],
+        "./tl-ph.js": [580, 1705],
+        "./tlh.js": [581, 1706],
+        "./tr.js": [582, 1707],
+        "./tzl.js": [583, 1708],
+        "./tzm-latn.js": [584, 1709],
+        "./tzm.js": [585, 1710],
+        "./ug-cn.js": [586, 1711],
+        "./uk.js": [587, 1712],
+        "./ur.js": [588, 1713],
+        "./uz-latn.js": [589, 1714],
+        "./uz.js": [590, 1715],
+        "./vi.js": [591, 1716],
+        "./x-pseudo.js": [592, 1717],
+        "./yo.js": [593, 1718],
+        "./zh-cn.js": [594, 1719],
+        "./zh-hk.js": [595, 1720],
+        "./zh-tw.js": [596, 1721],
+        "./zh.js": [597, 1722],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -49214,72 +49215,72 @@
     },
     function (e, t, n) {
       var r = {
-        "./ar_EG.js": [598, 525],
-        "./az_AZ.js": [599, 526],
-        "./bg_BG.js": [600, 527],
-        "./bn_BD.js": [601, 528],
-        "./by_BY.js": [602, 529],
-        "./ca_ES.js": [603, 530],
-        "./cs_CZ.js": [604, 531],
-        "./da_DK.js": [605, 532],
-        "./de_DE.js": [606, 533],
+        "./ar_EG.js": [598, 528],
+        "./az_AZ.js": [599, 529],
+        "./bg_BG.js": [600, 530],
+        "./bn_BD.js": [601, 531],
+        "./by_BY.js": [602, 532],
+        "./ca_ES.js": [603, 533],
+        "./cs_CZ.js": [604, 534],
+        "./da_DK.js": [605, 535],
+        "./de_DE.js": [606, 536],
         "./default.js": [104],
-        "./el_GR.js": [607, 534],
-        "./en_GB.js": [608, 535],
-        "./en_US.js": [453, 1570],
-        "./es_ES.js": [609, 536],
-        "./et_EE.js": [610, 537],
-        "./fa_IR.js": [611, 538],
-        "./fi_FI.js": [612, 539],
-        "./fr_BE.js": [613, 540],
-        "./fr_CA.js": [614, 541],
-        "./fr_FR.js": [615, 542],
-        "./ga_IE.js": [616, 543],
-        "./gl_ES.js": [617, 544],
-        "./he_IL.js": [618, 545],
-        "./hi_IN.js": [619, 546],
-        "./hr_HR.js": [620, 547],
-        "./hu_HU.js": [621, 548],
-        "./hy_AM.js": [622, 1571],
-        "./id_ID.js": [623, 549],
-        "./is_IS.js": [624, 550],
-        "./it_IT.js": [625, 551],
-        "./ja_JP.js": [626, 552],
-        "./ka_GE.js": [627, 553],
-        "./kk_KZ.js": [628, 554],
-        "./km_KH.js": [629, 555],
-        "./kmr_IQ.js": [630, 127, 131, 1572],
-        "./kn_IN.js": [631, 556],
-        "./ko_KR.js": [632, 557],
-        "./ku_IQ.js": [633, 127, 131, 1573],
-        "./lt_LT.js": [634, 558],
-        "./lv_LV.js": [635, 559],
-        "./mk_MK.js": [636, 560],
-        "./ml_IN.js": [637, 561],
-        "./mn_MN.js": [638, 562],
-        "./ms_MY.js": [639, 563],
-        "./nb_NO.js": [640, 564],
-        "./ne_NP.js": [641, 1574],
-        "./nl_BE.js": [642, 565],
-        "./nl_NL.js": [643, 566],
-        "./pl_PL.js": [644, 567],
-        "./pt_BR.js": [645, 568],
-        "./pt_PT.js": [646, 569],
-        "./ro_RO.js": [647, 570],
-        "./ru_RU.js": [648, 571],
-        "./sk_SK.js": [649, 572],
-        "./sl_SI.js": [650, 583],
-        "./sr_RS.js": [651, 573],
-        "./sv_SE.js": [652, 574],
-        "./ta_IN.js": [653, 575],
-        "./th_TH.js": [654, 576],
-        "./tr_TR.js": [655, 577],
-        "./uk_UA.js": [656, 578],
-        "./ur_PK.js": [657, 579],
-        "./vi_VN.js": [658, 580],
-        "./zh_CN.js": [659, 581],
-        "./zh_HK.js": [660, 128, 132, 1575],
-        "./zh_TW.js": [661, 128, 132, 1576],
+        "./el_GR.js": [607, 537],
+        "./en_GB.js": [608, 538],
+        "./en_US.js": [453, 1573],
+        "./es_ES.js": [609, 539],
+        "./et_EE.js": [610, 540],
+        "./fa_IR.js": [611, 541],
+        "./fi_FI.js": [612, 542],
+        "./fr_BE.js": [613, 543],
+        "./fr_CA.js": [614, 544],
+        "./fr_FR.js": [615, 545],
+        "./ga_IE.js": [616, 546],
+        "./gl_ES.js": [617, 547],
+        "./he_IL.js": [618, 548],
+        "./hi_IN.js": [619, 549],
+        "./hr_HR.js": [620, 550],
+        "./hu_HU.js": [621, 551],
+        "./hy_AM.js": [622, 1574],
+        "./id_ID.js": [623, 552],
+        "./is_IS.js": [624, 553],
+        "./it_IT.js": [625, 554],
+        "./ja_JP.js": [626, 555],
+        "./ka_GE.js": [627, 556],
+        "./kk_KZ.js": [628, 557],
+        "./km_KH.js": [629, 558],
+        "./kmr_IQ.js": [630, 129, 133, 1575],
+        "./kn_IN.js": [631, 559],
+        "./ko_KR.js": [632, 560],
+        "./ku_IQ.js": [633, 129, 133, 1576],
+        "./lt_LT.js": [634, 561],
+        "./lv_LV.js": [635, 562],
+        "./mk_MK.js": [636, 563],
+        "./ml_IN.js": [637, 564],
+        "./mn_MN.js": [638, 565],
+        "./ms_MY.js": [639, 566],
+        "./nb_NO.js": [640, 567],
+        "./ne_NP.js": [641, 1577],
+        "./nl_BE.js": [642, 568],
+        "./nl_NL.js": [643, 569],
+        "./pl_PL.js": [644, 570],
+        "./pt_BR.js": [645, 571],
+        "./pt_PT.js": [646, 572],
+        "./ro_RO.js": [647, 573],
+        "./ru_RU.js": [648, 574],
+        "./sk_SK.js": [649, 575],
+        "./sl_SI.js": [650, 586],
+        "./sr_RS.js": [651, 576],
+        "./sv_SE.js": [652, 577],
+        "./ta_IN.js": [653, 578],
+        "./th_TH.js": [654, 579],
+        "./tr_TR.js": [655, 580],
+        "./uk_UA.js": [656, 581],
+        "./ur_PK.js": [657, 582],
+        "./vi_VN.js": [658, 583],
+        "./zh_CN.js": [659, 584],
+        "./zh_HK.js": [660, 130, 134, 1578],
+        "./zh_TW.js": [661, 130, 134, 1579],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -49301,26 +49302,26 @@
     },
     function (e, t, n) {
       var r = {
-        "./ar/translations.json": [662, 492],
-        "./de/translations.json": [663, 493],
-        "./el/translations.json": [664, 504],
-        "./en/translations.json": [454, 123],
-        "./en_CA/translations.json": [665, 505],
-        "./es/translations.json": [666, 506],
-        "./fr/translations.json": [667, 507],
-        "./hi_IN/translations.json": [668, 508],
-        "./hy/translations.json": [669, 509],
-        "./ko/translations.json": [670, 510],
-        "./ku/translations.json": [671, 494],
-        "./pt/translations.json": [672, 495],
-        "./pt_BR/translations.json": [673, 496],
-        "./ru/translations.json": [674, 497],
-        "./sv/translations.json": [675, 498],
-        "./th/translations.json": [676, 499],
-        "./tr/translations.json": [677, 500],
-        "./uz/translations.json": [678, 501],
-        "./zh/translations.json": [679, 502],
-        "./zh_CN/translations.json": [680, 503],
+        "./ar/translations.json": [662, 495],
+        "./de/translations.json": [663, 496],
+        "./el/translations.json": [664, 507],
+        "./en/translations.json": [454, 124],
+        "./en_CA/translations.json": [665, 508],
+        "./es/translations.json": [666, 509],
+        "./fr/translations.json": [667, 510],
+        "./hi_IN/translations.json": [668, 511],
+        "./hy/translations.json": [669, 512],
+        "./ko/translations.json": [670, 513],
+        "./ku/translations.json": [671, 497],
+        "./pt/translations.json": [672, 498],
+        "./pt_BR/translations.json": [673, 499],
+        "./ru/translations.json": [674, 500],
+        "./sv/translations.json": [675, 501],
+        "./th/translations.json": [676, 502],
+        "./tr/translations.json": [677, 503],
+        "./uz/translations.json": [678, 504],
+        "./zh/translations.json": [679, 505],
+        "./zh_CN/translations.json": [680, 506],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -52971,11 +52972,11 @@
         ir = n(196),
         ur = n(190),
         cr = n(122),
-        sr = n(187),
+        sr = n(186),
         lr = (n(426), n(7)),
         fr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(484)]).then(
-            n.bind(null, 3772)
+          return Promise.all([n.e(0), n.e(7), n.e(6), n.e(12), n.e(487)]).then(
+            n.bind(null, 3773)
           );
         }),
         dr = function () {
@@ -53133,280 +53134,276 @@
         mr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(13),
+            n.e(15),
             n.e(27),
-            n.e(33),
-            n.e(381),
-          ]).then(n.bind(null, 3313));
+            n.e(34),
+            n.e(384),
+          ]).then(n.bind(null, 3310));
         }),
         vr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(13),
+            n.e(15),
             n.e(27),
-            n.e(33),
-            n.e(352),
-          ]).then(n.bind(null, 3101));
+            n.e(34),
+            n.e(355),
+          ]).then(n.bind(null, 3096));
         }),
         yr = Object(f.lazy)(function () {
-          return Promise.all([
-            n.e(11),
-            n.e(6),
-            n.e(24),
-            n.e(40),
-            n.e(236),
-          ]).then(n.bind(null, 3768));
+          return Promise.all([n.e(9), n.e(6), n.e(24), n.e(31), n.e(239)]).then(
+            n.bind(null, 3769)
+          );
         }),
         gr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(6), n.e(27), n.e(488)]).then(
-            n.bind(null, 3916)
+          return Promise.all([n.e(0), n.e(6), n.e(27), n.e(491)]).then(
+            n.bind(null, 3917)
           );
         }),
         br = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(9), n.e(6), n.e(12), n.e(288)]).then(
-            n.bind(null, 3904)
+          return Promise.all([n.e(0), n.e(7), n.e(6), n.e(12), n.e(291)]).then(
+            n.bind(null, 3905)
           );
         }),
         _r = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
             n.e(24),
-            n.e(13),
+            n.e(15),
             n.e(27),
-            n.e(409),
-          ]).then(n.bind(null, 3769));
+            n.e(412),
+          ]).then(n.bind(null, 3770));
         }),
         Er = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(11),
+            n.e(9),
             n.e(24),
-            n.e(40),
-            n.e(13),
-            n.e(155),
+            n.e(31),
+            n.e(47),
+            n.e(157),
           ]).then(n.bind(null, 3725));
         }),
         Or = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(143)]).then(
-            n.bind(null, 3314)
+          return Promise.all([n.e(0), n.e(5), n.e(9), n.e(19), n.e(145)]).then(
+            n.bind(null, 3311)
           );
         }),
         Sr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(11), n.e(19), n.e(6), n.e(225)]).then(
+          return Promise.all([n.e(0), n.e(9), n.e(19), n.e(6), n.e(228)]).then(
             n.bind(null, 2551)
           );
         }),
         Tr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(24), n.e(263)]).then(
-            n.bind(null, 3329)
+          return Promise.all([n.e(5), n.e(24), n.e(266)]).then(
+            n.bind(null, 3326)
           );
         }),
         wr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(18), n.e(38), n.e(271)]).then(
-            n.bind(null, 3315)
+          return Promise.all([n.e(0), n.e(5), n.e(18), n.e(39), n.e(274)]).then(
+            n.bind(null, 3312)
           );
         }),
         Cr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(7), n.e(6), n.e(24), n.e(291)]).then(
-            n.bind(null, 2898)
+          return Promise.all([n.e(5), n.e(11), n.e(6), n.e(24), n.e(294)]).then(
+            n.bind(null, 2893)
           );
         }),
         jr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(17), n.e(22), n.e(294)]).then(
-            n.bind(null, 3300)
+          return Promise.all([n.e(0), n.e(1), n.e(17), n.e(22), n.e(297)]).then(
+            n.bind(null, 3297)
           );
         }),
         xr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(296)]).then(
-            n.bind(null, 3316)
+          return Promise.all([n.e(0), n.e(1), n.e(9), n.e(19), n.e(299)]).then(
+            n.bind(null, 3313)
           );
         }),
         Ar = Object(f.lazy)(function () {
           return Promise.all([
             n.e(10),
-            n.e(13),
+            n.e(15),
             n.e(21),
-            n.e(46),
-            n.e(90),
-          ]).then(n.bind(null, 3330));
+            n.e(52),
+            n.e(91),
+          ]).then(n.bind(null, 3327));
         }),
         Pr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(320)]).then(
-            n.bind(null, 3770)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(323)]).then(
+            n.bind(null, 3771)
           );
         }),
         kr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(11), n.e(19), n.e(325)]).then(
+          return Promise.all([n.e(0), n.e(5), n.e(9), n.e(19), n.e(328)]).then(
             n.bind(null, 2752)
           );
         }),
         Ir = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(326)]).then(
-            n.bind(null, 3105)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(329)]).then(
+            n.bind(null, 3100)
           );
         }),
         Nr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(328)]).then(
-            n.bind(null, 2642)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(331)]).then(
+            n.bind(null, 2583)
           );
         }),
         Rr = Object(f.lazy)(function () {
-          return Promise.all([n.e(5), n.e(7), n.e(16), n.e(24), n.e(327)]).then(
-            n.bind(null, 3106)
-          );
+          return Promise.all([
+            n.e(5),
+            n.e(11),
+            n.e(16),
+            n.e(24),
+            n.e(330),
+          ]).then(n.bind(null, 3101));
         }),
         Mr = Object(f.lazy)(function () {
-          return n.e(71).then(n.bind(null, 3107));
+          return n.e(71).then(n.bind(null, 3102));
         }),
         Dr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(339)]).then(
-            n.bind(null, 2912)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(14), n.e(342)]).then(
+            n.bind(null, 2907)
           );
         }),
         Lr = Object(f.lazy)(function () {
-          return Promise.all([n.e(1), n.e(2), n.e(3), n.e(4), n.e(358)]).then(
-            n.bind(null, 3108)
+          return Promise.all([n.e(1), n.e(2), n.e(3), n.e(4), n.e(361)]).then(
+            n.bind(null, 3103)
           );
         }),
         Fr = Object(f.lazy)(function () {
-          return Promise.all([n.e(2), n.e(3), n.e(4), n.e(5), n.e(359)]).then(
-            n.bind(null, 3109)
+          return Promise.all([n.e(2), n.e(3), n.e(4), n.e(5), n.e(362)]).then(
+            n.bind(null, 3104)
           );
         }),
         Ur = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(360)]).then(
-            n.bind(null, 3317)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(363)]).then(
+            n.bind(null, 3314)
           );
         }),
         Br = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(361)]).then(
-            n.bind(null, 3110)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(364)]).then(
+            n.bind(null, 3105)
           );
         }),
         Gr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(362)]).then(
-            n.bind(null, 3111)
+          return Promise.all([n.e(0), n.e(1), n.e(9), n.e(19), n.e(365)]).then(
+            n.bind(null, 3106)
           );
         }),
         Hr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(363)]).then(
-            n.bind(null, 3112)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(366)]).then(
+            n.bind(null, 3107)
           );
         }),
         Vr = Object(f.lazy)(function () {
-          return Promise.all([
-            n.e(5),
-            n.e(10),
-            n.e(13),
-            n.e(46),
-            n.e(366),
-          ]).then(n.bind(null, 3318));
+          return Promise.all([n.e(0), n.e(2), n.e(3), n.e(4), n.e(369)]).then(
+            n.bind(null, 3315)
+          );
         }),
         Wr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(11), n.e(391)]).then(
-            n.bind(null, 2899)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(9), n.e(394)]).then(
+            n.bind(null, 2894)
           );
         }),
         zr = Object(f.lazy)(function () {
           return Promise.all([
+            n.e(35),
+            n.e(15),
             n.e(34),
-            n.e(13),
-            n.e(33),
             n.e(51),
-            n.e(426),
-          ]).then(n.bind(null, 3319));
+            n.e(429),
+          ]).then(n.bind(null, 3316));
         }),
         $r = Object(f.lazy)(function () {
           return Promise.all([n.e(10), n.e(73)]).then(n.bind(null, 3739));
         }),
         Yr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(11), n.e(19), n.e(434)]).then(
-            n.bind(null, 2481)
+          return Promise.all([n.e(0), n.e(1), n.e(9), n.e(19), n.e(437)]).then(
+            n.bind(null, 2480)
           );
         }),
         Kr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(15), n.e(437)]).then(
-            n.bind(null, 3308)
+          return Promise.all([n.e(0), n.e(5), n.e(8), n.e(14), n.e(440)]).then(
+            n.bind(null, 3305)
           );
         }),
         qr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(473)]).then(
-            n.bind(null, 3298)
+          return Promise.all([n.e(0), n.e(1), n.e(2), n.e(3), n.e(476)]).then(
+            n.bind(null, 3295)
           );
         }),
         Jr = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(34),
+            n.e(35),
             n.e(10),
             n.e(21),
-            n.e(33),
-            n.e(460),
-          ]).then(n.bind(null, 3320));
+            n.e(34),
+            n.e(463),
+          ]).then(n.bind(null, 3317));
         }),
         Qr = Object(f.lazy)(function () {
-          return Promise.all([n.e(0), n.e(2), n.e(3), n.e(4), n.e(461)]).then(
-            n.bind(null, 3113)
+          return Promise.all([n.e(0), n.e(2), n.e(3), n.e(4), n.e(464)]).then(
+            n.bind(null, 3108)
           );
         }),
         Xr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(24),
-            n.e(13),
+            n.e(15),
             n.e(20),
             n.e(26),
-            n.e(511),
-          ]).then(n.bind(null, 3302));
+            n.e(514),
+          ]).then(n.bind(null, 3299));
         }),
         Zr = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
             n.e(24),
-            n.e(13),
+            n.e(15),
             n.e(27),
-            n.e(519),
+            n.e(522),
           ]).then(n.bind(null, 3732));
         }),
         eo = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(13),
-            n.e(33),
-            n.e(35),
-            n.e(121),
-            n.e(408),
-          ]).then(n.bind(null, 3115));
+            n.e(15),
+            n.e(34),
+            n.e(36),
+            n.e(122),
+            n.e(411),
+          ]).then(n.bind(null, 3110));
         }),
         to = Object(f.lazy)(function () {
-          return Promise.all([n.e(24), n.e(13), n.e(26), n.e(456)]).then(
-            n.bind(null, 3751)
+          return Promise.all([n.e(24), n.e(15), n.e(26), n.e(459)]).then(
+            n.bind(null, 3752)
           );
         }),
         no = Object(f.lazy)(function () {
-          return Promise.all([n.e(24), n.e(483)]).then(n.bind(null, 2901));
+          return Promise.all([n.e(24), n.e(486)]).then(n.bind(null, 2896));
         }),
         ro = Object(f.lazy)(function () {
-          return Promise.all([n.e(13), n.e(303)]).then(n.bind(null, 3116));
+          return Promise.all([n.e(15), n.e(306)]).then(n.bind(null, 3111));
         }),
         oo = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
             n.e(24),
-            n.e(13),
+            n.e(15),
             n.e(20),
-            n.e(411),
-          ]).then(n.bind(null, 3117));
+            n.e(414),
+          ]).then(n.bind(null, 3112));
         }),
         ao = Object(f.lazy)(function () {
-          return Promise.all([n.e(6), n.e(27), n.e(117), n.e(515)]).then(
-            n.bind(null, 3771)
+          return Promise.all([n.e(6), n.e(27), n.e(118), n.e(518)]).then(
+            n.bind(null, 3772)
           );
         }),
         io = Object(f.lazy)(function () {
           return Promise.all([
             n.e(6),
-            n.e(13),
+            n.e(15),
             n.e(20),
             n.e(27),
-            n.e(482),
-          ]).then(n.bind(null, 3118));
+            n.e(485),
+          ]).then(n.bind(null, 3113));
         });
       xn.a.extend(Bn.a),
         xn.a.extend(Pn.a),
@@ -53594,7 +53591,7 @@
                             case 0:
                               return (
                                 (e.next = 2),
-                                n.e(123).then(n.t.bind(null, 454, 3))
+                                n.e(124).then(n.t.bind(null, 454, 3))
                               );
                             case 2:
                               if (((a = e.sent), zn.a.USER_FILES_URL)) {
@@ -53874,8 +53871,8 @@
           var fo = Object(Yn.b)("X_FCM_TOKEN");
           fo && Gn.a.dispatch(Object(Cn.j)(fo));
         } else
-          n.e(353)
-            .then(n.bind(null, 3901))
+          n.e(356)
+            .then(n.bind(null, 3902))
             .then(
               (function () {
                 var e = Object(c.a)(
@@ -55179,6 +55176,6 @@
       }
     },
   ],
-  [[320, 433]],
+  [[320, 436]],
 ]);
-//# sourceMappingURL=main.ef84b07d.chunk.js.map
+//# sourceMappingURL=main.5648453c.chunk.js.map
