@@ -819,3 +819,5 @@ function addVersusIcon() {
     elm.style = "align-items: center;";
   });
 }
+
+addVersusIcon();
