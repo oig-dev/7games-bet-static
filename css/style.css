@@ -1549,8 +1549,24 @@ body {
   padding: 0 10px 24px !important;
 }
 
+/* Outer glow nas bordas verdes da home */
 #r479 .mainRow {
   box-shadow: 0px 0px 6px #29FF008F !important;
-  border: 1px solid #2FC473 !important;
-  border-radius: 32px !important;
+}
+
+/* Largura dos cards de 'jogos da semana' (Home) */
+#m957 .style__RadioButton-sc-3ucvic-2.cyiMKC, #m957 .style__RadioButton-sc-3ucvic-2.edOIQa {
+  height: 28px !important
+}
+
+#m957 div.style__Wrapper-sc-vig7k4-3.eRCVUv {
+  margin-top: 0px !important;
+}
+
+#m957 .card__container.card__container-mobile {
+  padding-bottom: 0px !important;
+}
+
+#m957 > div.full-width.module.ModuleSbSelectedSportGames > div{
+  height: 180px !important;
 }
