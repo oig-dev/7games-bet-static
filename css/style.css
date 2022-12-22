@@ -775,6 +775,23 @@ body {
     bottom: 2px !important;
     margin-bottom: 0;
   }
+
+  #m853 .slick-slider .slick-dots,
+  #m961 .slick-slider .slick-dots,
+  #m959 .slick-slider .slick-dots,
+  #m957 .slick-slider .slick-dots {
+    bottom: 2px !important;
+    margin-bottom: 0;
+  }
+  
+  #m957 .slick-slider .slick-dots li button {
+    background: var(--v3-black-45)!important;
+  }
+  
+  #m957 .slick-slider .slick-dots li.slick-active button {
+    background: var(--v3-primary-6)!important;
+  }
+
   #m853 .slick-slide div[class^="style__Wrapper-sc"],
   #m961 .slick-slide div[class^="style__Wrapper-sc"],
   #m959 .slick-slide div[class^="style__Wrapper-sc"],
