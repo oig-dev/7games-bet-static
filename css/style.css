@@ -1566,7 +1566,3 @@ body {
 #m957 .card__container.card__container-mobile {
   padding-bottom: 0px !important;
 }
-
-#m957 > div.full-width.module.ModuleSbSelectedSportGames > div{
-  height: 180px !important;
-}
