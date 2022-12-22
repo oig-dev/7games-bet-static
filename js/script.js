@@ -820,4 +820,6 @@ function addVersusIcon() {
   });
 }
 
-addVersusIcon();
+waitForElm("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").then((elm) => {
+  addVersusIcon();
+});
