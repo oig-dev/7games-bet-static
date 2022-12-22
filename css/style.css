@@ -763,6 +763,10 @@ body {
   #m957 .slick-slider {
     min-height: 219px;
   }
+
+  #m957 .slick-slider {
+    min-height: 190px;
+  }
   
   #m853 .slick-slider .slick-dots,
   #m961 .slick-slider .slick-dots,
