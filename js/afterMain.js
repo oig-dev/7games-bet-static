@@ -1,4 +1,4 @@
-/*! For license information please see main.5648453c.chunk.js.LICENSE.txt */
+/*! For license information please see main.7719813d.chunk.js.LICENSE.txt */
 (this["webpackJsonpsportsbook-v3.0"] =
   this["webpackJsonpsportsbook-v3.0"] || []).push([
   [383],
@@ -1215,182 +1215,185 @@
     },
     function (e, t, n) {
       "use strict";
-      n.d(t, "db", function () {
-        return ce;
+      n.d(t, "eb", function () {
+        return se;
       }),
         n.d(t, "d", function () {
-          return se;
-        }),
-        n.d(t, "gb", function () {
           return le;
         }),
-        n.d(t, "X", function () {
+        n.d(t, "hb", function () {
           return fe;
         }),
         n.d(t, "Y", function () {
           return de;
         }),
-        n.d(t, "ab", function () {
+        n.d(t, "Z", function () {
           return pe;
         }),
-        n.d(t, "fb", function () {
+        n.d(t, "bb", function () {
           return he;
         }),
-        n.d(t, "o", function () {
+        n.d(t, "gb", function () {
           return me;
         }),
-        n.d(t, "cb", function () {
+        n.d(t, "o", function () {
           return ve;
         }),
-        n.d(t, "eb", function () {
+        n.d(t, "db", function () {
           return ye;
         }),
-        n.d(t, "bb", function () {
+        n.d(t, "fb", function () {
           return ge;
         }),
-        n.d(t, "e", function () {
+        n.d(t, "cb", function () {
           return be;
         }),
-        n.d(t, "V", function () {
+        n.d(t, "e", function () {
           return _e;
         }),
-        n.d(t, "i", function () {
+        n.d(t, "W", function () {
           return Ee;
         }),
-        n.d(t, "N", function () {
+        n.d(t, "i", function () {
           return Oe;
         }),
-        n.d(t, "x", function () {
+        n.d(t, "O", function () {
           return Se;
         }),
-        n.d(t, "u", function () {
+        n.d(t, "x", function () {
           return Te;
         }),
-        n.d(t, "Q", function () {
+        n.d(t, "u", function () {
           return we;
         }),
-        n.d(t, "I", function () {
+        n.d(t, "R", function () {
           return Ce;
         }),
-        n.d(t, "H", function () {
+        n.d(t, "I", function () {
           return je;
         }),
-        n.d(t, "J", function () {
+        n.d(t, "H", function () {
           return xe;
         }),
-        n.d(t, "G", function () {
+        n.d(t, "J", function () {
           return Ae;
         }),
-        n.d(t, "w", function () {
+        n.d(t, "G", function () {
           return Pe;
         }),
-        n.d(t, "v", function () {
+        n.d(t, "w", function () {
           return ke;
         }),
-        n.d(t, "E", function () {
+        n.d(t, "v", function () {
           return Ie;
         }),
-        n.d(t, "k", function () {
+        n.d(t, "E", function () {
           return Ne;
         }),
-        n.d(t, "U", function () {
+        n.d(t, "k", function () {
           return Re;
         }),
-        n.d(t, "T", function () {
+        n.d(t, "V", function () {
           return Me;
         }),
-        n.d(t, "P", function () {
+        n.d(t, "U", function () {
           return De;
         }),
-        n.d(t, "r", function () {
+        n.d(t, "Q", function () {
           return Le;
         }),
-        n.d(t, "K", function () {
+        n.d(t, "r", function () {
           return Fe;
         }),
-        n.d(t, "s", function () {
+        n.d(t, "K", function () {
           return Ue;
         }),
-        n.d(t, "q", function () {
+        n.d(t, "L", function () {
           return Be;
         }),
-        n.d(t, "S", function () {
+        n.d(t, "s", function () {
           return Ge;
         }),
-        n.d(t, "F", function () {
+        n.d(t, "q", function () {
           return He;
         }),
-        n.d(t, "h", function () {
+        n.d(t, "T", function () {
           return Ve;
         }),
-        n.d(t, "t", function () {
+        n.d(t, "F", function () {
           return We;
         }),
-        n.d(t, "M", function () {
+        n.d(t, "h", function () {
           return ze;
         }),
-        n.d(t, "W", function () {
+        n.d(t, "t", function () {
           return $e;
         }),
-        n.d(t, "l", function () {
+        n.d(t, "N", function () {
           return Ye;
         }),
-        n.d(t, "g", function () {
+        n.d(t, "X", function () {
           return Ke;
         }),
-        n.d(t, "Z", function () {
+        n.d(t, "l", function () {
           return qe;
         }),
-        n.d(t, "L", function () {
+        n.d(t, "g", function () {
           return Je;
         }),
-        n.d(t, "O", function () {
+        n.d(t, "ab", function () {
           return Qe;
         }),
-        n.d(t, "f", function () {
+        n.d(t, "M", function () {
           return Xe;
         }),
-        n.d(t, "y", function () {
+        n.d(t, "P", function () {
           return Ze;
         }),
-        n.d(t, "z", function () {
+        n.d(t, "f", function () {
           return et;
         }),
-        n.d(t, "A", function () {
+        n.d(t, "y", function () {
           return tt;
         }),
-        n.d(t, "B", function () {
+        n.d(t, "z", function () {
           return nt;
         }),
-        n.d(t, "m", function () {
+        n.d(t, "A", function () {
           return rt;
         }),
-        n.d(t, "p", function () {
+        n.d(t, "B", function () {
           return ot;
         }),
-        n.d(t, "n", function () {
+        n.d(t, "m", function () {
           return at;
         }),
-        n.d(t, "R", function () {
+        n.d(t, "p", function () {
           return it;
         }),
-        n.d(t, "j", function () {
+        n.d(t, "n", function () {
           return ut;
         }),
-        n.d(t, "C", function () {
+        n.d(t, "S", function () {
           return ct;
         }),
-        n.d(t, "D", function () {
+        n.d(t, "j", function () {
           return st;
         }),
-        n.d(t, "c", function () {
+        n.d(t, "C", function () {
           return lt;
         }),
-        n.d(t, "b", function () {
+        n.d(t, "D", function () {
           return ft;
         }),
-        n.d(t, "a", function () {
+        n.d(t, "c", function () {
           return dt;
+        }),
+        n.d(t, "b", function () {
+          return pt;
+        }),
+        n.d(t, "a", function () {
+          return ht;
         });
       var r = "UPDATE_EVENT_AND_GAME_IDS",
         o = "CLOSE_EASY_BET",
@@ -1422,210 +1425,214 @@
         P = "SET_SUPERBET_ACTIVE",
         k = "SET_COUNTER_OFFER_ACTIVE",
         I = "SET_SENT_COUNTER_OFFERS_COUNT",
-        N = "SET_EDIT_BET_ACTIVE",
-        R = "SET_CASHOUT_FROM",
-        M = "SET_CONFLICTING_GAME_IDS",
-        D = "SET_TEMPORARY_EVENT_HOLDER",
-        L = "SET_REBET_LOADING",
-        F = "SET_ACTIVE_TAB_PAGE",
-        U = "FREEZE_TAB_CHANGE",
-        B = "SET_SPORT_BONUS_RULES",
-        G = "SET_USE_BALANCE_BONUS",
-        H = "SET_ACTIVE_MARKET_ODD",
-        V = "SET_BETSLIP_OPEN",
-        W = "TOGGLE_TICKETS_CHANGED",
-        z = "SET_IS_CALCULATING",
-        $ = "SET_SINGLE_RETURN",
-        Y = "SET_SUBSCRIBED_EVENTS",
-        K = "MERGE_SUBSCRIBED_EVENTS",
-        q = "SET_OPEN_BETS_COUNT",
-        J = "SET_OPEN_BETS_COUNT_AFTER_CASHOUT",
-        Q = "SET_OPEN_BETS_DATA",
-        X = "SET_OPEN_BETS_LOADING",
-        Z = "SET_TABS",
-        ee = "SET_CASHOUT_TICKET",
-        te = "SET_BOOK_BET_ID",
-        ne = "SET_TAX_AMOUNT_RANGES",
-        re = "SET_BASIC_EW",
-        oe = "SET_PROFIT_BOOST",
-        ae = "SET_PROFIT_BOOST_ADVANCED",
-        ie = "ADD_PROFIT_BOOST_ADVANCED_SINGLE_ITEM",
-        ue = "ADD_PROFIT_BOOST_ADVANCED_ITEM",
-        ce = function (e) {
+        N = "SET_SENT_SUPER_BET_COUNT",
+        R = "SET_EDIT_BET_ACTIVE",
+        M = "SET_CASHOUT_FROM",
+        D = "SET_CONFLICTING_GAME_IDS",
+        L = "SET_TEMPORARY_EVENT_HOLDER",
+        F = "SET_REBET_LOADING",
+        U = "SET_ACTIVE_TAB_PAGE",
+        B = "FREEZE_TAB_CHANGE",
+        G = "SET_SPORT_BONUS_RULES",
+        H = "SET_USE_BALANCE_BONUS",
+        V = "SET_ACTIVE_MARKET_ODD",
+        W = "SET_BETSLIP_OPEN",
+        z = "TOGGLE_TICKETS_CHANGED",
+        $ = "SET_IS_CALCULATING",
+        Y = "SET_SINGLE_RETURN",
+        K = "SET_SUBSCRIBED_EVENTS",
+        q = "MERGE_SUBSCRIBED_EVENTS",
+        J = "SET_OPEN_BETS_COUNT",
+        Q = "SET_OPEN_BETS_COUNT_AFTER_CASHOUT",
+        X = "SET_OPEN_BETS_DATA",
+        Z = "SET_OPEN_BETS_LOADING",
+        ee = "SET_TABS",
+        te = "SET_CASHOUT_TICKET",
+        ne = "SET_BOOK_BET_ID",
+        re = "SET_TAX_AMOUNT_RANGES",
+        oe = "SET_BASIC_EW",
+        ae = "SET_PROFIT_BOOST",
+        ie = "SET_PROFIT_BOOST_ADVANCED",
+        ue = "ADD_PROFIT_BOOST_ADVANCED_SINGLE_ITEM",
+        ce = "ADD_PROFIT_BOOST_ADVANCED_ITEM",
+        se = function (e) {
           return { type: r, payload: e };
         },
-        se = function () {
+        le = function () {
           return { type: o };
         },
-        le = function (e) {
+        fe = function (e) {
           return { type: a, payload: e };
         },
-        fe = function (e) {
+        de = function (e) {
           return { type: u, payload: e };
         },
-        de = function () {
+        pe = function () {
           return { type: i };
         },
-        pe = function () {
+        he = function () {
           return { type: c };
         },
-        he = function () {
+        me = function () {
           return { type: s };
         },
-        me = function (e) {
-          return { type: R, payload: e };
-        },
         ve = function (e) {
-          return { type: l, payload: e };
-        },
-        ye = function (e) {
-          return { type: f, payload: e };
-        },
-        ge = function (e) {
-          return { type: C, payload: e };
-        },
-        be = function () {
-          return { type: d };
-        },
-        _e = function (e) {
-          return { type: p, payload: e };
-        },
-        Ee = function (e) {
-          return { type: h, payload: e };
-        },
-        Oe = function (e) {
-          return { type: m, payload: e };
-        },
-        Se = function (e) {
-          return { type: v, payload: e };
-        },
-        Te = function (e) {
-          return { type: y, payload: e };
-        },
-        we = function (e) {
-          return { type: g, payload: e };
-        },
-        Ce = function (e) {
-          return { type: b, payload: e };
-        },
-        je = function (e) {
-          return { type: _, payload: e };
-        },
-        xe = function (e) {
-          return { type: E, payload: e };
-        },
-        Ae = function (e) {
-          return { type: O, payload: e };
-        },
-        Pe = function (e) {
-          return { type: S, payload: e };
-        },
-        ke = function (e) {
-          return { type: T, payload: e };
-        },
-        Ie = function (e) {
-          return { type: w, payload: e };
-        },
-        Ne = function (e) {
-          return { type: j, payload: e };
-        },
-        Re = function (e) {
-          return { type: x, payload: e };
-        },
-        Me = function (e) {
-          return { type: A, payload: e };
-        },
-        De = function (e) {
-          return { type: P, payload: e };
-        },
-        Le = function (e) {
-          return { type: k, payload: e };
-        },
-        Fe = function (e) {
-          return { type: I, payload: e };
-        },
-        Ue = function (e) {
-          return { type: N, payload: e };
-        },
-        Be = function (e) {
           return { type: M, payload: e };
         },
+        ye = function (e) {
+          return { type: l, payload: e };
+        },
+        ge = function (e) {
+          return { type: f, payload: e };
+        },
+        be = function (e) {
+          return { type: C, payload: e };
+        },
+        _e = function () {
+          return { type: d };
+        },
+        Ee = function (e) {
+          return { type: p, payload: e };
+        },
+        Oe = function (e) {
+          return { type: h, payload: e };
+        },
+        Se = function (e) {
+          return { type: m, payload: e };
+        },
+        Te = function (e) {
+          return { type: v, payload: e };
+        },
+        we = function (e) {
+          return { type: y, payload: e };
+        },
+        Ce = function (e) {
+          return { type: g, payload: e };
+        },
+        je = function (e) {
+          return { type: b, payload: e };
+        },
+        xe = function (e) {
+          return { type: _, payload: e };
+        },
+        Ae = function (e) {
+          return { type: E, payload: e };
+        },
+        Pe = function (e) {
+          return { type: O, payload: e };
+        },
+        ke = function (e) {
+          return { type: S, payload: e };
+        },
+        Ie = function (e) {
+          return { type: T, payload: e };
+        },
+        Ne = function (e) {
+          return { type: w, payload: e };
+        },
+        Re = function (e) {
+          return { type: j, payload: e };
+        },
+        Me = function (e) {
+          return { type: x, payload: e };
+        },
+        De = function (e) {
+          return { type: A, payload: e };
+        },
+        Le = function (e) {
+          return { type: P, payload: e };
+        },
+        Fe = function (e) {
+          return { type: k, payload: e };
+        },
+        Ue = function (e) {
+          return { type: I, payload: e };
+        },
+        Be = function (e) {
+          return { type: N, payload: e };
+        },
         Ge = function (e) {
-          return { type: D, payload: e };
+          return { type: R, payload: e };
         },
         He = function (e) {
-          return { type: L, payload: e };
+          return { type: D, payload: e };
         },
         Ve = function (e) {
-          return { type: F, payload: e };
+          return { type: L, payload: e };
         },
         We = function (e) {
-          return { type: U, payload: e };
+          return { type: F, payload: e };
         },
         ze = function (e) {
-          return { type: B, payload: e };
+          return { type: U, payload: e };
         },
         $e = function (e) {
-          return { type: G, payload: e };
+          return { type: B, payload: e };
         },
         Ye = function (e) {
-          return { type: V, payload: e };
+          return { type: G, payload: e };
         },
         Ke = function (e) {
           return { type: H, payload: e };
         },
-        qe = function () {
-          return { type: W };
+        qe = function (e) {
+          return { type: W, payload: e };
         },
         Je = function (e) {
-          return { type: $, payload: e };
+          return { type: V, payload: e };
         },
-        Qe = function (e) {
-          return { type: Y, payload: e };
+        Qe = function () {
+          return { type: z };
         },
         Xe = function (e) {
-          return { type: K, payload: e };
+          return { type: Y, payload: e };
         },
         Ze = function (e) {
-          return { type: q, payload: e };
+          return { type: K, payload: e };
         },
         et = function (e) {
-          return { type: J, payload: e };
+          return { type: q, payload: e };
         },
         tt = function (e) {
-          return { type: Q, payload: e };
+          return { type: J, payload: e };
         },
         nt = function (e) {
-          return { type: X, payload: e };
+          return { type: Q, payload: e };
         },
         rt = function (e) {
-          return { type: Z, payload: e };
+          return { type: X, payload: e };
         },
         ot = function (e) {
-          return { type: ee, payload: e };
+          return { type: Z, payload: e };
         },
         at = function (e) {
-          return { type: te, payload: e };
+          return { type: ee, payload: e };
         },
         it = function (e) {
-          return { type: ne, payload: e };
+          return { type: te, payload: e };
         },
         ut = function (e) {
-          return { type: re, payload: e };
+          return { type: ne, payload: e };
         },
         ct = function (e) {
-          return { type: oe, payload: e };
+          return { type: re, payload: e };
         },
         st = function (e) {
-          return { type: ae, payload: e };
+          return { type: oe, payload: e };
         },
         lt = function (e) {
-          return { type: ie, payload: e };
+          return { type: ae, payload: e };
         },
         ft = function (e) {
+          return { type: ie, payload: e };
+        },
+        dt = function (e) {
           return { type: ue, payload: e };
         },
-        dt = {
+        pt = function (e) {
+          return { type: ce, payload: e };
+        },
+        ht = {
           UPDATE_EVENT_AND_GAME_IDS: r,
           CLOSE_EASY_BET: o,
           UPDATE_QUICK_BET_STAKE: a,
@@ -1656,35 +1663,36 @@
           SET_SUPERBET_ACTIVE: P,
           SET_COUNTER_OFFER_ACTIVE: k,
           SET_SENT_COUNTER_OFFERS_COUNT: I,
-          SET_EDIT_BET_ACTIVE: N,
-          SET_CASHOUT_FROM: R,
-          SET_CONFLICTING_GAME_IDS: M,
-          SET_TEMPORARY_EVENT_HOLDER: D,
-          SET_REBET_LOADING: L,
-          SET_ACTIVE_TAB_PAGE: F,
-          FREEZE_TAB_CHANGE: U,
-          SET_SPORT_BONUS_RULES: B,
-          SET_USE_BALANCE_BONUS: G,
-          SET_ACTIVE_MARKET_ODD: H,
-          SET_BETSLIP_OPEN: V,
-          TOGGLE_TICKETS_CHANGED: W,
-          SET_SINGLE_RETURN: $,
-          SET_IS_CALCULATING: z,
-          SET_SUBSCRIBED_EVENTS: Y,
-          MERGE_SUBSCRIBED_EVENTS: K,
-          SET_OPEN_BETS_COUNT: q,
-          SET_OPEN_BETS_COUNT_AFTER_CASHOUT: J,
-          SET_OPEN_BETS_DATA: Q,
-          SET_OPEN_BETS_LOADING: X,
-          SET_TABS: Z,
-          SET_CASHOUT_TICKET: ee,
-          SET_BOOK_BET_ID: te,
-          SET_TAX_AMOUNT_RANGES: ne,
-          SET_BASIC_EW: re,
-          SET_PROFIT_BOOST: oe,
-          SET_PROFIT_BOOST_ADVANCED: ae,
-          ADD_PROFIT_BOOST_ADVANCED_SINGLE_ITEM: ie,
-          ADD_PROFIT_BOOST_ADVANCED_ITEM: ue,
+          SET_SENT_SUPER_BET_COUNT: N,
+          SET_EDIT_BET_ACTIVE: R,
+          SET_CASHOUT_FROM: M,
+          SET_CONFLICTING_GAME_IDS: D,
+          SET_TEMPORARY_EVENT_HOLDER: L,
+          SET_REBET_LOADING: F,
+          SET_ACTIVE_TAB_PAGE: U,
+          FREEZE_TAB_CHANGE: B,
+          SET_SPORT_BONUS_RULES: G,
+          SET_USE_BALANCE_BONUS: H,
+          SET_ACTIVE_MARKET_ODD: V,
+          SET_BETSLIP_OPEN: W,
+          TOGGLE_TICKETS_CHANGED: z,
+          SET_SINGLE_RETURN: Y,
+          SET_IS_CALCULATING: $,
+          SET_SUBSCRIBED_EVENTS: K,
+          MERGE_SUBSCRIBED_EVENTS: q,
+          SET_OPEN_BETS_COUNT: J,
+          SET_OPEN_BETS_COUNT_AFTER_CASHOUT: Q,
+          SET_OPEN_BETS_DATA: X,
+          SET_OPEN_BETS_LOADING: Z,
+          SET_TABS: ee,
+          SET_CASHOUT_TICKET: te,
+          SET_BOOK_BET_ID: ne,
+          SET_TAX_AMOUNT_RANGES: re,
+          SET_BASIC_EW: oe,
+          SET_PROFIT_BOOST: ae,
+          SET_PROFIT_BOOST_ADVANCED: ie,
+          ADD_PROFIT_BOOST_ADVANCED_SINGLE_ITEM: ue,
+          ADD_PROFIT_BOOST_ADVANCED_ITEM: ce,
         };
     },
     function (e, t, n) {
@@ -3796,6 +3804,7 @@
           superbetActive: !1,
           counterOfferActive: !1,
           sentCounterOffersCount: 0,
+          sentSuperBetCount: 0,
           editBet: {
             active: Object(Ie.i)(),
             amount: "",
@@ -4371,6 +4380,9 @@
                   break;
                 case Pe.a.SET_SENT_COUNTER_OFFERS_COUNT:
                   n.sentCounterOffersCount = Math.max(0, t.payload);
+                  break;
+                case Pe.a.SET_SENT_SUPER_BET_COUNT:
+                  n.sentSuperBetCount = Math.max(0, t.payload);
                   break;
                 case Pe.a.SET_EDIT_BET_ACTIVE:
                   n.editBet = t.payload;
@@ -15328,12 +15340,12 @@
                 JSON.stringify(p)
               ),
               w(v),
-              i.a.dispatch(Object(u.S)(null)),
+              i.a.dispatch(Object(u.T)(null)),
               i.a.dispatch(Object(u.h)(0));
-          } else i.a.dispatch(Object(u.S)(e));
+          } else i.a.dispatch(Object(u.T)(e));
         },
         O = function (e, t) {
-          D(null), i.a.dispatch(Object(u.S)(null));
+          D(null), i.a.dispatch(Object(u.T)(null));
           var n = C(),
             r = n.bets || [],
             a = r.findIndex(function (t) {
@@ -15379,7 +15391,7 @@
         },
         w = function (e) {
           i.a.dispatch(
-            Object(u.db)(
+            Object(u.eb)(
               e.map(function (e) {
                 return Object(a.a)(
                   { eventId: e.eventId, gameId: e.gameId },
@@ -55181,4 +55193,4 @@
   ],
   [[320, 436]],
 ]);
-//# sourceMappingURL=main.5648453c.chunk.js.map
+//# sourceMappingURL=main.7719813d.chunk.js.map
