@@ -812,7 +812,7 @@ function addVersusIcon() {
   document.querySelectorAll("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").forEach((elm) => {
     const newSpan = document.createElement("span");
     newSpan.classList = ["style__Team-sc-vig7k4-0", "TPHqt"];
-    newSpan.style = "font-size: 30px; font-weight: 400; color: #fff;"
+    newSpan.style = "font-size: 25px; font-weight: 400; color: #fff;"
     newSpan.innerHTML = "x";
     elm.firstChild.insertAdjacentElement("afterend", newSpan);
     moveElementTo(elm.childNodes[2].firstChild, 1);
