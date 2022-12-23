@@ -1533,6 +1533,11 @@ body {
   #social-media-menu .social-media-menu-container span {
     width: 35px;
   }
+
+  div.liveGame__wrapper {
+    --container-height: initial !important;
+    margin-bottom: 2px;
+  }
 }
 
 /* only ios */
