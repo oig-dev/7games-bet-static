@@ -1620,3 +1620,9 @@ body {
 #m957 .card__container.card__container-mobile {
   padding-bottom: 0px !important;
 }
+
+/* Do overwrites ODD button */
+.edOIQa {
+  background-color: #2C3434 !important;
+  border: 1px solid var(--v3-primary-6) !important;
+}
