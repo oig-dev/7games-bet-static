@@ -759,12 +759,9 @@ body {
   /* slick */
   #m853 .slick-slider,
   #m961 .slick-slider,
-  #m959 .slick-slider {
-    min-height: 219px;
-  }
-
+  #m959 .slick-slider,
   #m957 .slick-slider {
-    min-height: 190px;
+    min-height: 205px;
   }
   
   #m853 .slick-slider .slick-dots,
@@ -1514,7 +1511,7 @@ body {
   #m961 .slick-slider,
   #m959 .slick-slider,
   #m957 .slick-slider {
-    min-height: 190px;
+    min-height: 205px;
     height: 100%;
   }
   
@@ -1574,10 +1571,11 @@ body {
   box-shadow: 0px 0px 6px #29FF008F !important;
 }
 
-/* Largura dos cards de 'jogos da semana' (Home) */
+/* Largura dos cards de 'jogos da semana' (Home)
 #m957 .style__RadioButton-sc-3ucvic-2.cyiMKC, #m957 .style__RadioButton-sc-3ucvic-2.edOIQa {
-  height: 28px !important
+  height: 28px !important;
 }
+*/
 
 #m957 div.style__Wrapper-sc-vig7k4-3.eRCVUv {
   margin-top: 0px !important;
