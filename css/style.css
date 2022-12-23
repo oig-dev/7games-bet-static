@@ -508,6 +508,9 @@ div[class^="style__Container-sc"] .am-flexbox button span:nth-child(1) {
 
 /* Estilo apenas do Desktop */
 @media only screen and (min-width: 961px) {
+  div[class^="style__Container-sc"] .am-flexbox button:not([role="switch"]) {
+    margin: 0 2px 0 2px !important;
+  }
   
   #lateral-menu #social-media-menu{ visibility:hidden; }
   /*  #lateral-menu.active #social-media-menu{ 
