@@ -945,6 +945,10 @@ body {
     width: max-content;
   }
 
+  #m522 div[class^="style__Wrapper-sc-"] div[class^="style__Header-sc-vig7k4-2"] div[class^="style__Title-sc"]  {
+    min-width: 50%;
+  }
+
   #m241 .liveGame__wrapper div[class^="style__Container-sc"] div.am-flexbox.am-flexbox-justify-end.am-flexbox-align-center,
   #m522 div[class^="style__Container-sc"] div.am-flexbox.am-flexbox-justify-end.am-flexbox-align-center {
     width: 44% !important;
