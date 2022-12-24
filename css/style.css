@@ -1092,6 +1092,18 @@ body {
   body .main-container {
     padding: 0 7.5px;
   }
+
+  #r118 .style__Footer-sc-1bwpb48-1.ejjeid{
+    overflow-x: hidden !important;
+  }
+
+  #r118, #r117, #r265, #r146 {
+    margin: 0 -7.5px;
+  }
+
+  #r146 .full-width.module.ModuleWidgets {
+    margin-right: 0px!important;
+  }
   
   .sportsHeader-titleWrapper {
     width: 100% !important;
