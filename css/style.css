@@ -970,7 +970,7 @@ body {
   #m522 .lazyLoad__wrapper div[class^="style__Container-sc"] .am-flexbox {
     width: 42%;
     float: right;
-    margin-top: -44px; /* COMENT */
+    margin-top: -49px; /* COMENT */
     height: 50px;
   }
   
@@ -1622,8 +1622,11 @@ body {
 }
 
 /* Do overwrites ODD button */
-.edOIQa {
-  background-color: #2C3434 !important;
-  border: 1px solid #0D2202 !important;
-  border-radius: 5px;
+.edOIQa, .jOyjTk {
+  background-color: #1B2420 !important;
+  border: 1px solid #5c5c5c !important;
+}
+
+.edOIQa,.klNiqt, .jOyjTk {
+  border-radius: 5px !important;
 }
