@@ -1637,3 +1637,7 @@ body {
 }
 
 /* Card home #m957 */
+
+#m957 .eoMUD {
+  min-height: 175px !important;
+}
