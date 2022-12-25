@@ -823,3 +823,17 @@ function addVersusIcon() {
 waitForElm("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").then((elm) => {
   addVersusIcon();
 });
+
+/** Add bottom margin on register and login only */
+if (isMobile) {
+  function addBottomMarginToAuth(authTextItens) {
+    waitForElm(".style__Container-sc-1klqpe7-0.dEloEX").then((elm) => {
+      let actionButton = elm.firstChild;
+      console.log("context", actionButton.firstChild.innerText, authTextItens);
+      if (authTextItens.includes(actionButton.firstChild.innerText)) {
+        elm.style = "margin-bottom: 30px !important;";
+      }
+    });
+  }
+  addBottomMarginToAuth(["Entrar", "Próximo"]);
+}
