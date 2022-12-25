@@ -1097,10 +1097,14 @@ body {
     overflow-x: hidden !important;
   }
 
+  /** Deixa as telas do sportbook com largura total (revert o padding do main-container) */
   #r118, #r117, #r265, #r146 {
     margin: 0 -7.5px;
   }
 
+  #r118 .full-width.module.ModuleWidgets,
+  #r117 .full-width.module.ModuleWidgets,
+  #r265 .full-width.module.ModuleWidgets,
   #r146 .full-width.module.ModuleWidgets {
     margin-right: 0px!important;
   }
