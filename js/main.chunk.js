@@ -24818,7 +24818,7 @@
               gtag("event", "conversion", {
                 send_to: "AW-336388911/IwMZCOL29YUYEK_Gs6AB",
               });
-              cpa_img = document.createElement("img");
+              let cpa_img = document.createElement("img");
               cpa_img.id = "1000385091_cpa_testing";
               cpa_img.src =
                 "https://ads.trafficjunky.net/tj_ads_pt?a=1000385091&member_id=1004870561&cb=[RANDOM_NUMBER]&cti=[TRANSACTION_UNIQ_ID]&ctv=[VALUE_OF_THE_TRANSACTION]&ctd=[TRANSACTION_DESCRIPTION]";
