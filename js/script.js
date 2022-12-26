@@ -831,7 +831,7 @@ if (isMobile) {
       let actionButton = elm.firstChild;
       console.log("context", actionButton.firstChild.innerText, authTextItens);
       if (authTextItens.includes(actionButton.firstChild.innerText)) {
-        elm.style = "margin-bottom: 30px !important;";
+        elm.style = "margin-bottom: 110px !important;";
       }
     });
   }
