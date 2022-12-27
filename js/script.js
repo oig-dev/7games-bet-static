@@ -53,6 +53,7 @@ function trocaImagemCupomMenuMobile() {
     fifthMenuIcon.fill = "#65C673";
     const gradients = fifthMenuIcon.querySelectorAll(":scope > defs > linearGradient > stop");
     for (let i = 0; i < gradients.length; i++) {
+      gradients[i].outerHTML = "<stop stop-color=\"#65C673\"></stop>";
       gradients[i].stopColor = "#65C673";
     }
     moveElementTo(
