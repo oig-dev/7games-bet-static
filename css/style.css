@@ -1664,3 +1664,7 @@ body {
   font-weight: bold;
   width: inherit;
 }
+
+.payment__iframe-close {
+  position: absolute !important;
+}
