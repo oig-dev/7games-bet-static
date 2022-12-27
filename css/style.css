@@ -888,6 +888,7 @@ body {
   #m959 .slick-slide div[class^="style__Container-sc"],
   #m957 .slick-slide div[class^="style__Container-sc"] {
     padding: 0px 5px 10px;
+    margin-right: 5px !important;
   }
   
   /* esportes */
