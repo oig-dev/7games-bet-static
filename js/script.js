@@ -742,11 +742,8 @@ function queryAddIdExclude(query, id, excludedId) {
 }
 
 // Paybrokers
-const paybrokers_opt_query =(
-  isMobile ?
-  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR"
-  : ".payment__item-box .style__HeroBoxContainer-sc-swzx38-3.lbstYe .style__HeroBox-sc-swzx38-4.hvFpHc .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR"
-);
+const paybrokers_opt_query =
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
 
 const paybrokers_banner_query =
   ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
@@ -754,11 +751,8 @@ const paybrokers_banner_query =
 const paybrokers_banner_id = "paybrokers_banner_id";
 
 // Safeway
-const safeway_opt_query = (
-  isMobile ?
-  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroBox-sc-swzx38-4.hvFpHc"
-  : ".payment__item-box.payment__item-box-active .style__HeroBoxContainer-sc-swzx38-3.lbstYe .style__HeroBox-sc-swzx38-4.hvFpHc"
-);
+const safeway_opt_query =
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroBox-sc-swzx38-4.hvFpHc";
 
 const safeway_banner_query =
   ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc";
@@ -815,15 +809,18 @@ setInterval(
 
 /** Add versus icon */
 function addVersusIcon() {
-  document.querySelectorAll("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").forEach((elm) => {
-    const newSpan = document.createElement("span");
-    newSpan.classList = ["style__Team-sc-vig7k4-0", "TPHqt"];
-    newSpan.style = "font-size: 25px; font-weight: 400; color: #D9D9D9; margin-top: -6px;"
-    newSpan.innerHTML = "x";
-    elm.firstChild.insertAdjacentElement("afterend", newSpan);
-    moveElementTo(elm.childNodes[2].firstChild, 1);
-    elm.style = "align-items: center;";
-  });
+  document
+    .querySelectorAll("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv")
+    .forEach((elm) => {
+      const newSpan = document.createElement("span");
+      newSpan.classList = ["style__Team-sc-vig7k4-0", "TPHqt"];
+      newSpan.style =
+        "font-size: 25px; font-weight: 400; color: #D9D9D9; margin-top: -6px;";
+      newSpan.innerHTML = "x";
+      elm.firstChild.insertAdjacentElement("afterend", newSpan);
+      moveElementTo(elm.childNodes[2].firstChild, 1);
+      elm.style = "align-items: center;";
+    });
 }
 
 waitForElm("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").then((elm) => {
@@ -843,8 +840,5 @@ if (isMobile) {
     });
   }
 
-  setInterval(
-    'addBottomMarginToAuth(["Entrar", "Próximo"])',
-    1000
-  );
+  setInterval('addBottomMarginToAuth(["Entrar", "Próximo"])', 1000);
 }
