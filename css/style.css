@@ -1657,3 +1657,10 @@ body {
 #m957 .eoMUD {
   min-height: 175px !important;
 }
+
+.statusColorDes, .statusColorMob {
+  font-size: 11px;
+  color: var(--v3-text-color-fixed);
+  font-weight: bold;
+  width: inherit;
+}

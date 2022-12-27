@@ -645,7 +645,7 @@ function createSvgIcon(element, name) {
 fbq("track", "ViewContent");
 
 // Overwrite do icone de carteira
-waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
+waitForElm(".v3-icon.profileInfo__add").then((elm) => {
   elm.innerHTML = `
       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
       <defs>
@@ -742,8 +742,11 @@ function queryAddIdExclude(query, id, excludedId) {
 }
 
 // Paybrokers
-const paybrokers_opt_query =
-  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
+const paybrokers_opt_query =(
+  isMobile ?
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR"
+  : ".payment__item-box .style__HeroBoxContainer-sc-swzx38-3.lbstYe .style__HeroBox-sc-swzx38-4.hvFpHc .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR"
+);
 
 const paybrokers_banner_query =
   ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc .style__HeroFallbackContainer-sc-swzx38-5.dyAbpR";
@@ -751,8 +754,11 @@ const paybrokers_banner_query =
 const paybrokers_banner_id = "paybrokers_banner_id";
 
 // Safeway
-const safeway_opt_query =
-  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroBox-sc-swzx38-4.hvFpHc";
+const safeway_opt_query = (
+  isMobile ?
+  ".paymentMethods__listLayout .paymentMethods__listLayout__item .style__HeroBoxContainer-sc-swzx38-3.dxlcuG .style__HeroBox-sc-swzx38-4.hvFpHc"
+  : ".payment__item-box.payment__item-box-active .style__HeroBoxContainer-sc-swzx38-3.lbstYe .style__HeroBox-sc-swzx38-4.hvFpHc"
+);
 
 const safeway_banner_query =
   ".style__PaymentWrapper-sc-2c0o0u-0.cfgmFt .style__HeroBoxContainer-sc-swzx38-3.jpqglK .style__HeroBox-sc-swzx38-4.hvFpHc";
