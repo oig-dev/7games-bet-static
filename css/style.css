@@ -1659,10 +1659,10 @@ body {
 }
 
 .statusColorDes, .statusColorMob {
-  font-size: 11px;
-  color: var(--v3-text-color-fixed);
-  font-weight: bold;
-  width: inherit;
+  font-size: 11px !important;
+  color: var(--v3-text-color-fixed) !important;
+  font-weight: bold !important;
+  width: inherit !important;
 }
 
 .payment__iframe-close {
