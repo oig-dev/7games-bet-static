@@ -645,7 +645,7 @@ function createSvgIcon(element, name) {
 fbq("track", "ViewContent");
 
 // Overwrite do icone de carteira
-waitForElm(".v3-icon.style__PlusIcon-sc-1nhmslw-4.dzhtzK").then((elm) => {
+waitForElm(".v3-icon.profileInfo__add").then((elm) => {
   elm.innerHTML = `
       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
       <defs>
