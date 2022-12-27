@@ -826,14 +826,19 @@ waitForElm("#m957 .style__Wrapper-sc-vig7k4-3.eRCVUv").then((elm) => {
 
 /** Add bottom margin on register and login only */
 if (isMobile) {
-  function addBottomMarginToAuth(authTextItens) {
+  function addBottomMarginToAuth(authTextItens, margin = "110px") {
     waitForElm(".style__Container-sc-1klqpe7-0.dEloEX").then((elm) => {
       let actionButton = elm.firstChild;
-      console.log("context", actionButton.firstChild.innerText, authTextItens);
       if (authTextItens.includes(actionButton.firstChild.innerText)) {
-        elm.style = "margin-bottom: 110px !important;";
+        if (elm.style.marginBottom !== margin) {
+          elm.style.marginBottom = margin;
+        }
       }
     });
   }
-  addBottomMarginToAuth(["Entrar", "Próximo"]);
+
+  setInterval(
+    'addBottomMarginToAuth(["Entrar", "Próximo"])',
+    1000
+  );
 }
