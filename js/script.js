@@ -50,8 +50,7 @@ function trocaImagemCupomMenuMobile() {
   );
 
   if (fifthMenuIcon) {
-    fifthMenuIcon.querySelector(":scope > defs > style").innerHTML =
-      ".cls-17777{fill:#65C673;}";
+    fifthMenuIcon.querySelector(":scope > path").fill = "#65C673";
     moveElementTo(
       document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`),
       1
