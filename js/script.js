@@ -50,7 +50,11 @@ function trocaImagemCupomMenuMobile() {
   );
 
   if (fifthMenuIcon) {
-    fifthMenuIcon.querySelector(":scope > path").fill = "#65C673";
+    fifthMenuIcon.fill = "#65C673";
+    const gradients = fifthMenuIcon.querySelectorAll(":scope > defs > linearGradient > stop");
+    for (let i = 0; i < gradients.length; i++) {
+      gradients[i].stopColor = "#65C673";
+    }
     moveElementTo(
       document.querySelector(`#bottom-navigation > div:nth-child(${ORDER})`),
       1
