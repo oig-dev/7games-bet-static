@@ -1653,9 +1653,8 @@ body {
   border-radius: 5px !important;
 }
 
-/* Card home #m957 */
-
-#m957 .eoMUD {
+/* Card home #m957 - mesma altura com e sem bet */
+#m957 .hIYwiq, #m957 .kJLjPP{
   min-height: 175px !important;
 }
 
