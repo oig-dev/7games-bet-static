@@ -24981,6 +24981,7 @@
             r,
             function (e) {
               t(e.details);
+              console.log(e.details);
               fbq("track", "Subscribe");
               gtag("event", "conversion", {
                 send_to: "AW-336388911/IwMZCOL29YUYEK_Gs6AB",
@@ -24997,6 +24998,7 @@
             null,
             function (e) {
               n(e.data);
+              console.log(e.data);
             }
           );
         },
@@ -25023,6 +25025,7 @@
             r,
             function (e) {
               t(e);
+              console.log(e);
             },
             null,
             function () {
@@ -25040,6 +25043,7 @@
             n,
             function (t) {
               e(t);
+              console.log(t);
             },
             null,
             function () {
