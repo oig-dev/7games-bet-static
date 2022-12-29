@@ -4573,6 +4573,7 @@
                   e.depositModalOpen = t.payload;
                   break;
                 case Me.a.SET_DEPOSIT_PAYMENT_STATUS:
+                  console.log("Confirmado.");
                   e.confirmedDeposit = t.payload;
                   break;
                 case Me.a.SET_SEON_SESSION_DATA:
