@@ -1,4 +1,4 @@
-/*! For license information please see main.ab49b744.chunk.js.LICENSE.txt */
+/*! For license information please see main.aec94dd7.chunk.js.LICENSE.txt */
 (this["webpackJsonpsportsbook-v3.0"] =
   this["webpackJsonpsportsbook-v3.0"] || []).push([
   [385],
@@ -14495,7 +14495,7 @@
           return he;
         });
       var c = n(0),
-        l = n(191),
+        l = n(190),
         f = n(141),
         d = n(29),
         p = n.n(d),
@@ -24076,6 +24076,17 @@
     function (e, t, n) {
       "use strict";
       n.d(t, "a", function () {
+        return a;
+      });
+      var r = n(44),
+        o = n.n(r);
+      function a(e) {
+        return e instanceof HTMLElement ? e : o.a.findDOMNode(e);
+      }
+    },
+    function (e, t, n) {
+      "use strict";
+      n.d(t, "a", function () {
         return i;
       });
       var r = n(1),
@@ -24087,17 +24098,6 @@
           fallback: e.fallback || null,
           children: Object(a.jsx)(t, Object(r.a)({}, e.innerProps)),
         });
-      }
-    },
-    function (e, t, n) {
-      "use strict";
-      n.d(t, "a", function () {
-        return a;
-      });
-      var r = n(44),
-        o = n.n(r);
-      function a(e) {
-        return e instanceof HTMLElement ? e : o.a.findDOMNode(e);
       }
     },
     function (e, t, n) {
@@ -49116,32 +49116,32 @@
     },
     function (e, t, n) {
       var r = {
-        "./by": [305, 98],
-        "./by.ts": [305, 98],
-        "./ca": [306, 99],
-        "./ca.ts": [306, 99],
-        "./cy": [307, 100],
-        "./cy.ts": [307, 100],
-        "./de": [308, 101],
-        "./de.ts": [308, 101],
-        "./fr": [309, 102],
-        "./fr.ts": [309, 102],
-        "./gh": [310, 103],
-        "./gh.ts": [310, 103],
-        "./it": [311, 104],
-        "./it.ts": [311, 104],
-        "./mga": [312, 105],
-        "./mga.ts": [312, 105],
-        "./nl": [313, 106],
-        "./nl.ts": [313, 106],
-        "./po": [314, 107],
-        "./po.ts": [314, 107],
-        "./se": [315, 108],
-        "./se.ts": [315, 108],
-        "./uk": [316, 109],
-        "./uk.ts": [316, 109],
-        "./usa": [317, 110],
-        "./usa.ts": [317, 110],
+        "./by": [305, 97],
+        "./by.ts": [305, 97],
+        "./ca": [306, 98],
+        "./ca.ts": [306, 98],
+        "./cy": [307, 99],
+        "./cy.ts": [307, 99],
+        "./de": [308, 100],
+        "./de.ts": [308, 100],
+        "./fr": [309, 101],
+        "./fr.ts": [309, 101],
+        "./gh": [310, 102],
+        "./gh.ts": [310, 102],
+        "./it": [311, 103],
+        "./it.ts": [311, 103],
+        "./mga": [312, 104],
+        "./mga.ts": [312, 104],
+        "./nl": [313, 105],
+        "./nl.ts": [313, 105],
+        "./po": [314, 106],
+        "./po.ts": [314, 106],
+        "./se": [315, 107],
+        "./se.ts": [315, 107],
+        "./uk": [316, 108],
+        "./uk.ts": [316, 108],
+        "./usa": [317, 109],
+        "./usa.ts": [317, 109],
       };
       function o(e) {
         if (!n.o(r, e))
@@ -54418,7 +54418,7 @@
         ur = n(200),
         sr = n(194),
         cr = n(125),
-        lr = n(190),
+        lr = n(191),
         fr =
           (n(431),
           Object(f.lazy)(function () {
@@ -54630,7 +54630,7 @@
             n.e(20),
             n.e(16),
             n.e(39),
-            n.e(76),
+            n.e(75),
             n.e(152),
           ]).then(n.bind(null, 3855));
         }),
@@ -54675,7 +54675,7 @@
             n.e(12),
             n.e(15),
             n.e(36),
-            n.e(94),
+            n.e(93),
           ]).then(n.bind(null, 3435));
         }),
         Pr = Object(f.lazy)(function () {
@@ -54684,7 +54684,7 @@
           );
         }),
         Ir = Object(f.lazy)(function () {
-          return Promise.all([n.e(1), n.e(0), n.e(20), n.e(62), n.e(323)]).then(
+          return Promise.all([n.e(1), n.e(0), n.e(20), n.e(61), n.e(323)]).then(
             n.bind(null, 2723)
           );
         }),
@@ -54751,15 +54751,15 @@
         }),
         $r = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(34),
+            n.e(33),
             n.e(12),
             n.e(38),
-            n.e(59),
+            n.e(58),
             n.e(433),
           ]).then(n.bind(null, 3417));
         }),
         Yr = Object(f.lazy)(function () {
-          return Promise.all([n.e(10), n.e(75)]).then(n.bind(null, 3871));
+          return Promise.all([n.e(10), n.e(74)]).then(n.bind(null, 3871));
         }),
         Kr = Object(f.lazy)(function () {
           return Promise.all([n.e(1), n.e(0), n.e(4), n.e(5), n.e(441)]).then(
@@ -54778,7 +54778,7 @@
         }),
         Qr = Object(f.lazy)(function () {
           return Promise.all([
-            n.e(34),
+            n.e(33),
             n.e(10),
             n.e(15),
             n.e(38),
@@ -54794,8 +54794,8 @@
           return Promise.all([
             n.e(16),
             n.e(12),
+            n.e(17),
             n.e(21),
-            n.e(19),
             n.e(515),
           ]).then(n.bind(null, 3402));
         }),
@@ -54813,7 +54813,7 @@
             n.e(12),
             n.e(38),
             n.e(40),
-            n.e(114),
+            n.e(113),
             n.e(415),
           ]).then(n.bind(null, 3209));
         }),
@@ -54830,7 +54830,7 @@
           return Promise.all([n.e(16), n.e(487)]).then(n.bind(null, 2891));
         }),
         oo = Object(f.lazy)(function () {
-          return Promise.all([n.e(12), n.e(71), n.e(301)]).then(
+          return Promise.all([n.e(12), n.e(70), n.e(301)]).then(
             n.bind(null, 3210)
           );
         }),
@@ -54839,12 +54839,12 @@
             n.e(6),
             n.e(16),
             n.e(12),
-            n.e(19),
+            n.e(17),
             n.e(418),
           ]).then(n.bind(null, 3211));
         }),
         io = Object(f.lazy)(function () {
-          return Promise.all([n.e(6), n.e(29), n.e(111), n.e(519)]).then(
+          return Promise.all([n.e(6), n.e(29), n.e(110), n.e(519)]).then(
             n.bind(null, 3902)
           );
         }),
@@ -54852,7 +54852,7 @@
           return Promise.all([
             n.e(6),
             n.e(12),
-            n.e(19),
+            n.e(17),
             n.e(29),
             n.e(486),
           ]).then(n.bind(null, 3212));
@@ -56662,4 +56662,4 @@
   ],
   [[323, 440]],
 ]);
-//# sourceMappingURL=main.ab49b744.chunk.js.map
+//# sourceMappingURL=main.aec94dd7.chunk.js.map
