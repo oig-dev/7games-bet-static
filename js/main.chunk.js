@@ -1,4 +1,4 @@
-/*! For license information please see main.aec94dd7.chunk.js.LICENSE.txt */
+/*! For license information please see main.032ecf6c.chunk.js.LICENSE.txt */
 (this["webpackJsonpsportsbook-v3.0"] =
   this["webpackJsonpsportsbook-v3.0"] || []).push([
   [385],
@@ -775,7 +775,7 @@
                 null === (he = pe.partnerConfigs) ||
                 void 0 === he
                   ? void 0
-                  : he.bookBetSharingAvailable1)
+                  : he.bookBetSharingAvailable)
               )) ||
             !1,
           IS_QUICK_BET:
@@ -56662,4 +56662,4 @@
   ],
   [[323, 440]],
 ]);
-//# sourceMappingURL=main.aec94dd7.chunk.js.map
+//# sourceMappingURL=main.032ecf6c.chunk.js.map
