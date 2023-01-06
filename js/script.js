@@ -51,9 +51,11 @@ function trocaImagemCupomMenuMobile() {
 
   if (fifthMenuIcon) {
     fifthMenuIcon.fill = "#65C673";
-    const gradients = fifthMenuIcon.querySelectorAll(":scope > defs > linearGradient > stop");
+    const gradients = fifthMenuIcon.querySelectorAll(
+      ":scope > defs > linearGradient > stop"
+    );
     for (let i = 0; i < gradients.length; i++) {
-      gradients[i].outerHTML = "<stop stop-color=\"#65C673\"></stop>";
+      gradients[i].outerHTML = '<stop stop-color="#65C673"></stop>';
       gradients[i].stopColor = "#65C673";
     }
     moveElementTo(
@@ -456,7 +458,7 @@ waitForElm(".x-casinoGameCardImageWrapper__image").then((elm) => {
     ).length > 0
   )
     return;
-  setTimeout("addIconeComponents()", 500);
+  setTimeout("addIconeComponents()", 1000);
 });
 
 waitForElm(".x-casinoGameCardImageWrapper__image").then((elm) => {
@@ -465,7 +467,7 @@ waitForElm(".x-casinoGameCardImageWrapper__image").then((elm) => {
     document.querySelectorAll("#m848 .uc-content span svg").length > 0
   )
     return;
-  setTimeout("addIconeComponentMaisJogados()", 500);
+  setTimeout("addIconeComponentMaisJogados()", 1000);
 });
 
 function addIconeComponentMaisJogados() {
