@@ -669,6 +669,7 @@ body {
   }
 }
 
+/* Estilo apenas mobi */
 @media only screen and (max-width: 960px) {
   .style__BetCountWrapper-sc-nlog2h-0 {
     background-color: white !important;
@@ -891,7 +892,14 @@ body {
     margin-right: 7.5px !important;
   }
   
-  /* esportes */
+  /** 
+  
+   Página Sportbook 
+   > #m239 - aba 'Esportes'
+   > #m522 - aba 'E-Sports'
+   > #m241 - aba 'Ao vivo'
+  
+  */
   #m239 .match-card__container div[class^="style__Header-sc-"] {
     padding-right: 52%;
   }
@@ -1032,7 +1040,110 @@ body {
     right: 0;
     position: absolute;
   }
-  
+
+  /** 
+   ## Página Eventos Home - #m1179 - Eventos esportivos da home  
+  */
+
+  /** Página Eventos Home - menu superior */
+  #m1179 .customMenu__item {
+    border: 1px solid #2C3434 !important;
+    color: #707070 !important;
+    font-weight: bolder !important;
+  }
+
+  #m1179 .customMenu__item--active {
+    background-color: #2C3434 !important;
+    border: 1px solid #438A5A !important;
+    color: #fff !important;
+    font-weight: bolder !important;
+  }
+
+  /** Página Eventos Home - evento - background */
+  #m1179 .events__live,
+  #m1179 .events__menu-wrapper .cWqBee, 
+  #m1179 .events-time-filter--full-width,
+  #m1179 .events__event-wrapper .cRWLEv {
+    background-color: #2C3434 !important;
+  }
+
+  /** Página Eventos Home - filtro de eventos */
+
+  #m1179 .events-time-filter__button .v3-btn.v3-btn-primary {
+    background-color: #2FC473 !important;
+    color: #FFFFFF !important;
+  }
+
+  #m1179 .events-time-filter__button .v3-btn.v3-btn-default {
+    background-color: #18201D !important;
+    color: #707070 !important;
+  }
+
+  /** Página Eventos Home - conteúdo */
+  #m1179 .events__event-wrapper .LovOu {
+    border-bottom: 1px solid #707070 !important;
+  }
+
+  /** Página Eventos Home - Botão odd ativo */
+  #m1179 .events__event-wrapper .lprjrX,
+  #m1179 .events__event-wrapper .juRvAq  {
+    /*
+    border: 1px solid #3B7C54 !important;
+    color: #50A163 !important;
+    background-color: unset !important;
+    */
+  }
+
+  /** Página Eventos Home - Botão odd inativo */
+  #m1179 .events__event-wrapper .czyrAX,
+  #m1179 .events__event-wrapper .eWvBFy {
+    /*
+    border: #707070 !important;
+    color: #707070 !important;
+    background-color: unset !important;
+    */
+  }
+
+  /** card wrapper */
+  #m1179 .events__event-wrapper .cRWLEv {
+    /*
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    */
+  }
+
+  /** card wrapper header */
+  #m1179 .events__event-wrapper .cRWLEv > .bWqtyw{
+    padding-bottom: 8px !important;
+    margin-bottom: 8px !important;
+    border-bottom: 1px solid #707070 !important;
+    /*
+    width: 32%;
+    */
+  }
+
+  /** card wrapper body */
+  #m1179 .events__event-wrapper .cRWLEv > .gxNFBk{
+    /*
+    width: 68%;
+    float: right;
+    */
+  }
+
+  /** horario */
+  #m1179 .kMnvrO{
+    background-color: initial !important;
+  }
+
+  /** 
+   ## FINAL Página Eventos Home - #m1179 - Eventos esportivos da home  
+  */
   
   /* menu inferior */
   #bottom-navigation {
@@ -1644,12 +1755,12 @@ body {
 }
 
 /* Do overwrites ODD button */
-.edOIQa, .jOyjTk, .lkgpiC {
+.edOIQa, .jOyjTk, .lkgpiC, .czyrAX {
   background-color: #1B2420 !important;
   border: 1px solid #5c5c5c !important;
 }
 
-.edOIQa, .klNiqt, .jOyjTk, .lkgpiC {
+.edOIQa, .klNiqt, .jOyjTk, .lkgpiC, .czyrAX {
   border-radius: 5px !important;
 }
 
