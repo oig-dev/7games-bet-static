@@ -1,4 +1,4 @@
-/*! For license information please see main.032ecf6c.chunk.js.LICENSE.txt */
+/*! For license information please see main.c4396222.chunk.js.LICENSE.txt */
 (this["webpackJsonpsportsbook-v3.0"] =
   this["webpackJsonpsportsbook-v3.0"] || []).push([
   [385],
@@ -54898,9 +54898,23 @@
                   $n.a.IS_WEBP_SUPPORTED = !1;
                 })
             : ($n.a.IS_WEBP_SUPPORTED = !0);
-          var r = zn.a.parse(window.location.search, { ignoreQueryPrefix: !0 });
-          r.btag &&
-            Object(Kn.c)("btag", String(r.btag), 30, {
+          var r = zn.a.parse(window.location.search, { ignoreQueryPrefix: !0 }),
+            o = "";
+          if (r.btag) o = String(r.btag);
+          else if (window.location.hash.includes("btag")) {
+            var a, i, u;
+            o =
+              null === (a = window.location.hash.split("btag=")) ||
+              void 0 === a ||
+              null === (i = a[1]) ||
+              void 0 === i ||
+              null === (u = i.split("&")) ||
+              void 0 === u
+                ? void 0
+                : u[0];
+          }
+          o &&
+            Object(Kn.c)("btag", String(o), 30, {
               SameSite: "None",
               Secure: !0,
             }),
@@ -56662,4 +56676,4 @@
   ],
   [[323, 440]],
 ]);
-//# sourceMappingURL=main.032ecf6c.chunk.js.map
+//# sourceMappingURL=main.c4396222.chunk.js.map
