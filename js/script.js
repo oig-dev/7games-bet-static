@@ -456,7 +456,7 @@ waitForElm(".x-casinoGameCardImageWrapper__image").then((elm) => {
     ).length > 0
   )
     return;
-  setTimeout("addIconeComponents()", 500);
+  setInterval("addIconeComponents()", 500);
 });
 
 waitForElm(".x-casinoGameCardImageWrapper__image").then((elm) => {
@@ -490,6 +490,8 @@ function addIconeComponentMaisJogados() {
   }
 }
 
+var iconesAdicionados = [];
+
 function addIconeComponents() {
   const component = isMobile
     ? document.querySelectorAll(
@@ -501,6 +503,7 @@ function addIconeComponents() {
   component.forEach((im) => {
     const text = im.textContent.toLowerCase();
     if (text.includes("jogos populares")) {
+      if (iconesAdicionados.includes("jogosPopulares")) return;
       const svg = {
         viewBox: "0 0 31.794 31.794",
         height: "31.794",
@@ -511,8 +514,10 @@ function addIconeComponents() {
       };
       const img = createSvgIcon(svg, "jogosPopulares");
       im.appendChild(img);
+      iconesAdicionados.push("jogosPopulares");
     }
     if (text.includes("novos")) {
+      if (iconesAdicionados.includes("Novos")) return;
       const svg = {
         viewBox: "0 0 34.516 36.819",
         height: "36.819",
@@ -524,8 +529,10 @@ function addIconeComponents() {
       };
       const img = createSvgIcon(svg, "Novos");
       im.appendChild(img);
+      iconesAdicionados.push("Novos");
     }
     if (text.includes("cassino ao vivo")) {
+      if (iconesAdicionados.includes("CassinoVivo")) return;
       const svg = {
         viewBox: "0 0 24.708 29.201",
         height: "29.201",
@@ -536,6 +543,7 @@ function addIconeComponents() {
       };
       const img = createSvgIcon(svg, "CassinoVivo");
       im.appendChild(img);
+      iconesAdicionados.push("CassinoVivo");
     }
   });
 }
